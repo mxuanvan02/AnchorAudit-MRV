@@ -1,0 +1,71 @@
+# ---- Cay lam viec ban thao: chi quan ly NGUON, khong quan ly artifact ----
+#
+# Nguyen tac: git phai de (a) diff tung vong sua, (b) rewind khi sua sai,
+# (c) biet file nao song/chet. Moi thu tai sinh duoc thi KHONG commit.
+
+# ---- LaTeX build artifact (luon tai sinh bang latexmk) ----
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.xdv
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*.bcf
+*-blx.bib
+
+# ---- Artifact cua vong build Word (docx_build sinh tu prepare_body.py) ----
+paper2_hujos/docx_build/
+**/qa_png/
+**/qa_docx/
+**/out_src/
+# 6/7 file .docx la ban nhap cu khong script song nao doc; chi ref_base.docx
+# duoc paper2_hujos/build_ref.py dung -> giu 1 file do bang luat tru
+paper/*.docx
+!paper/ref_base.docx
+
+# ---- PDF ----
+# GIU: 3 ban render hien tai + thu tra loi (de doi chieu giua cac vong sua)
+#      figures/*.pdf vi la INPUT cua \includegraphics
+# BO:  4 PDF cua cac vong cu (khong con duoc build)
+paper/main.pdf
+paper/qa/
+paper2/TwinGate_paper2_device_anchored.pdf
+paper2_hujos/HUJOS_manuscript_device_anchored.pdf
+
+# ---- Van ban phap ly / phuong phap luan: giu TEXT, bo PDF nang ----
+# refs/*.txt da tach chu tu PDF (QD4801_2025.txt = 99KB); PDF goc 2MB khong
+# can trong git vi doi chieu duoc bang text + SHA-256 ghi trong
+# outputs/citation_evidence.json
+refs/*.pdf
+
+# ---- Thu muc chet / luu tru (xem _archive/README.md) ----
+_archive/
+_backups/
+.pytest_cache/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- File tam cua cac vong sua ----
+probe_*
+*.bak
+bk*_*.tex
+bk*_*.md
+tmp_*
+
+# ---- Du lieu nang tai ve duoc (reproduce.sh tai lai) ----
+# GIU: *.provenance.json (512 byte, ho so nguon cua tung file thoi tiet)
+# BO:  *.csv thoi tiet (vai MB, tai lai duoc tu Open-Meteo)
+data/era5_multi/*.csv
+data/era5_multi/*.json.gz

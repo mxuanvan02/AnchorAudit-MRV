@@ -1,0 +1,1371 @@
+                                                                    Số: 4801/QĐ-BNNMT
+                                                                    Thời gian ký: 2025-11-14T09:03:40+07:00
+
+
+BỘ NÔNG NGHIỆP VÀ MÔI TRƯỜNG                 CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                                                      Độc lập - Tự do - Hạnh phúc
+
+
+
+                                 Quy trình thí điểm
+     Đo đạc, báo cáo, thẩm định (MRV) trong canh tác lúa chất lượng cao, phát
+                     thải thấp vùng Đồng bằng sông Cửu Long
+
+          (Ban hành kèm theo Quyết định số  /QĐ-BNNMT ngày       tháng           năm 2025
+                         của Bộ trưởng Bộ Nông nghiệp và Môi trường)
+
+
+   Phụ lục 1. Quy trình thí điểm Đo đạc, báo cáo, thẩm định (MRV) trong canh
+   tác lúa chất lượng cao, phát thải thấp vùng Đồng bằng sông Cửu Long
+
+
+         1. Phạm vi ứng dụng:
+          Quy trình này áp dụng thí điểm cho hoạt động canh tác lúa chất lượng cao, phát thải
+   thấp thuộc các tỉnh vùng Đồng bằng sông Cửu Long (ĐBSCL) và các vùng khác tùy thuộc
+   điều kiện cụ thể có thể áp dụng.
+          2. Nội dung quy trình
+          Quy trình thí điểm đo đạc, báo cáo, thẩm định (MRV) trong canh tác lúa chất
+   lượng cao, phát thải thấp vùng Đồng bằng sông Cửu Long gồm 6 bước như sau:
+          a) Bước 1. Chuẩn bị
+          - Chuẩn bị công cụ kỹ thuật số, biểu mẫu, phần mềm MRV, cài đặt các ứng
+   dụng điện thoại, thiết lập hệ thống dữ liệu.
+          - Xây dựng và phê duyệt kế hoạch MRV hàng năm theo biểu mẫu 1.1.
+          - Rà soát MRV theo mùa vụ theo biểu mẫu số 1.2 và đề nghị điều chỉnh nếu
+   có theo biểu mẫu 1.3.
+          - Đào tạo cán bộ các cấp về kỹ năng thu thập và nhập dữ liệu MRV.
+          - Thiết lập hệ thống quản lý dữ liệu MRV kỹ thuật số và các cơ chế Đảm bảo
+   chất lượng và Kiểm soát chất lượng (QA/QC) ban đầu.
+          b) Bước 2. Đăng ký
+          - Các HTX/Doanh nghiệp đăng ký tham gia MRV theo hướng dẫn tại biểu
+   mẫu 2.1.
+          - Chi cục Trồng trọt và Bảo vệ thực vật các tỉnh rà soát, kiểm tra hồ sơ, xác
+   nhận và gửi hồ sơ lên Cục Trồng trọt và Bảo vệ thực vật, MAE để xem xét và phê
+   duyệt theo hướng dẫn tại biểu mẫu 2.2.
+          c) Bước 3. Thiết lập đường cơ sở
+          - Lập bản đồ SPOT theo hướng dẫn tại Phụ lục 3.
+          - Xác định năm cơ sở cho từng khu vực
+          - Thu thập dữ liệu cơ sở liên quan theo hướng dẫn tại biểu mẫu 3.1.
+          - Kiểm tra và xác nhận dữ liệu cơ sở theo hướng dẫn tại biểu mẫu 3.2.
+                                        2
+       - Tính toán phát thải cơ sở theo hướng dẫn tại Phụ lục 3.
+       - Đảm bảo chất lượng và Kiểm soát chất lượng (QA/QC): Đảm bảo dữ liệu
+MRV đầy đủ, chính xác, minh bạch và có thể kiểm chứng (kiểm tra nội bộ, kiểm tra
+đột xuất, kiểm tra tính logic, độ đầy đủ, tính nhất quán và độ không chắc chắn của
+dữ liệu theo biểu mẫu số 3.3 và 3.4.
+       d) Bước 4. Đo đạc
+       - Chọn vị trí thực hiện MRV đại diện cho từng vùng của SPOT.
+       - Giám sát rút nước trong mùa vụ bằng ảnh chụp và dữ liệu số.
+       - Thu thập các thông tin, dữ liệu canh tác tại thời điểm cuối vụ.
+       - Kiểm tra chéo dữ liệu.
+       - Tính toán lượng phát thải và giảm phát thải theo vụ và cả năm.
+       - Thiết lập quy trình QA/QC chuẩn.
+       - Lưu trữ hồ sơ gốc và dữ liệu số hóa.
+       - Kiểm tra tính logic, độ đầy đủ, và tính nhất quán của dữ liệu.
+       - Quản lý và báo cáo mức độ không chắc chắn trong dữ liệu MRV theo hướng
+dẫn tại Phụ lục 3.
+       - Kiểm soát đảm bảo chất lượng (QA/QC): Đảm bảo dữ liệu MRV đầy đủ,
+chính xác, minh bạch và có thể kiểm chứng (kiểm tra nội bộ, kiểm tra đột xuất, kiểm
+tra tính logic, độ đầy đủ, tính nhất quán và độ không chắc chắn của dữ liệu.
+       đ) Bước 5. Báo cáo
+       - Cập nhật dữ liệu giám sát lên hệ thống MRV.
+       - Tổng hợp và biên soạn Báo cáo tóm tắt giám sát theo mùa vụ và hàng năm
+theo hướng dẫn tại biểu mẫu 5.1 và biểu mẫu 5.2.
+       - Rà soát, góp ý, phê duyệt trước khi ban hành chính thức.
+       - Kiểm soát đảm bảo chất lượng (QA/QC): Đảm bảo chất lượng báo cáo
+       e) Bước 6. Thẩm định
+       - Xác minh được thực hiện bởi bên thứ ba độc lập được Bộ Nông nghiệp và
+Môi trường ủy quyền.
+       - Kiểm tra hồ sơ, dữ liệu MRV và các cuộc khảo sát thực địa.
+       - Đánh giá tính chính xác, đầy đủ, minh bạch của các báo cáo.
+       - Phát hành Báo cáo xác minh – cơ sở để cấp tín chỉ carbon và báo cáo NDC
+quốc gia.
+                                               3
+  Phụ lục 2. Các biểu mẫu
+          Biểu mẫu số 1.1. Kế hoạch MRV hàng năm cấp tỉnh
+
+SỞ NÔNG NGHIỆP VÀ MÔI TRƯỜNG TỈNH ... CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+    CHI CỤC TRỒNG TRỌT & BVTV              Độc lập – Tự do – Hạnh phúc
+
+
+                            KẾ HOẠCH MRV NĂM…
+        Căn cứ Kế hoạch MRV năm …của Bộ Nông nghiệp và Môi trường, Sở Nông
+  nghiệp và Môi trường tỉnh …xây dựng kế hoạch MRV năm …cấp tỉnh …như sau:
+        I. THÔNG TIN CHUNG
+        1.1. Nhân sự đơn vị MRV
+        - Người chịu trách nhiệm đơn vị MRV của tỉnh:
+              Họ và tên:
+              Đơn vị công tác:                     Điện thoại/Zalo:
+        - Danh sách nhân viên chịu trách nhiệm cho các nhiệm vụ MRV và tình trạng
+  đào tạo:
+                       Nhiệm vụ                          Tên     Tình trạng đào
+                                                                 tạo [Có/Không]
+   1. Lập kế hoạch hàng năm và đánh giá MRV theo
+   mùa vụ
+   2. Đào tạo cán bộ khuyến nông xã
+   3. Kiểm tra đơn đăng ký HTX/doanh nghiệp
+   4. Hướng dẫn và giám sát việc lập bản đồ SPOT
+   và thu thập dữ liệu cơ sở
+   5. Kiểm tra đột xuất về việc lập bản đồ và thu thập
+   dữ liệu cơ sở
+   6. Hướng dẫn và giám sát việc thu thập dữ liệu
+   giám sát
+   7. Kiểm tra đột xuất việc thu thập dữ liệu giám sát
+   8. Xem xét các báo cáo tóm tắt theo mùa vụ và báo
+   cáo giám sát hàng năm
+   9. Quản lý và lưu trữ tài liệu
+
+          1.2. Tình trạng đăng ký HTX và doanh nghiệp
+          Thống kê số lượng HTX và doanh nghiệp theo mức độ tham gia:
+   Tên xã trực thuộc tỉnh                 Số lượng HTX và doanh nghiệp
+                                    Có ý định Đăng ký đã Bản         đồ Bắt đầu
+                                    nộp     đơn được chấp SPOT và giám sát
+                                    đăng ký      thuận       dữ liệu cơ giảm
+                                                             sở được thiểu
+                                                             thu thập
+   Xã A
+   Xã B
+                                       4
+       1.3. Tình hình chuẩn bị của xã
+       Danh sách cán bộ khuyến nông chịu trách nhiệm và hiện trạng đào tạo về
+MRV.
+                                                                    Có cần
+                                                   Đã hoàn thành
+                                  Địa chỉ liên                     đào tạo
+        Tên xã         Tên                       khóa đào tạo cơ
+                                      hệ                             thêm
+                                                  bản (Có/Không)
+                                                                    không?
+Xã A
+Xã B
+…
+                                                  5
+                II. LỊCH NHIỆM VỤ MRV NĂM….
+
+        Nội dung                                          Tháng
+                              3   4   5   6   7       8           9   10   11   12   1   2
+1. Ngày mùa vụ
+Hè-Thu
+Thu đông
+Đông-xuân
+2. Hoạt động MRV
+Đào tạo cán bộ tỉnh
+Đào tạo cán bộ khuyến
+nông xã
+Kiểm      tra   đăng     ký
+HTX/doanh nghiệp
+Lập bản đồ SPOT và thu
+thập dữ liệu cơ sở
+Kiểm tra đột xuất dữ liệu
+lập bản đồ và DLCS
+Theo dõi chế độ nước trong
+mùa
+Giám sát thực hành canh
+tác cuối vụ
+Kiểm tra chất lượng dữ liệu
+giám sát
+Đánh giá MRV theo mùa
+vụ
+Đánh giá báo cáo MRV
+Lập kế hoạch MRV hàng
+năm
+     III. KẾ HOẠCH HOẠT ĐỘNG MRV
+     3.1. Kế hoạch đào tạo MRV
+     3.1.1 Đào tạo Đơn vị MRV cấp tỉnh
+               Nội dung đào tạo                    Tháng   Nhân viên     Người
+                                                           tham gia      huấn
+                                                                         luyện
+Lập kế hoạch hàng năm và đánh giá MRV theo
+mùa vụ
+Đào tạo giảng viên hỗ trợ cán bộ khuyến nông xã
+Kiểm tra đơn đăng ký HTX/doanh nghiệp:
+Hướng dẫn và giám sát việc lập bản đồ SPOT và
+thu thập dữ liệu cơ sở
+Kiểm tra đột xuất về việc lập bản đồ và thu thập
+dữ liệu cơ sở
+Hướng dẫn và giám sát việc thu thập dữ liệu giám
+sát
+Kiểm tra đột xuất việc thu thập dữ liệu giám sát
+Xem xét các báo cáo tóm tắt theo mùa vụ và báo
+cáo giám sát hàng năm
+Quản lý và lưu trữ tài liệu
+     3.1.2. Đào tạo cán bộ khuyến nông xã
+Nội dung đào tạo                  Tháng    Các xã tham gia      Người     huấn
+                                                                 luyện
+Đơn đăng ký HTX/doanh nghiệp
+Lập bản đồ SPOT và thu thập dữ
+liệu cơ sở:
+Giám sát việc thu thập dữ liệu:
+     3.2. Kế hoạch hoạt động MRV
+     3.2.1. Vụ hè-thu
+Nội dung thực hiện                                 Thời     gian Người thực hiện
+                                                   thực hiện
+Lập kế hoạch hàng năm và đánh giá MRV theo
+mùa vụ
+Kiểm tra đơn đăng ký HTX/doanh nghiệp
+Hướng dẫn và giám sát việc lập bản đồ SPOT và
+thu thập dữ liệu cơ sở
+Kiểm tra đột xuất về việc lập bản đồ và thu thập
+dữ liệu cơ sở
+Hướng dẫn và giám sát việc thu thập dữ liệu giám
+sát
+Kiểm tra đột xuất việc thu thập dữ liệu giám sát
+Xem xét các báo cáo tóm tắt theo mùa vụ và báo
+cáo giám sát hàng năm
+Quản lý và lưu trữ tài liệu
+                                        7
+     3.2.2. Vụ thu đông
+Nội dung thực hiện                                 Thời    gian Người thực hiện
+                                                   thực hiện
+Lập kế hoạch hàng năm và đánh giá MRV theo
+mùa vụ
+Kiểm tra đơn đăng ký HTX/doanh nghiệp
+Hướng dẫn và giám sát việc lập bản đồ SPOT và
+thu thập dữ liệu cơ sở
+Kiểm tra đột xuất về việc lập bản đồ và thu thập
+dữ liệu cơ sở
+Hướng dẫn và giám sát việc thu thập dữ liệu giám
+sát
+Kiểm tra đột xuất việc thu thập dữ liệu giám sát
+Xem xét các báo cáo tóm tắt theo mùa vụ và báo
+cáo giám sát hàng năm
+Quản lý và lưu trữ tài liệu
+     3.2.3. Vụ đông xuân
+Nội dung thực hiện                                 Thời    gian Người thực hiện
+                                                   thực hiện
+Lập kế hoạch hàng năm và đánh giá MRV theo
+mùa/vụ
+Kiểm tra đơn đăng ký HTX/doanh nghiệp:
+Hướng dẫn và giám sát việc lập bản đồ SPOT và
+thu thập dữ liệu cơ sở:
+Kiểm tra đột xuất về việc lập bản đồ và thu thập
+dữ liệu cơ sở
+Hướng dẫn và giám sát việc thu thập dữ liệu giám
+sát
+Kiểm tra đột xuất việc thu thập dữ liệu giám sát
+Xem xét các báo cáo tóm tắt theo mùa vụ và báo
+cáo giám sát hàng năm
+Quản lý và lưu trữ tài liệu
+
+                                                       THỦ TRƯỞNG CƠ QUAN
+                                                               8
+          Biểu mẫu số 1.2. Mẫu Báo cáo rà soát hoạt động MRV theo mùa vụ
+SỞ NÔNG NGHIỆP VÀ MÔI TRƯỜNG                             CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+          TỈNH ….                                             Độc lập – Tự do – Hạnh phúc
+CHI CỤC TRỒNG TRỌT & BVTV
+
+                               BÁO CÁO RÀ SOÁT HOẠT ĐỘNG MRV
+                                     Vụ ………năm ……….
+
+
+ 1. Hoạt động đào tạo MRV
+ - Số lượng sự kiện đào tạo MRV được tổ chức trong vụ...năm…: ____
+ - Số lượng cán bộ tỉnh, xã, HTX được đào tạo
+  Nội dung đào tạo                                                 Số lượng cán bộ được đào tạo
+                                                       Cấp tỉnh           Cấp xã        HTX và Doanh nghiệp
+  Đăng ký HTX/doanh nghiệp
+  Lập bản đồ SPOT và thu thập dữ
+  liệu cơ sở
+  Giám sát việc thu thập dữ liệu
+  Kiểm tra chất lượng tại hiện
+  trường
+ - Tóm tắt ngắn gọn về kết quả đào tạo: ......................................................................
+ - Vấn đề cần cải thiện: ................................................................................................
+ - Đề xuất về phương án cải thiện:...............................................................................
+ 2. Hoạt động thực địa MRV
+ Số lượng HTX hoặc doanh nghiệp hoàn thành từng loại hoạt động trong mùa vụ trước
+  Đơn vị                  Đã nộp đăng ký                Lập bản đồ               Giám sát việc            Kiểm tra chất
+                           HTX/doanh                    SPOT và thu               thu thập dữ              lượng tại hiện
+                               nghiệp                    thập DLCS                    liệu                    trường
+  HTX
+  Doanh nghiệp
+ - Tóm tắt ngắn gọn về kết quả đào tạo: ......................................................................
+ - Vấn đề cần cải thiện: ................................................................................................
+ - Đề xuất về phương án cải thiện:...............................................................................
+                                                                                 THỦ TRƯỞNG CƠ QUAN
+                                                               9
+          Biểu mẫu số 1.3. Mẫu đề nghị thay đổi kế hoạch giám sát hàng năm
+SỞ NÔNG NGHIỆP VÀ MÔI TRƯỜNG                                CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+          TỈNH ….                                                Độc lập – Tự do – Hạnh phúc
+CHI CỤC TRỒNG TRỌT & BVTV
+
+       ĐƠN ĐỀ NGHỊ THAY ĐỔI KẾ HOẠCH GIÁM SÁT HÀNG NĂM
+
+- Ngày đề nghị: ..........................................................................................................
+- Người đề nghị:..........................................................................................................
+- Đơn vị công tác: .......................................................................................................
+- Điện thoại/Zalo: .......................................................................................................
+- Nội dung đề nghị thay đổi: ......................................................................................
+       Thời gian của hoạt động đã lên kế hoạch hiện tại
+       Địa điểm của hoạt động đã lên kế hoạch hiện tại
+       Thêm hoạt động mới
+       Thay đổi nhân sự MRV
+       Thay đổi phương pháp thu thập dữ liệu
+- Yêu cầu thay đổi: ......................................................................................................
+- Lý do thay đổi: .........................................................................................................
+- Sự thay đổi có dẫn đến bất kỳ điều nào sau đây không?
+ Nội dung                                                                                      Có                    Không
+ Phân bổ nhân viên cho các hoạt động MRV mà họ chưa
+ được đào tạo
+ Không phải tất cả dữ liệu cơ sở cần thiết trong sổ tay
+ MRV sẽ được thu thập
+ Không phải tất cả dữ liệu giám sát cần thiết trong sổ tay
+ MRV sẽ được thu thập
+ Phương pháp lập bản đồ hoặc thu thập dữ liệu cơ sở sẽ
+ thay đổi
+ Phương pháp thu thập dữ liệu giám sát sẽ thay đổi
+
+                                                                                     THỦ TRƯỞNG CƠ QUAN
+                                                              10
+         Biểu mẫu số 2.1. Mẫu đơn đăng ký tham gia của HTX, doanh nghiệp
+
+
+              Đơn vị đăng ký                             CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                                                              Độc lập – Tự do – Hạnh phúc
+
+           ĐƠN ĐĂNG KÝ THAM GIA CHƯƠNG TRÌNH CARBON 1MHA
+- Tên đơn vị: ...............................................................................................................
+- Địa chỉ: .....................................................................................................................
+- Người liên hệ: ..........................................................................................................
+- Điện thoại/Zalo: .......................................................................................................
+        (Đơn vị đăng ký) xin nộp đơn này để tham gia chương trình carbon 1 triệu ha.
+Chúng tôi xin xác nhận rằng:
+        (1) Chúng tôi đã hiểu về chương trình carbon 1Mha và tự nguyện nộp đơn xin
+tham gia
+        (2) Chúng tôi dự định áp dụng những biện pháp mới sau đây trên các cánh đồng
+lúa của mình:
+       Chuyển sang AWD                                                                                               
+       Chuyển sang các giống lúa có thời gian sinh trưởng ngắn hơn                                                   
+       Sử dụng PP gieo hạt trực tiếp với thời gian ngập nước được rút ngắn 
+       Thời gian bắt đầu: ...........................................................................................
+       Hoặc đã áp dụng các phương pháp trên từ sau ngày 1/1/2021:
+         Biện pháp canh tác                     Thời gian bắt đầu áp dụng                         Tài liệu minh chứng
+
+          AWD
+
+          Các giống ngắn ngày
+
+          Gieo sạ
+
+- Tổng diện tích đăng ký tham gia: ............................................................................
+Chúng tôi cam kết:
+   (1) Diện tích đăng ký tham gia chương trình có cơ sở hạ tầng tưới tiêu, rút nước phù
+       hợp để áp dụng các biện pháp quản lý nước được đề xuất.
+   (2) Thực hiện theo thỏa thuận hợp đồng đã ký để chuyển giao quyền đối với bất kỳ
+       khoản giảm phát thải khí nhà kính nào phát sinh từ các hành động nêu trên cho
+       (MAE) nếu đăng ký của chúng tôi được chấp thuận và để xác nhận rằng các quyền
+       giảm phát thải chưa được chuyển giao cho các nhà phát triển dự án carbon khác;
+   (3) Thực hiện các biện pháp quản lý nước và canh tác lúa trước khi thực hiện những
+       thay đổi nêu trên trong hoạt động canh tác, cũng như các biện pháp quản lý nước
+       và canh tác lúa mà chúng tôi đã lên kế hoạch thực hiện sau khi thực hiện những
+       thay đổi này.
+                                                                                             …Ngày …tháng … năm
+                                                                                                ĐƠN VỊ ĐĂNG KÝ
+                                          11
+Đơn vị đăng ký
+     DANH SÁCH THÀNH VIÊN HTX HOẶC NÔNG DÂN HỢP ĐỒNG CỦA
+              DOANH NGHIỆP NỘP ĐƠN XIN THAM GIA
+      Bằng việc ký vào mẫu đơn này, tôi xác nhận rằng tôi hiểu chương trình carbon
+1Mha cũng như các quyền và trách nhiệm của tôi trong chương trình này; rằng tôi tự
+nguyện tham gia; và tôi ủy quyền cho đại diện HTX /doanh nghiệp được nêu tên bên
+dưới bảng này nộp đơn xin tham gia thay mặt tôi:
+
+ TT           Tên     Địa       Điện        Số     Diện tích   Chủ-người     Chữ ký
+                      chỉ    thoại/Zalo    CMND     lô đất      canh tác,
+                                                     (ha)      hoặc người
+                                                                thuê đất
+                                                                canh tác
+
+ 1
+
+ 2
+
+ 3
+
+ 4
+
+ …
+
+ Tổng diện tích
+
+                                                           …Ngày …tháng … năm
+                                                               ĐƠN VỊ ĐĂNG KÝ
+                                        12
+Đơn vị đăng ký
+DANH MỤC CÁC GIẢI PHÁP QUẢN LÝ NƯỚC VÀ CANH TÁC LÚA THEO
+                  DỰ ÁN CƠ SỞ VÀ DỰ KIẾN
+       Thông tin được cung cấp ở đây chỉ mang tính chất tham khảo. Việc thu thập dữ
+liệu chính thức sẽ được thực hiện sau khi đơn đăng ký của mỗi HTX hoặc doanh nghiệp
+được chấp thuận.
+      Lưu ý: Phương pháp rút nước giữa mùa hoặc AWD chỉ được coi là hiệu quả nếu
+sau ngày rút nước, cánh đồng không được tưới lại trong ít nhất 3 ngày.
+      Quản lý nước và thực hành trồng lúa trước khi thay đổi thực hành quản lý nước:
+               Thông số                Mùa hè-thu     Thu đông        Đông-xuân
+ Giống được trồng
+ Ngày trồng
+ Ngày thu hoạch
+ Phương pháp quản lý nước: (nhập a
+ ) vào hàng đúng
+ Lũ lụt liên tục cho đến khi rút nước
+ cuối vụ
+ Một hệ thống rút nước giữa mùa
+ Nhiều hơn một hệ thống rút nước
+ giữa mùa (tức là AWD)
+ Phân bón (kg/ha)
+ Các sửa đổi hữu cơ khác có/không)
+ Năng suất lúa trung bình (kg)
+      Quản lý nước dự kiến và thực hành canh tác lúa sau khi thay đổi thực hành quản
+lý nước:
+             Nội dung               Mùa hè-thu        Thu đông        Đông-xuân
+ Giống được trồng
+ Ngày trồng
+ Ngày thu hoạch
+ Phương pháp quản lý nước: (nhập
+ a ) vào hàng đúng
+ Lũ lụt liên tục cho đến khi rút
+ nước cuối vụ
+ Một hệ thống rút nước giữa mùa
+ Nhiều hơn một hệ thống rút nước
+ giữa mùa (tức là AWD)
+ Phân bón (kg/ha)
+ Các sửa đổi hữu cơ khác
+ (có/không)
+ Năng suất lúa trung bình (kg)
+                                                             …Ngày …tháng … năm
+                                                               ĐƠN VỊ ĐĂNG KÝ
+                                                              13
+     Biểu mẫu số 2.2. Mẫu thẩm định đăng ký tham gia của HTX/ Doanh
+nghiệp
+
+         ĐƠN VỊ KIỂM TRA                            CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                                                          Độc lập – Tự do – Hạnh phúc
+
+
+                           KẾT QUẢ THẨM ĐỊNH
+               ĐĂNG KÝ THAM GIA CHƯƠNG TRÌNH CARBON 1MHA
+
+
+- Tên đơn vị: ...............................................................................................................
+- Địa chỉ: .....................................................................................................................
+- Người liên hệ: ..........................................................................................................
+- Điện thoại/Zalo: .......................................................................................................
+- Ngày nhận được đơn đăng ký: ................................................................................
+       Chúng tôi xin xác nhận đã kiểm tra các yếu tố:
+  Thứ                                         Yếu tố cần kiểm tra                                                       Xác nhận
+   tự                                                                                                                    (nhập )
+    1    Tên HTX hoặc doanh nghiệp, địa chỉ, người liên hệ và thông tin
+         liên lạc đầy đủ
+    2    Diện tích ruộng lúa của HTX/doanh nghiệp nằm trong diện tích đất
+         lúa chuyên dùng đã đăng ký trên địa bàn tỉnh
+    3    Có ít nhất 1 hoạt động đủ điều kiện được chỉ định (và nếu đã được
+         áp dụng, biểu mẫu sẽ chỉ ra mùa, năm và liệu có tài liệu hay không)
+    4    Nếu thực hành đủ điều kiện đã được áp dụng, biểu mẫu nêu rõ việc
+         áp dụng được thực hiện sau ngày 1/1/2021
+    5    Tổng ha đề xuất được chỉ ra và khớp với tổng ha trong Phụ lục 4.1
+    6    Nếu đề xuất áp dụng AWD, mẫu đơn nêu rõ cơ sở hạ tầng tưới tiêu
+         và rút nước phù hợp đã được thiết lập
+    7    Phụ lục 4.1 đã được tất cả các thành viên HTX được liệt kê (hoặc
+         nông dân hợp đồng của doanh nghiệp) ký kết và đại diện của HTX
+         hoặc doanh nghiệp được nêu tên bên dưới bảng
+    8    Phụ lục 4.2 đã được đại diện HTX hoặc doanh nghiệp ký (và nếu
+         liên quan đến các chủ đất khác, một thỏa thuận riêng cũng được
+         đính kèm)
+    9    Phụ lục 4.3 thông tin cơ sở được hoàn thành trong cả hai bảng
+   10 Trong Phụ lục 4.3, các biện pháp quản lý nước cơ sở và dự kiến
+         cho thấy AWD không được áp dụng trong cơ sở và ít nhất một biện
+         pháp đủ điều kiện mới được thể hiện trong bảng các biện pháp dự
+         kiến.
+   11 Theo như người đánh giá biết, các hoạt động đủ điều kiện được đề
+         xuất không được yêu cầu bởi bất kỳ luật, quy định hoặc nghị định
+         bắt buộc nào của quốc gia hoặc tỉnh
+       Việc áp dụng biện pháp quản lý nước cải tiến trong quá khứ hoặc dự định thay
+đổi biện pháp quản lý nước trong tương lai có được hưởng lợi trực tiếp từ nguồn tài trợ
+viện trợ quốc tế từ các tổ chức phi chính phủ, cơ quan song phương hoặc ngân hàng phát
+triển đa phương không?
+                                                              14
+                 Có                                                                Không 
+       Nếu có, hãy cung cấp tên cơ quan và/hoặc dự án và số tiền tài trợ mà HTX nhận
+được (nếu biết):
+       Đánh giá và khuyến nghị: ................................................................................
+        Sau khi xem xét, tôi xác nhận rằng đơn đăng ký đã đầy đủ và đủ điều kiện và
+không có lý do nào được nêu tại sao HTX hoặc doanh nghiệp này không được chấp
+thuận tham gia chương trình carbon 1Mha
+        Sau khi xem xét, tôi xác nhận rằng đơn đăng ký đã đầy đủ và đủ điều kiện,
+nhưng Cục Trồng trọt và BVTV có thể muốn xem xét các yếu tố sau đây có liên quan
+đến đơn đăng ký:
+       .........................................................................................................................
+       .........................................................................................................................
+       .........................................................................................................................
+       .........................................................................................................................
+       .........................................................................................................................
+                                                                                            …Ngày…tháng…năm…
+                                                                                        THỦ TRƯỞNG ĐƠN VỊ
+                                        15
+Biểu mẫu số 3.1. Phiếu thu thập số liệu, dữ liệu cơ sở
+                  CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                          Độc lập – Tự do – Hạnh phúc
+                  PHIẾU THU THẬP THÔNG TIN CẤP CƠ SỞ
+1. Tên HTX hoặc doanh nghiệp:
+2. Tên người ghi lại thông tin phỏng vấn:
+3. Ngày và giờ phỏng vấn:
+4. Tên người nông dân được phỏng vấn:
+5. Mã nhận dạng SPOT:
+6. Năm và mùa cơ sở:
+7. Diện tích ruộng lúa tại ĐIỂM NÀY:
+8. Khu vực ruộng lúa này được san phẳng bằng phương pháp san phẳng bằng laser hay
+san phẳng bằng phương pháp tưới nước trong năm cơ sở? Có/Không
+Nếu có,       cân bằng laser ngoài trời khô   san phẳng mặt ruộng ướt
+9. Năng suất trung bình trên cánh đồng này trong mùa cơ sở (Tấn/ha):
+10. Tên giống lúa trong năm và mùa vụ cơ sở:
+11. Lượng hạt giống (kg/ha)
+12. Ngày gieo hạt:                                13. Ngày thu hoạch:
+14. Trong mùa cơ sở, cần trộn rơm rạ và rơm vào đất trước khi canh tác bao nhiêu ngày?
+    < 30 ngày trước khi canh tác     > 30 ngày trước khi canh tác
+                                                                   Thương hiệu phân
+15. Bón phân (tổng lượng trong mùa cơ sở):        Kg/ha/vụ
+                                                                  bón và tên sản phẩm
+    Urê
+    NPK
+    DAP
+16. Các chất hữu cơ được sử dụng: Có/Không.           Kg/ha/vụ
+Nếu có:
+Loại 1:
+Loại 2:
+Loại 3:
+17. Thông tin về chế độ nước trước thời kỳ canh           Ngập          Ngập trước vụ
+tác:                                                  trước vụ       < 30 ngày
+                                                      >     30
+                                                      ngày
+18. Thông tin về chế độ nước trong thời gian canh tác:
+    Liên tục bị ngập lụt
+    Chu kỳ rút nước đơn
+    Nhiều giai đoạn rút nước
+19. Thông tin về quản lý rơm rạ:
+Tỷ lệ rơm rạ đem đốt (%)
+Tỷ lệ rơm rạ vùi tại ruộng (%):
+                                        16
+Tỷ lệ rơm rạ mang ra khỏi đồng ruộng:
+Trong đó:
+Sử dụng trong trồng nấm (%):
+Sử dụng cho thức ăn chăn nuôi(%):
+Mục đích khác (ghi rõ) (%):
+Chưa rõ mục đích sử dụng (%):
+                                                                   17
+Biểu mẫu số 3.2. Mẫu báo cáo kết quả kiểm tra các SPOT
+         ĐƠN VỊ KIỂM TRA                                CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                                                              Độc lập – Tự do – Hạnh phúc
+
+
+                              KẾT QUẢ KIỂM TRA SPOT ĐÃ CHỌN
+HTX/doanh nghiệp: ...................................................................................................
+Địa chỉ: .......................................................................................................................
+Đã kiểm tra số ID SPOT số: ......................................................................................
+Ngày kiểm tra đột xuất: .............................................................................................
+Tên người thực hiện kiểm tra tại chỗ: .......................................................................
+ TT                                      Yêu cầu kiểm tra                                                     Phát hiện và
+                                                                                                                  ghi chép
+ 1      Vị trí và ranh giới của mỗi SPOT có thể xác định được trên
+        thực địa
+ 2      Diện tích của mỗi SPOT được tính toán từ bản đồ SPOT được
+        so sánh với tổng diện tích các cánh đồng riêng lẻ trên bản đồ
+        địa chính hoặc danh sách các diện tích thửa ruộng trong trong
+        danh sách thống kê đất đai
+ 3      Diện tích của mỗi SPOT chưa được ước tính quá cao theo
+        như yêu cầu
+ 4      Tất cả các thửa ruộng trong mỗi SPOT đều có bề mặt đồng
+        đều và đặc điểm đất tương tự nhau
+ 5      Tất cả các thửa ruộng trong mỗi SPOT đều có chung hệ thống
+        tưới tiêu và quản lý nước
+ 6      Các nhà lãnh đạo HTX và các thành viên HTX (hoặc nông
+        dân hợp đồng của doanh nghiệp khi có liên quan) có các cánh
+        đồng trong mỗi SPOT đã tham gia vào việc lập bản đồ SPOT
+ 7      Các nhà lãnh đạo HTX/doanh nghiệp và tất cả nông dân
+        thống nhất rằng các thửa ruộng ở mỗi SPOT sẽ áp dụng cùng
+        một chế độ quản lý nước (MSD hoặc AWD)
+ 8      Tất cả các hộ nông dân có ruộng tại mỗi SPOT đều ký vào
+        Phụ lục của đơn đăng ký HTX hoặc doanh nghiệp
+ 9.     Tất cả các hộ nông dân có ruộng ở mỗi SPOT đều tự nguyện
+        tham gia chương trình 1 triệu ha và những thay đổi đã được
+        lên kế hoạch trong quản lý nước trong canh tác lúa.
+      Các hành động đã thực hiện hoặc khuyến nghị cụ thể để giải quyết mọi vấn đề
+được xác định trong các SPOT đã được kiểm tra: ......................................................
+           .........................................................................................................................
+           .........................................................................................................................
+          Khuyến nghị nhằm cải thiện chất lượng hoạt động lập bản đồ SPOT trong tương
+lai: ...............................................................................................................................
+           .........................................................................................................................
+           .........................................................................................................................
+Ghi chú: Hướng dẫn kiểm tra
+                                         18
+      Mục đích của việc kiểm tra đột xuất trên bản đồ SPOT là để đảm bảo rằng các
+SPOT được xác định đáp ứng các yêu cầu chính và nông dân hiểu rõ các cánh đồng
+trong SPOT cần được quản lý thống nhất.
+     Kiểm tra đột xuất phải được thực hiện sau khi bản đồ SPOT và thông tin liên quan
+đã được tải lên hệ thống MRV kỹ thuật số.
+      Khuyến nghị các đơn vị MRV cấp tỉnh tiến hành kiểm tra thực địa các điểm SPOT
+đã được lập bản đồ tại ít nhất một HTX hoặc doanh nghiệp trên mỗi xã. Lý do là nếu
+cán bộ khuyến nông xã làm việc với các thành viên HTX hoặc doanh nghiệp đã thành
+thạo các phương pháp lập bản đồ SPOT, thì chất lượng lập bản đồ SPOT ở các HTX
+hoặc doanh nghiệp khác được lập bản đồ trong cùng một xã có nhiều khả năng sẽ tương
+đương. Tuy nhiên, các đơn vị MRV cấp tỉnh cũng có thể sử dụng kiến thức về các vấn
+đề gặp phải trong quá trình lập bản đồ để tập trung kiểm tra thực địa cho các xã, HTX
+hoặc doanh nghiệp nơi đã xác định được nhiều rủi ro hoặc vấn đề hơn. Nếu cần thiết,
+nên kiểm tra thực địa tại nhiều hơn một HTX hoặc doanh nghiệp trên mỗi xã.
+                                                             …Ngày…tháng…năm…
+                                                          THỦ TRƯỞNG ĐƠN VỊ
+                                                             19
+         Biểu mẫu số 3.3. Mẫu báo cáo kết quả kiểm tra trên dữ liệu cơ sở
+        ĐƠN VỊ KIỂM TRA                            CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                                                         Độc lập – Tự do – Hạnh phúc
+
+
+   THỐNG KÊ DANH MỤC SPOT ĐÃ ĐƯỢC THU THẬP DỮ LIỆU CƠ SỞ
+HTX/doanh nghiệp: ...................................................................................................
+Địa chỉ: .......................................................................................................................
+Đã kiểm tra số ID SPOT: 1. ______ 2.                                     3.                    4.                    5.
+Ngày kiểm tra đột xuất: ..............................................................................................
+Tên người thực hiện kiểm tra tại chỗ: ........................................................................
+       1. Nếu SPOT chỉ sử dụng phỏng vấn nông dân làm dữ liệu cơ sở trong 1 năm
+trước khi khảo sát:
+  TT                                         Yêu cầu kiểm tra                                                        Phát hiện và
+                                                                                                                       bình luận
+ 1      Số lượng nông dân được phỏng vấn ít nhất là 3, hoặc nếu có hơn
+        30 hộ nông dân có ruộng trong SPOT thì ít nhất 10% đã được
+        phỏng vấn
+ 2      Những người nông dân được nêu tên đã được phỏng vấn xác nhận
+        rằng họ đã được phỏng vấn và tham gia vào việc cung cấp DLCS
+ 3      Sau khi đối chiếu với nhân viên HTX hoặc doanh nghiệp và nông
+        dân, chế độ nước cơ sở (ngập liên tục hoặc MSD) được báo cáo
+        là chính xác.
+ 4      Sau khi đối chiếu với nhân viên HTX hoặc doanh nghiệp và nông
+        dân, dữ liệu về ngày gieo trồng và thu hoạch ban đầu, năng suất
+        cây trồng và dữ liệu quản lý rơm rạ là chính xác và không ước
+        tính quá cao thời gian sinh trưởng, năng suất hoặc lượng rơm rạ
+        trả lại ruộng.
+      2. Nếu SPOT đã áp dụng AWD trong quá khứ và năm và mùa cơ sở cách đây
+hơn 1 năm:
+                                             Yêu cầu kiểm tra                                                 Phát hiện và
+                                                                                                               bình luận
+ 1         Sau khi kiểm tra chéo với nhân viên HTX hoặc doanh nghiệp và
+           nông dân, mùa và năm đầu tiên áp dụng AWD là chính xác
+ 2         Sau khi thảo luận về tính khả dụng của bằng chứng tài liệu để
+           chứng minh thời điểm AWD được áp dụng lần đầu tiên, việc lựa
+           chọn tài liệu được cung cấp theo thứ tự ưu tiên (hồ sơ tưới tiêu &
+           rút nước thực tế > kế hoạch > lịch trình > ghi chú thực địa > tuyên
+           bố đã ký)
+ 3         Sau khi thảo luận về tính khả dụng của bằng chứng tài liệu cho
+           các phương pháp trồng lúa khác, việc lựa chọn tài liệu hoặc sử
+           dụng phỏng vấn nông dân đã tuân theo hướng dẫn trong sổ tay
+           MRV.
+ 4         Sau khi đối chiếu với nhân viên HTX hoặc doanh nghiệp và nông
+           dân, chế độ nước cơ sở (ngập liên tục hoặc MSD) được báo cáo
+           là chính xác.
+                                                                  20
+                                                Yêu cầu kiểm tra                                                        Phát hiện và
+                                                                                                                         bình luận
+ 5        Sau khi đối chiếu với nhân viên HTX hoặc doanh nghiệp và nông
+          dân, dữ liệu về ngày gieo trồng và thu hoạch ban đầu, năng suất
+          cây trồng và dữ liệu quản lý rơm rạ là chính xác và không ước
+          tính quá cao thời gian sinh trưởng, năng suất hoặc lượng rơm rạ
+          trả lại ruộng.
+     Các khuyến nghị cụ thể để giải quyết mọi vấn đề được xác định trong các SPOT
+đã được kiểm tra: ........................................................................................................
+     Các khuyến nghị nhằm cải thiện chất lượng hoạt động thu thập dữ liệu cơ sở trong
+tương lai:
+        ...........................................................................................................................
+Hướng dẫn:
+      Mục đích của việc kiểm tra đột xuất dữ liệu hoạt động cơ sở là để đảm bảo rằng
+năm và mùa cơ sở được xác định chính xác và dữ liệu cơ sở chính xác và đáng tin cậy.
+       Kiểm tra đột xuất nên được thực hiện sau khi dữ liệu cơ sở (và bất kỳ bằng chứng
+hỗ trợ nào) đã được tải lên hệ thống MRV kỹ thuật số.
+       Khuyến nghị các đơn vị MRV cấp tỉnh nên tiến hành kiểm tra thực địa tại ít nhất
+một HTX hoặc doanh nghiệp cho mỗi xã. Lý do là nếu cán bộ khuyến nông xã làm việc
+với các thành viên HTX hoặc doanh nghiệp đã nắm vững cách hướng dẫn các HTX thu
+thập dữ liệu cơ sở, thì chất lượng dữ liệu cơ sở ở các HTX hoặc doanh nghiệp khác được
+lập bản đồ trong cùng một xã sẽ tương đương nhau. Tuy nhiên, các đơn vị MRV cấp tỉnh
+cũng có thể sử dụng kiến thức về các vấn đề gặp phải trong quá trình thiết lập dữ liệu cơ
+sở để tập trung kiểm tra thực địa cho các xã, HTX hoặc doanh nghiệp nơi đã xác định
+được nhiều rủi ro hoặc vấn đề hơn. Nếu cần thiết, nên kiểm tra thực địa tại nhiều hơn
+một HTX hoặc doanh nghiệp cho mỗi xã.
+       Nếu trong SPOT, đường cơ sở được chọn là các mùa trong năm trước khi khảo
+sát đường cơ sở và nông dân được phỏng vấn mà không cần cung cấp thêm tài liệu, thì
+trọng tâm của việc kiểm tra tại chỗ là (a) đảm bảo các quy trình được tuân thủ; (b) đảm
+bảo rằng chế độ nước đường cơ sở được báo cáo là mô tả chính xác về các hoạt động
+quản lý nước và (c) đảm bảo rằng dữ liệu về ngày gieo trồng và thu hoạch, năng suất
+cây trồng và quản lý rơm là đáng tin cậy.
+       Nếu trong SPOT, AWD đã được áp dụng trước đó, trọng tâm của các cuộc kiểm
+tra đột xuất là (a) xác nhận mùa và năm áp dụng AWD và (b) kiểm tra các tài liệu bổ
+sung được cung cấp và lựa chọn các nguồn dữ liệu khác được sử dụng.
+                                                                                                   …Ngày…tháng…năm…
+                                                                                               THỦ TRƯỞNG ĐƠN VỊ
+                                                              21
+         Biểu mẫu số 3.4. Mẫu báo cáo kết quả kiểm tra trên dữ liệu giám sát
+         ĐƠN VỊ KIỂM TRA                            CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                                                          Độc lập – Tự do – Hạnh phúc
+
+
+THỐNG KÊ DANH MỤC SPOT ĐÃ ĐƯỢC THU THẬP DỮ LIỆU GIÁM SÁT
+
+HTX/doanh nghiệp: ...................................................................................................
+Địa chỉ: .......................................................................................................................
+Đã kiểm tra số ID SPOT: 1. ______ 2.                                     3.                    4.                    5.
+Ngày kiểm tra đột xuất: ..............................................................................................
+Tên người thực hiện kiểm tra tại chỗ: ........................................................................
+        1. Kiểm tra đột xuất trong mùa vụ tập trung vào việc giám sát ảnh
+ TT Yêu cầu kiểm tra                                                                      Phát hiện và bình luận
+ 1      3 vị trí trong mỗi SPOT để giám sát ảnh được
+        đánh dấu rõ ràng
+ 2      Nhân viên HTX hoặc doanh nghiệp chịu trách
+        nhiệm giám sát ảnh phải hiểu rõ khi nào cần chụp
+        ảnh và cách chụp như thế nào
+ 3      Ảnh đã được chụp và tải lên đúng thời hạn và đã
+        hoàn tất cho tất cả các lần rút nước được thực hiện
+        cho đến nay trong mùa này
+ 4      Ảnh đã tải lên có chất lượng đủ tốt
+      Các khuyến nghị cụ thể để giải quyết mọi vấn đề được xác định trong các SPOT
+đã được kiểm tra: ........................................................................................................
+      Các khuyến nghị nhằm cải thiện chất lượng hoạt động thu thập dữ liệu cơ sở trong
+tương lai: .....................................................................................................................
+      2. Kiểm tra đột xuất cho các cuộc khảo sát giám sát cuối vụ
+ TT Yêu cầu kiểm tra                                                                 Phát hiện và bình luận
+ 1     Sau khi đối chiếu với cán bộ HTX, doanh
+       nghiệp và nông dân, chế độ nước được các hộ
+       nông dân báo cáo thực hiện (ngập liên tục,
+       MSD hoặc AWD) là chính xác.
+ 2     Sau khi đối chiếu với cán bộ HTX hoặc doanh
+       nghiệp và nông dân, ngày gieo trồng và thu
+       hoạch, năng suất cây trồng và dữ liệu quản lý
+       rơm rạ là chính xác và không đánh giá thấp
+       thời gian sinh trưởng, năng suất hoặc lượng
+       rơm rạ trả lại ruộng.
+ 3     San lấp đất: (a) kiểm tra xem HTX có ruộng
+       lúa nào được san lấp trong vụ mùa trước hay
+       không và nếu có, liệu ruộng lúa đó có được
+       đăng ký trong chương trình carbon hay không;
+       (b) Nếu có ruộng lúa trong chương trình đã
+       được san lấp, hãy đối chiếu khu vực được báo
+       cáo là đã được san lấp với tài liệu do HTX, nhà
+       cung cấp dịch vụ hoặc sở nông nghiệp địa
+       phương lưu giữ.
+                                                              22
+      Các khuyến nghị cụ thể để giải quyết mọi vấn đề được xác định trong các SPOT
+đã được kiểm tra: ........................................................................................................
+      Các khuyến nghị nhằm cải thiện chất lượng hoạt động thu thập dữ liệu cơ sở trong
+tương lai: .....................................................................................................................
+Hướng dẫn:
+     Mục đích của việc kiểm tra đột xuất là để đảm bảo dữ liệu giám sát là chính xác
+và đáng tin cậy.
+     Kiểm tra đột xuất nên được thực hiện trong suốt mùa (để kiểm tra việc giám sát
+bằng ảnh) và sau khi dữ liệu giám sát cuối vụ đã được tải lên hệ thống MRV kỹ thuật số.
+     Khuyến nghị các đơn vị MRV của tỉnh nên tiến hành kiểm tra thực địa tại ít nhất
+một HTX hoặc doanh nghiệp cho mỗi xã. Điều này là do nếu cán bộ khuyến nông xã
+làm việc với các thành viên HTX hoặc doanh nghiệp đã nắm vững cách hướng dẫn các
+HTX hoặc doanh nghiệp thu thập dữ liệu giám sát, thì chất lượng dữ liệu giám sát ở các
+HTX hoặc doanh nghiệp khác được lập bản đồ trong cùng một xã có nhiều khả năng sẽ
+tương đương. Tuy nhiên, các đơn vị MRV của tỉnh cũng có thể sử dụng kiến thức của
+mình về các vấn đề gặp phải do việc tải dữ liệu giám sát ảnh chưa đầy đủ hoặc các vấn
+đề khác để tập trung kiểm tra thực địa tại các xã, HTX hoặc doanh nghiệp nơi đã xác
+định được nhiều rủi ro hoặc vấn đề hơn. Nếu cần thiết, nên kiểm tra thực địa tại nhiều
+hơn một HTX hoặc doanh nghiệp cho mỗi xã.
+                                                                                            …Ngày…tháng…năm…
+                                                                                        THỦ TRƯỞNG ĐƠN VỊ
+                                        23
+     Biểu mẫu số 5.1. Mẫu báo cáo tóm tắt tình hình thực hiện chương trình
+carbon 1Mha theo mùa vụ
+  ĐƠN VỊ BÁO CÁO         CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                               Độc lập – Tự do – Hạnh phúc
+
+
+BÁO CÁO TÓM TẮT THEO MÙA VỤ CỦA CHƯƠNG TRÌNH CARBON 1MHA
+                        (Vụ lúa: …….…... năm: ………..…)
+I. Tỉnh….
+1.1. Tình hình phê duyệt kế hoạch giám sát hàng năm của tỉnh
+Đã được phê duyệt tại văn bản số…
+Chưa được phê duyệt
+1.2. Tình hình triển khai các hoạt động đào tạo MRV
+ Các hoạt động đã đào tạo     Số sự kiện Số cán bộ Các      sự Số lượng CB xã và
+                              đào     tạo tỉnh được kiện đào HTX/doanh nghiệp
+                              của tỉnh    đào tạo   tạo của xã được đào tạo
+ Phương pháp đăng ký
+ Bản đồ SPOT
+ Thu thập dữ liệu cơ sở
+ Giám sát ảnh
+ Khảo sát giám sát
+ Phương pháp QA/QC
+1.3. Tình hình triển khai các hoạt động MRV tại thực địa
+ Triển khai MRV               Đăng ký    Bản đồ SPOT       Dữ    liệu   Kiểm tra đột
+                              đã được    và dữ liệu cơ     giám sát     xuất    QA
+                              chấp       sở được đăng      được đăng    được ghi lại
+                              thuận      ký trong hệ       ký trong     trong     hệ
+                                         thống MRV         hệ thống     thống MRV
+                                                           MRV
+ Số lượng HTX/doanh nghiệp
+ Số lượng SPOT
+ Tổng diện tích (ha)
+II. Tỉnh….
+[lặp lại cho mỗi tỉnh]
+                                                          Ngày  tháng năm
+                                                         THỦ TRƯỞNG ĐƠN VỊ
+                                           24
+
+
+      Biểu mẫu số 5.2. Mẫu báo cáo giám sát hàng năm thực hiện chương
+trình carbon 1Mha
+  ĐƠN VỊ BÁO CÁO            CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                                  Độc lập – Tự do – Hạnh phúc
+
+
+BÁO CÁO GIÁM SÁT HÀNG NĂM CỦA CHƯƠNG TRÌNH CARBON 1MHA
+                      (năm: ………..…)
+Lưu ý: người mua hoặc nhà đầu tư cụ thể có thể có các yêu cầu báo cáo khác và các
+mẫu bắt buộc.
+Thời kỳ báo cáo được đề cập trong báo cáo này       DD-MM-YYYY đến DD-MM-YYYY
+Phiên bản & ngày áp dụng phương pháp luận
+Số lượng ER được định lượng:
+Ngày nộp                                            DD-MM-YYYY
+
+I. Tỉnh…
+1.1. Tình hình thực hiện chương trình carbon
+Mô tả ngắn gọn (tối đa 2 trang) về việc thực hiện chương trình carbon, bao gồm: Tiến
+độ thực hiện các hành động và can thiệp (bao gồm các ngày và cột mốc quan trọng);
+Hiệu quả của các sắp xếp tổ chức và sự tham gia của các cơ quan đối tác; Cập nhật về
+mọi thay đổi trong hoàn cảnh có tác động tích cực hoặc tiêu cực đến việc thực hiện
+chương trình, đặc biệt là mọi thay đổi hoặc sai lệch quan trọng so với C-PDD
+1.2. Hệ thống MRV
+Mô tả ngắn gọn về việc triển khai hệ thống MRV, bao gồm: Cơ cấu tổ chức, trách nhiệm
+và đào tạo được thực hiện; Mô tả chung về các phương pháp và cách tiếp cận MRV
+được sử dụng (có tham chiếu đến các hướng dẫn MRV được áp dụng hoặc tham chiếu
+đến các chi tiết từng bước trong phần phụ lục); Cập nhật mọi thay đổi so với mô tả được
+cung cấp trong C-PDD.
+1.3. Định lượng lượng giảm phát thải
+1.3.1 Lượng phát thải cơ sở trong giai đoạn báo cáo
+Đối với mỗi năm cơ sở, một bảng như sau:
+ Năm          của Lượng phát thải cơ sở
+ đường cơ sở        Lượng khí thải Lượng phát Lượng khí thải Tổng                     lượng
+                    từ canh tác lúa thải phân bón nhiên liệu hóa phát thải cơ sở
+                    (tCO2 e)          (tCO2 e)        thạch (tCO2 e)      (tCO2 e)
+
+ Tầng 1           ..                 ..               ..                  ..
+ ..               ..                 ..               ..                  ..
+ Tầng 10
+ Tổng số cơ sở trong năm cơ sở                                            ..
+                                            25
+1.3.2. Lượng khí thải trong mỗi năm có hành động giảm thiểu trong giai đoạn báo cáo
+        Đối với mỗi năm có hành động giảm thiểu, một bảng như sau sẽ được lập:
+ Năm hành                               Lượng khí thải của dự án
+ động giảm Lượng khí thải Lượng             phát Lượng khí thải Tổng lượng khí
+ thiểu            từ canh tác lúa thải phân bón nhiên liệu hóa thải của dự án
+                (tCO2 e)         (tCO2 e)           thạch (tCO2 e)     (tCO2 e)
+
+ Tầng 1         ..               ..                 ..                 ..
+ Tầng 2         ..               ..                 ..                 ..
+ ..             ..               ..                 ..                 ..
+ Tầng 10
+ Tổng lượng khí thải của dự án trong năm                               ..
+1.3.3 Giảm phát thải trong từng năm trong giai đoạn báo cáo
+              Tổng lượng khí thải giảm (tCO2 e) trong mỗi năm với hành động giảm
+                                             thiểu
+            Năm:………..          Năm:………..          Năm:………..         Tổng lượng khí
+                                                                    thải giảm
+ Tầng 1      ……                  ……                      ……
+ Tầng 2      ……                  ……                      ……
+ …….         ……                  ……                      ……
+ Tầng 10
+ Tổng
+ lượng khí
+ thải giảm
+ trong mỗi
+ năm
+ Tổng lượng khí thải giảm trong giai đoạn báo cáo
+1.4. Sự không chắc chắn của ước tính giảm phát thải
+       Nêu tổng mức độ không chắc chắn của ước tính giảm phát thải trong mỗi năm
+trong giai đoạn báo cáo. (tham khảo phụ lục để biết chi tiết về phương pháp và giả
+định); Xác định các nguồn chính gây ra sự không chắc chắn đã được xác định và sự
+đóng góp của chúng vào sự không chắc chắn
+ Tham số       Nguồn gốc của sự không Phân tích sự đóng góp vào sự không
+               chắc chắn              chắc chắn chung
+ ví dụ ROA     ví dụ lỗi lấy mẫu      xem hướng dẫn về sự không chắc chắn
+                                      ở trên
+ …..           …..                               …..
+1.5. Các thủ tục QA/QC được áp dụng
+        Mô tả các quy trình QA/QC được áp dụng (có tham khảo phần phụ lục để biết
+chi tiết), đặc biệt tập trung vào các thông số được xác định là nguồn chính gây ra sự
+không chắc chắn trong phần 1.4.
+                                         26
+1.6. Các biện pháp tránh đếm trùng
+       Mô tả các biện pháp được sử dụng để đảm bảo rằng các ER được báo cáo trong
+kỳ báo cáo chưa được chuyển cho các thực thể khác.
+1.7. Các chỉ tiêu phát triển bền vững và việc áp dụng các yêu cầu bảo vệ
+1.7.1. Các chỉ số phát triển bền vững
+       Các yêu cầu cho phần này chưa được nêu chi tiết trong hướng dẫn này. Danh
+sách ban đầu các chỉ số phát triển bền vững được cung cấp trong bảng dưới đây.
+   Lợi ích đồng thời của                  Các chỉ số                  Đơn vị tính
+   Phát triển bền vững
+ Lợi nhuận của nông dân      Biên lợi nhuận gộp trung bình tính %
+                             theo phần trăm doanh thu bán gạo
+ Lợi ích sức khỏe môi Tỷ lệ phần trăm giảm trung bình              %
+ trường                 trong việc sử dụng thuốc trừ sâu hóa
+                        học
+ Tích hợp chuỗi giá trị Số lượng HTX (và ha) có hợp đồng           Số lượng HTX,
+                        cung ứng dài hạn với doanh nghiệp          ha
+                        nông nghiệp
+ Tiếp thị               Hàng tấn lúa được bán thông qua các        Tấn
+                        hợp đồng cung ứng dài hạn
+ Năng lực cạnh tranh xuất Tỷ lệ gạo sản xuất tại các vùng %
+ khẩu                        chuyên canh được xuất khẩu dưới
+                             thương hiệu Việt Nam chất lượng
+                             cao, ít carbon
+ Hỗ trợ chính sách cho sản Số lượng cơ chế chính sách cụ thể Số lượng cơ chế
+ xuất lúa gạo phát thải thấp được chính quyền trung ương và địa chính sách
+                             phương thực hiện tại khu vực MKD
+ Đầu tư công vào sản xuất Tổng đầu tư của Chính phủ vào sản $
+ lúa gạo phát thải thấp      xuất lúa gạo phát thải thấp
+ Đầu tư kinh doanh nông Tổng đầu tư kinh doanh nông nghiệp $
+ nghiệp vào sản xuất lúa vào sản xuất lúa gạo phát thải thấp
+ gạo phát thải thấp
+1.7.2. Các biện pháp bảo vệ
+       - Các yêu cầu bảo vệ áp dụng: Mô tả rõ ràng các yêu cầu bảo vệ áp dụng.
+       - Thực hiện các biện pháp bảo vệ và thực hiện các hoạt động bảo vệ
+       Mô tả các hoạt động được thực hiện để thực hiện các biện pháp bảo vệ hiện hành
+và kết quả.
+                                                              Ngày     tháng      năm
+                                                          THỦ TRƯỞNG ĐƠN VỊ
+                                          27
+Phụ lục 3. Các hướng dẫn kỹ thuật
+       1. Hướng dẫn lập bản đồ SPOT
+       1.1. Khái niệm
+       Khái niệm SPOT: là đơn vị diện tích lúa đồng nhất về mặt cao trình, độ
+bằng phẳng, loại đất; cùng hệ thống tưới tiêu, lịch và quy trình canh tác (giống,
+chế độ tưới tiêu, phân bón, quản lý rơm rạ). Tuỳ thuộc vào độ biến động của đồng
+ruộng mà có thể chia mô hình thành các SPOT với đặc trưng khác nhau.
+       Mỗi SPOT có thể là 1 hoặc nhiều thửa ruộng của nông dân, miễn sao khi
+thực hành rút nước phơi ruộng thì mọi điểm trên SPOT đều khô như nhau trong
+vòng 24h.
+       Mỗi SPOT sẽ là một đơn vị được mã hoá và được theo dõi, đo đạc, báo cáo
+liên tục trong suốt quá trình canh tác để tính toán lượng phát thải và giảm phát
+thải của các hoạt động giảm nhẹ đã được đăng ký.
+       1.2. Các bước lập bản đồ SPOT
+       Bản đồ SPOT được lập dựa trên 4 bước như sau:
+       Bước 1: Xác định vị trí và diện tích ruộng lúa
+       - Cài đặt Google map trên điện thoại thông minh
+
+
+
+
+      Định vị tọa độ các góc vùng diện tích thực hiện mô hình theo dõi MRV (hệ
+tọa độ GCS_WGS_1984)
+      Vẽ sơ đồ các thửa ruộng bằng tay trên giấy – ghi rõ thông tin hộ nông dân
+
+
+
+
+   Xác định lại ranh giới thửa và thông tin hộ      Vẽ lại sơ đồ thửa và xác định
+    trồng lúa nếu có bản đồ địa chính giấy       thông tin thửa nếu không có bản đồ
+                                                              địa chính
+                                       28
+      Bước 2: Vẽ sơ đồ ruộng lúa
+      - Nhập tọa độ đã xác định được tại các góc vùng diện tích thực hiện mô
+hình bằng phần mềm thông tin địa lý GIS (Có thể dung các phần mềm như: QGIS,
+ARCGIS hoặc MAPINFO; tuy nhiên ưu tiên sử dụng QGIS vì nền ảnh vệ tinh
+chạy trên QGIS rất ổn định và cho thao tác nhanh chóng)
+
+
+
+
+       - Cài đặt Google map, google satellite, google earth engine trong phần mềm
+QGIS
+      - Download bản đồ số độ cao vùng thực hiện mô hình bằng google earth
+engin trong phần mềm QGIS
+      - Dựa vào tọa độ đã xác định được tại các góc vùng thực hiện mô hình và
+sơ đồ các thửa ruộng vẽ tay, số hóa các thửa ruộng của từng hộ trên nền ảnh vệ
+tinh Google satellite
+
+
+
+
+      - Xây dựng thông tin hộ nông dân trên sơ đồ ruộng đã được số hóa gồm:
+Họ và tên hộ nông dân, cánh đồng, HTX, xã/phường, tỉnh/thành, tọa độ từng thửa
+ruộng
+                                       29
+       - Số hóa các kênh tưới tiêu và đường nội đồng khu vực thực hiện mô hình
+       - Xuất bản đồ sang dạng Shapefile.
+       Bước 3: Xây dựng bản đồ SPOT
+       - Tính diện tích từng thửa ruộng (thực hiện trên phần mềm thông tin địa lý
+GIS)
+       - Xác định độ cao tương đối của từng thửa ruộng (dựa vào bản đồ số độ cao
+đã download được)
+       - Nhập thông tin canh tác của từng thửa ruộng bao gồm: ngày xuống giống,
+chế độ quản lý nước, giống lúa hiện tại đang trồng
+       - Gộp các thửa ruộng liền kề có cùng thông tin về: đô cao ruộng, giống,
+ngày xuống giống, chế độ quản lý nước, cùng một dây ruộng để tạo thành một
+SPOT (khoảng 5 – 20 ha/SPOT)
+       - Tính diện tích từng SPOT (thực hiện trên phần mềm thông tin địa lý GIS)
+       - Đánh số thứ tự các SPOT trong mô hình.
+       Bước 4: Xác định các điểm theo dõi MRV trên các SPOT
+       - Mỗi SPOT xác định 3 điểm theo dõi MRV tại các vị trí: đầu nguồn nước
+(gần kênh tưới), giữa SPOT và cuối nguồn nước.
+       - Mỗi điểm đo MRV có gắn biển và đóng ống nước để theo dõi mực nước
+trong SPOT
+       - Biên tập và xuất bản đồ SPOT có thể hiện điểm theo dõi MRV
+       - Xuất bảng thông tin Excel bao gồm: thứ tự SPOT, kí hiệu điểm theo dõi
+MRV, Tọa độ điểm theo dõi MRV, diện tích ruộng, tên hộ nông dân, thông tin vị
+trí (cánh đồng, HTX, xã/phường, tỉnh/thành), độ cao trung bình SPOT, ngày
+xuống giống, loại giống…
+                                         30
+      2. Hướng dẫn tính toán độ không chắc chắn của kết quả phát thải KNK
+      2.1. Mô phỏng Monte Carlo
+      Phân tích bất định bằng mô phỏng Monte Carlo có thể được thực hiện bằng
+nhiều phần mềm khác nhau, mỗi phần mềm có yêu cầu riêng về dữ liệu đầu vào
+và quy trình chạy mô phỏng. Nhìn chung, các yếu tố đầu vào chính của bất kỳ mô
+hình mô phỏng Monte Carlo nào là:
+      - Giá trị tham số: Giá trị trung bình của tất cả dữ liệu hoạt động, hệ số và
+hệ số phát thải chính xác như đã thực hiện trong phương trình tính toán GHG;
+      - Biên độ sai số: Biên độ sai số xung quanh giá trị trung bình của từng tham
+số đầu vào (hoặc phạm vi không chắc chắn đối với một số tham số mặc định được
+nêu trong hướng dẫn của IPCC). Biên độ sai số nên được tính toán với khoảng tin
+cậy 95% bằng cách sử dụng điểm z là 1,96:
+                     𝑀𝑎𝑟𝑔𝑖𝑛 𝑜𝑓 𝑒𝑟𝑟𝑜𝑟 = [(1.96 × 𝜎) ÷ 𝑥̄] × 100
+       Trong đó σ là độ lệch chuẩn và 𝑥̄ là giá trị trung bình. Nếu chỉ có các khoảng
+không chắc chắn, thì trừ khi Hướng dẫn của IPCC quy định khác, có thể giả định
+rằng các khoảng này chứa 95% các giá trị tham số khả dĩ (IPCC 2019 Tập 1
+Chương 3 mục 3.2).
+       Hàm mật độ xác suất (PDF): Đối với mỗi tham số, PDF về cơ bản mô tả sự
+phân bố của các giá trị tham số (ví dụ: chuẩn, lognormal, v.v.).
+       Phương trình mô hình: Các phương trình được sử dụng chính xác như trong
+chương trình tính toán GHG thể hiện mối quan hệ giữa các tham số.
+       Tóm lại, các phương trình được đưa ra trong phương pháp luận nên được
+lập trình và tham số hóa bằng cách sử dụng các giá trị được sử dụng trong tính
+toán khí nhà kính của chương trình cho tất cả các thông số cơ sở và dự án, và tính
+toán mức giảm phát thải; mỗi thông số sau đó được liên kết với một phạm vi
+không chắc chắn (hoặc biên độ sai số) và phân phối cụ thể (pdf). Mô phỏng Monte
+Carlo sau đó chạy mô hình trong số lần xác định, chọn ngẫu nhiên các giá trị tham
+số từ mỗi thông số. Điều này dẫn đến một phân phối mô phỏng để ước tính mức
+giảm phát thải, cũng có thể được biểu thị dưới dạng biên độ sai số hoặc độ không
+chắc chắn liên quan đến giá trị mô phỏng trung bình. Một số chương trình phần
+mềm cũng có các chức năng tự động để định lượng phần trăm đóng góp của từng
+thông số đầu vào vào tổng độ không chắc chắn. Điều này có thể hữu ích để xác
+định những thông số nào cần tập trung vào để cải thiện chất lượng dữ liệu.
+      2.2 Nguồn dữ liệu và giả định cho sự không chắc chắn và phân phối của
+chúng
+      Bảng dưới đây cung cấp một số nguồn dữ liệu và giả định có thể được sử
+dụng để tham số hóa mô hình mô phỏng.
+                                                           31
+             Bảng A12.1 Nguồn dữ liệu và giả định cho sự không chắc chắn
+                               và phân bổ của chúng
+         Các thông số                   Sự không chắc chắn                 Nguồn              Phân bổ            Nguồn
+    EFc,g,s (hệ số phát thải   đông xuân: ±8,9%                           Dữ liệu
+    cho ruộng lúa ngập         hè-thu: ±6,2%                              được lưu
+    nước liên tục không có     thu đông: ±8,9%                            giữ bởi
+    sự bổ sung hữu cơ)                                                    IAE
+    SFw,g (hệ số tỷ lệ cho     CF: 0,73 – 1,27                            Bảng         PERT 1(không đối
+    chế độ nước)               MSD: 0,53 – 0,94                           5.12 của     xứng, chỉ có min, max
+                               AWD: 0,41 – 0,72                           IPCC         và có khả năng biết
+                                                                          2019         nhiều nhất)
+    SFp,g, (hệ số tỷ lệ cho    Không ngập < 180d: 0,88 – 1,12             Bảng         PERT (không đối xứng,
+    chế độ nước trước thời     Không ngập > 180 ngày: 0,80 – 0,99         5.13 của     chỉ có min, max và có
+    kỳ canh tác)               Mùa trước ngập lụt > 30 ngày: 2,13 –       IPCC         khả năng biết nhiều
+                               2,73                                       2019         nhất)
+    CFOA (hệ số chuyển         Rơm <30 ngày: 0,85 – 1,17                  Bảng         PERT (không đối xứng,
+    đổi cho các chất bổ        Rơm > 30 ngày: 0,11 – 0,28                 5.14 của     chỉ có min, max và có
+    sung hữu cơ)               Phân hữu cơ: 0,09 – 0,29                   IPCC         khả năng biết nhiều
+                               Năm năm trước: 0,15 – 0,28                 2019         nhất)
+                               Phân xanh: 0,36 – 0,57
+    AS,g (diện tích của        Được tính toán từ nghiên cứu trong
+    SPOT)                      3.6.3.4.a.                                 Ngân         Bình thường
+                               Nếu sử dụng theo dõi GPS chưa sửa          hàng
+                               đổi, có thể giả định độ không chắc chắn    Phát triển
+                               mặc định là ±1,3%.                         Châu Á
+                                                                          (2018)
+    ROA (áp dụng các sửa       Được tính toán từ các nghiên cứu trong                  Được xác định theo sự
+    đổi hữu cơ)                3.6.3.4.b và c, và phân tích sau về độ                  phân bố của dữ liệu thu
+                               chính xác của dữ liệu khảo sát (xem                     thập được
+                               'tính toán và phân bổ quy mô mẫu theo
+                               dõi' trong Bảng 9).
+
+    Ngày (thời gian của        Được tính toán từ dữ liệu hoạt động cơ                  Được xác định theo sự
+    mùa vụ)                    sở và dự án (xem 'tính toán và phân bổ                  phân bố của dữ liệu thu
+                               quy mô mẫu giám sát' trong Bảng 9).                     thập được
+    kg phân N bón/ha           Được tính toán từ nghiên cứu trong                      Được xác định theo sự
+                               3.6.3.4.d và phân tích sau về độ chính                  phân bố của dữ liệu thu
+                               xác của dữ liệu khảo sát (xem 'tính toán                thập được
+                               và phân bổ quy mô mẫu theo dõi' trong
+                               Bảng 9).
+    Hàm lượng phân bón                                                    Kojin và     Bình thường               Kojin và
+    N                          Tỷ lệ sai lệch N (%) so với nhãn sản       cộng sự                                cộng sự
+                               phẩm có thể được coi là 3,2%               (2022)                                 (2022)
+    EF1FR                                                                 Bảng         PERT (không đối xứng,
+                                                                          11.1 của     chỉ có min, max và có
+                               CF: 0 – 0,010                              IPCC         khả năng biết nhiều
+                               MSD hoặc AWD: 0 - 0,016                    2019         nhất)
+    EFL (kgCO2/ha ruộng        Được tính toán từ dữ liệu trong nghiên                  Được xác định từ
+    lúa được san phẳng)        cứu định lượng hệ số phát thải và phân                  nghiên cứu định lượng
+                               tích sau về độ chính xác của dữ liệu                    hệ số phát thải
+                               khảo sát (xem 'tính toán và phân bổ quy
+                               mô mẫu giám sát' trong Bảng 9).
+
+
+
+
+1
+  Phân phối PERT là phân phối xác suất liên tục được xác định bởi các giá trị có khả năng xảy ra tối
+thiểu, tối đa và tối đa và phù hợp để sử dụng khi phân phối không đối xứng quanh giá trị có khả năng
+xảy ra tối đa.
+                                                  32
+      3. Hướng dẫn đo lường các hệ số phát thải methane và các hệ số tỷ lệ
+      3.1. Mục đích
+      Mục đích của phép đo trực tiếp là ước tính dòng khí CH4 từ đất lúa bị nhiễm
+methogenosis cho từng tầng trong mỗi mùa vụ canh tác lúa theo 3 nghiệm thức:
+ngập liên tục không bổ sung hữu cơ và không ngập < 180 ngày trước mùa vụ
+(EFc,g,s ), và rút nước giữa mùa và tưới khô hạn AWD trong điều kiện tương
+đương. Hai phép đo sau được sử dụng để ước tính các giá trị đặc trưng của tầng
+đối với thông số IPCC SFw. Các ước tính đặc trưng của tầng này về EFc,g,s và
+SFw có thể được sử dụng để thay thế các giá trị mặc định được trình bày trong
+Bảng 3 và 4 của tài liệu 'Quy tắc và Nguyên tắc Phương pháp Hướng dẫn'.
+      3.2. Yêu cầu và thủ tục
+      3.2.1. Yêu cầu chung
+      Việc lựa chọn địa điểm, lắp đặt thiết bị đo đạc ngoài đồng ruộng, đo đạc,
+vận chuyển mẫu khí, phân tích trong phòng thí nghiệm và tính toán thông lượng
+theo mùa vụ, hệ số phát thải và hệ số tỷ lệ phải được thực hiện bởi đội ngũ nhân
+viên có trình độ và kinh nghiệm phù hợp. Các yêu cầu và quy trình phải tuân thủ
+theo các quy định tại Quyết định số 4831/QĐ-BNN-KHCN, ngày 22 tháng 11
+năm 2016 của Bộ Nông nghiệp và Phát triển Nông thôn về "Quyết định ban hành
+Sổ tay hướng dẫn đo đạc phát thải khí nhà kính trong canh tác lúa", trừ trường
+hợp có quy định khác tại Phụ lục này.
+      3.2.2. Lựa chọn địa điểm
+      Phải thực hiện các phép đo thực địa tại các địa điểm đại diện cho từng tầng
+được đánh số trong Bảng 2 của phương pháp luận này. Trong mỗi địa điểm, vị trí
+cho từng biện pháp xử lý phải càng gần nhau càng tốt để giảm thiểu tác động của
+các yếu tố khác, đồng thời cô lập từng lô xử lý chế độ nước để tránh dòng chảy
+ngang từ các lô ngập lụt sang các lô MSD hoặc AWD. Đối với mỗi địa điểm đo
+lường trong mỗi mùa vụ lúa, các phép đo cho mỗi biện pháp xử lý phải được tiến
+hành với 3 lần lặp lại. Nếu có đủ nguồn lực cho nhiều địa điểm trên mỗi tầng hoặc
+các phép đo trong hơn một năm, thì nên chọn các địa điểm đại diện cho một loạt
+các giá trị về đặc điểm đất (ví dụ như hàm lượng sét), vì điều này có thể ảnh hưởng
+mạnh đến mối quan hệ giữa độ sâu của nước dưới hệ thống rút nước, thời gian rút
+nước và lượng khí thải methane.2
+      3.2.3. Thiết bị lấy mẫu
+      Thông số kỹ thuật chi tiết về thiết kế buồng, đế và các dụng cụ khác được
+nêu trong Quyết định 4831/QĐ-BNN-KHCN và được tóm tắt trong Bảng 1.
+
+
+
+
+2
+    Sự thay đổi khí hậu giữa các địa điểm được phản ánh một phần vào thời gian mùa vụ canh tác.
+                                                      33
+                 Bảng 1. Tóm tắt các yêu cầu đối với thiết kế buồng
+          Tính năng                                                  Điều kiện
+ Vị trí thực địa              Cách mép cánh đồng ít nhất 2 m, được lắp đặt 1 ngày trước lần đo đầu tiên
+ Vật liệu buồng               kính, nhựa hoặc nhôm tráng nhựa
+ Hình dạng và kích thước      Hình vuông, hình chữ nhật hoặc hình trụ; thể tích tối thiểu khoảng 125 lít, chiều
+                              cao của hộp lấy mẫu phải cao hơn chiều cao tối đa của cây lúa 10 cm.
+ Thông số kỹ thuật cơ bản     Vật liệu: Thép không gỉ, nhôm hoặc nhựa.
+ và vị trí                    Kích thước: thể tích tối thiểu 36 lít.
+                              Thiết kế: đế được trang bị ống tuần hoàn nước giữa bên trong và bên ngoài đế
+                              (nằm cách mặt đất khoảng 1 - 2 cm), có nút cao su để bịt kín trong quá trình lấy
+                              mẫu. Phía trên đế
+                              có rãnh chứa đầy nước để khi hộp thu khí được đặt lên trên đế, nước sẽ tạo thành
+                              một lớp đệm ngăn không cho không khí lưu thông vào và ra.
+                              Vị trí đặt gốc: gốc được đặt cách mặt đất 7 – 10 cm
+ Thiết bị khác                Nhiệt kế để đo nhiệt độ bên trong buồng; Quạt để trộn không khí bên trong buồng
+                              trong quá trình lấy mẫu, được kết nối với pin bên ngoài buồng; van áp suất; ống
+                              lấy mẫu khí được kết nối với van 3 chiều; ống tiêm lấy mẫu; lọ đựng mẫu; đồng
+                              hồ để xác định thời gian lấy mẫu.
+       3.3 Tổng quan về chương trình đo lường
+       EFc cấp dưới quốc gia từ Tài liệu 2626 và hệ số tỷ lệ mặc định của IPCC
+SFw sẽ được sử dụng để tính toán ER được tạo ra trong khoảng thời gian từ tháng
+1 năm 2023 đến tháng 8 năm 2025.
+       Bắt đầu từ tháng 9 năm 2025, các phép đo trực tiếp sẽ được tiến hành trong
+1 năm để xác định các giá trị EFc và SFw cụ thể theo từng tầng cho từng mùa.
+       Tùy thuộc vào kết quả đo lường năm đầu tiên và nguồn lực sẵn có, người
+ta sẽ quyết định có nên thực hiện thêm các phép đo trực tiếp hay không.
+       3.3.1. Lựa chọn địa điểm
+       Việc lựa chọn địa điểm sẽ dựa trên 10 tầng địa chất trong Phụ lục A8 và
+cũng xem xét vị trí của các địa điểm trình diễn MRV. Các địa điểm có hệ thống
+tọa độ và địa chỉ hành chính được thể hiện trong Bảng 2.
+    Bảng 2. Vị trí của 10 địa điểm đại diện cho 10 tầng cho các thí nghiệm
+     thực địa để đo lượng khí thải GHG và xác định Hệ số phát thải (EF)
+                               và hệ số tỷ lệ (SF)
+   Tiểu vùng          Loại đất                       Tên của tầng      Tọa độ trang web      Địa chỉ hành chính
+                                          Tên tầng
+                                                         phụ                X            Y
+                                                                                             Châu Thành, An
+Thượng nguồn     Đất phù sa           1               1CF; 1MSD     105.270     10.605       Giang
+                                                                                             Láng Biển, Tháp
+                 Đất phèn sunfat      2              2CF; 2 MSD     105.817     10.500       Mười, Đồng Tháp
+                                                                                             Thạnh An, Vĩnh
+Vùng giữa        Đất phù sa           3              3CF; 3 MSD     105.318     10.256       Thạnh, Cần Thơ
+                 Đất phèn sunfat      4              4CF; 4 MSD                              Vĩnh Long
+                                                                                             Yên Luông, Gò
+                 Đất mặn trung                                                               Công Tây, Tiền
+                 bình và nhẹ          5              5CF; 5 MSD     106.636     10.336       Giang
+Khu vực ven                                                                                  Tân Hội, huyện Tân
+biển             Đất phù sa           6              6CF; 6 MSD     105.125     10.111       Hiệp, Kiên Giang
+                                                                                             Phước Hảo và Phát
+                                                                    106.396;    9.864;       Tài, Châu Thành,
+                 Đất phèn sunfat      7              7CF; 7 MSD     106.301     9.846        Trà Vinh
+                 Đất mặn trung                                                               Long Đức, Long
+                 bình và nhẹ          8              8CF; 8 MSD     106.083     9.693        Phú, Sóc Trăng
+                                                  34
+   Tiểu vùng        Loại đất                     Tên của tầng      Tọa độ trang web       Địa chỉ hành chính
+                                      Tên tầng
+                                                     phụ               X             Y
+                                                                                         Vĩnh Thành, Phước
+Bán đảo Cà Mau Đất phèn sunfat    9              9CF; 9 MSD     105.505     9.368        Long, Bạc Liêu
+                                                                                         Vĩnh Thuận Đông,
+                                                                                         huyện Long Mỹ và
+                                                                                         Khánh Bình Tây
+                Đất mặn trung                                 105.529;      9.687;       Bắc, Trần Văn Thời,
+                bình và nhẹ       10             10CF; 10 MSD 104.840       9.223        Cà Mau
+
+                Tổng số tầng/tầng
+                dưới              10             20
+      3.4. Xử lý, lặp lại và các thông số để đo lường
+      Các thí nghiệm thực địa sẽ được tiến hành tại mỗi địa điểm trên 10 tầng với
+3 nghiệm thức và 3 lần lặp lại. Bảng 3 thể hiện các nghiệm thức.
+                 Bảng 3. Xử lý trong các thí nghiệm thực địa
+ Mã theo dõi      Giải thích về cách theo dõi                                            Nhận xét
+ T1               Ngập nước liên tục mà không có sự cải tạo hữu cơ và không bị ngập
+                  nước < 180 ngày trước mùa
+ T2               Rút nước giữa mùa mà không cần cải tạo hữu cơ và không bị ngập <
+                  180 ngày trước mùa
+ T3               Phương án thay thế ướt và khô không có chất cải tạo hữu cơ và không
+                  ngập nước < 180 ngày trước mùa vụ
+       Hình 1. Bố trí thí nghiệm thực địa
+với 9 ô (màu xanh lá cây) theo thiết kế                   T1.1          T2.3            T3.2
+khối chia tách được ngăn cách bởi các bờ
+bao (màu nâu) được gia cố bằng các tấm
+nhựa; các tấm này nên được chèn sâu tới                   T1.2          T2.1            T3.3
+20 cm vào đất để ngăn dòng chảy ngang
+từ các ô bị ngập sang các ô không bị ngập.                T1.3          T2.2            T1.1
+
+
+     3.6. Phương pháp đo lường thực địa và phân tích trong phòng thí nghiệm
+     3.6.1. Quy trình đo lường
+     Đối với phát thải GHG, các quy trình chi tiết được nêu trong Quyết định
+4831/QĐ-BNN-KHCN và được tóm tắt trong Bảng 4.
+             Bảng 4. Tóm tắt các yêu cầu về quy trình lấy mẫu
+ Tính năng           điều kiện
+ Tần suất lấy mẫu    Không ít hơn 8 - 10 lần mỗi vụ, một tuần một lần trong 50 ngày
+                     đầu sau khi cấy và hai tuần một lần sau đó cho đến 15 ngày
+                     trước khi thu hoạch.
+ Thời gian lấy mẫu   Lấy mẫu từ 8:00 – 10:00 sáng. Lấy bốn mẫu liên tiếp tại thời
+                     điểm t0 (sau khi đặt buồng trên), t1 (10 phút), t2 (20 phút), t3
+                     (30 phút), với thời gian lấy mẫu cách nhau 10 phút.
+ Lưu trữ mẫu cho đến Chuyển mẫu không khí vào lọ đã hút chân không để lưu trữ và
+ khi phân tích       vận chuyển đến phòng thí nghiệm
+                                          35
+       Ngoài ra, các ống nước hoặc cảm biến nước sẽ được sử dụng để đo độ sâu
+của nước tại mỗi sự kiện lấy mẫu khí (hoặc bằng laser).
+       3.6.2. Phân tích khí
+       Phân tích khí có thể sử dụng sắc ký khí (GC) được trang bị detector ion hóa
+ngọn lửa (FID) hoặc máy quang phổ laser. Nếu sử dụng GC, phải tuân thủ các quy
+trình trong Quyết định 4831/QĐ-BNN-KHCN, như được tóm tắt trong Bảng
+A15.5. Nếu sử dụng máy quang phổ laser, phải tuân thủ hướng dẫn của nhà sản
+xuất và việc lựa chọn sử dụng máy quang phổ laser phải được chứng minh bằng
+một nghiên cứu thẩm định. Phân tích khí phải được thực hiện trong phòng thí
+nghiệm có hệ thống quản lý và đảm bảo chất lượng.
+         Bảng 5. Tóm tắt các yêu cầu phân tích phòng thí nghiệm GC
+      Tính năng                                      Tình trạng
+ Phương pháp          Máy sắc ký khí với đầu dò ion hóa ngọn lửa (FID) hoặc
+                      máy quang phổ laser
+ Tiêm                 Tiêm trực tiếp hoặc với van đa cổng và vòng lặp mẫu
+ Cột GC               Cột đóng gói (ví dụ sàng phân tử) hoặc cột mao quản
+ Sự định cỡ           Với khí tiêu chuẩn được chứng nhận mỗi ngày phân tích trước và sau khi
+                      phân tích được thực hiện
+       3.6.3. Tính toán các hệ số phát thải tích hợp theo mùa vụ và các hệ số tỷ lệ
+       Quy trình xử lý số liệu và kiểm soát chất lượng phải tuân thủ theo Quyết
+định số 4831/QĐ-BNN-KHCN. Để tính toán hệ số phát thải CH4 trong từng lô
+xử lý (mg/m2/ h):
+                           ∆C      v    M       P        273
+                     F = ( )∗( )∗( )∗( )∗(                     )
+                           ∆t      A     V      P0     Tkelvin
+       Trong đó:
+       F là hệ số phát xạ của một ngày đo nhất định cho mỗi lần xử lý
+       ∆C là sự thay đổi nồng độ CH 4 trong khoảng thời gian ∆t;
+       v và A là thể tích của hộp lấy mẫu khí và diện tích đáy hộp đo khí (L);
+       M là khối lượng nguyên tử của khí đó;
+       V là thể tích chiếm bởi 1 mol khí ở nhiệt độ và áp suất tiêu chuẩn (22,4 L);
+       P là áp suất khí quyển (mbar), P 0 là áp suất chuẩn (1013 mbar);
+       Tkelvin: 273+ Ttb
+       Ttb = (T0 + T1 + T2 + T3)/4
+       Lượng phát thải tích lũy theo mùa vụ của CH4 trên mỗi vụ lúa ở mỗi lô xử
+lý được tính bằng công thức:
+                      (Fn1 + Fn2 )                 Fn2 + Fn3
+     = (𝑛2 − n1) ∗                 + (n3 − n2) ∗             + ⋯ + (nc − nx)
+                           2                           2
+                     Fnc + Fnx
+                   ∗
+                         2
+       Trong đó n1, n2, n3 là ngày lấy mẫu thứ 1, thứ 2 và thứ 3; nx là ngày lấy
+mẫu thứ x trước ngày lấy mẫu cuối cùng, nc là ngày lấy mẫu cuối cùng và Fn1,
+Fn2, Fn3, Fnx, Fnc là lượng khí thải CH4 trung bình hàng ngày (mg/m2/ngày)
+tương ứng với các ngày lấy mẫu n1, n2, n3, nx và nc.
+                                        36
+        Giá trị trung bình của mỗi tầng phát thải CH4 theo mùa vụ cho mỗi nghiệm
+thức trong mỗi vụ lúa được tính bằng giá trị trung bình cộng của các lần lặp lại.
+Độ không chắc chắn (tức là biên độ sai số được biểu thị bằng phần trăm của giá
+trị trung bình) được tính như sau:
+                    𝑀𝑎𝑟𝑔𝑖𝑛 𝑜𝑓 𝑒𝑟𝑟𝑜𝑟 = [(1.96 × 𝜎) ÷ 𝑥̄] × 100
+        Trong đó σ là độ lệch chuẩn và 𝑥̄là giá trị trung bình.
+        Hệ số tỷ lệ cho MSD và AWD có thể được biểu diễn dưới dạng một phần
+của lượng phát thải CH4 theo mùa vụ trong điều kiện ngập lụt liên tục như trong
+Hướng dẫn của IPCC, hoặc sử dụng các phương trình phù hợp với dữ liệu chứng
+minh mối quan hệ chấp nhận được giữa lượng phát thải CH4 ( hoặc lượng phát
+thải CH4 dưới dạng một phần của EFc ) và các thông số khác (ví dụ: số ngày rút
+nước hiệu quả) được theo dõi bằng phương pháp này. Khi sử dụng các phương
+trình hồi quy để ước tính hệ số tỷ lệ, độ không chắc chắn của các hệ số tỷ lệ có
+thể được biểu thị bằng sai số bình phương trung bình (RMSE) của phép khớp.
+        3.6.4. Phân tích dữ liệu
+        Dữ liệu sẽ được phân tích bằng phần mềm/chương trình chuyên nghiệp theo
+các hướng dẫn thống kê, ví dụ: Phần mềm độc quyền của Hệ thống Phân tích
+Thống kê (SAS), để kiểm tra xem lượng khí thải GHG từ quá trình xử lý có khác
+biệt đáng kể hay không. Ngoài ra, các phương pháp hồi quy sẽ được sử dụng để
+đánh giá liệu có mối quan hệ giữa lượng khí thải theo mùa vụ với tần suất hoặc
+thời gian rút nước trong mùa và/hoặc độ sâu của nước hay không.
+        3.7. Báo cáo kết quả và siêu dữ liệu
+        Cấu trúc báo cáo (tại mỗi vị trí đo tại điểm nghiên cứu trong 1 mùa)
+        - Trang bìa.
+        - Tên báo cáo.
+        - Cơ quan thực hiện nhiệm vụ.
+        - Cơ quan quản lý.
+        - Mục tiêu của nhiệm vụ.
+        - Nội dung chính của báo cáo.
+        - Mục lục.
+        Nội dung chính của báo cáo
+        Báo cáo phải trình bày ngắn gọn và rõ ràng các nội dung sau:
+        I. Mở đầu (Nêu lý do và mục đích thực hiện hoạt động đo phát thải khí nhà
+kính)
+        II. Nội dung, địa điểm, thông số quan trắc, lấy mẫu và phân tích mẫu
+        - Nội dung, địa điểm giám sát;
+        - Điều kiện lấy mẫu: [đây là thông tin quan trọng phải ghi chép và lưu giữ:
+nhiệt độ, đặc điểm thời tiết (mưa, nắng...), đặc điểm mực nước, mức độ sinh
+trưởng của cây, các thông số đo nhanh tại hiện trường (pH, nhiệt độ đấT...) vào
+biểu mẫu hoặc biên bản kiểm tra/theo dõi].
+                                       37
+       - Thông số quan trắc và phân tích tại các điểm [Ghi rõ hàm lượng từng chỉ
+tiêu cho từng loại mẫu (CH4, N2O)].
+       - Số lượng mẫu và vị trí lấy mẫu kèm theo sơ đồ vị trí lấy mẫu [tóm tắt vị
+trí thực hiện, bản đồ minh họa vị trí lấy mẫu và mô tả vị trí lấy mẫu].
+       - Tên cơ quan chịu trách nhiệm phân tích.
+       - Thiết bị và phương pháp lấy mẫu: [Nêu tóm tắt thiết bị và dụng cụ lấy
+mẫu được sử dụng trong báo cáo]
+       - Phương pháp phân tích: [Các phương pháp phân tích được sử dụng trong
+báo cáo, nếu sử dụng phương pháp chuẩn thì chỉ cần ghi tên chuẩn đã sử dụng].
+       III. Phân tích và đánh giá kết quả
+       Kết quả giám sát, phân tích và thảo luận (nêu phương pháp đo đạc, phương
+pháp tính toán, phân tích, sử dụng các phương pháp thống kê (thống kê mô tả và
+thống kê phân tích) để bình luận và đánh giá các số liệu, thông tin thu thập được.
+Việc đánh giá phải dựa trên ngưỡng cho phép của TCVN hoặc các tiêu chuẩn quốc
+tế được viện dẫn khác. Đối với các quy chuẩn, tiêu chuẩn, phải áp dụng các văn
+bản mới nhất.
+       3.1. Kết quả phát thải CH4 (EFc và các hệ số tỷ lệ)
+       3.2. Kết quả phát thải N2O
+       3.3. Sự không chắc chắn của kết quả phát thải CH4
+       3.4. Kết quả thực hiện QA/QC trong quá trình phân tích
+       IV. Kết luận và khuyến nghị
+       Tài liệu tham khảo
+       Phụ lục Bản đồ, Sơ đồ vị trí các khu vực giám sát và lấy mẫu Hình ảnh
+minh họa
+       Kết quả dữ liệu giám sát tại chỗ
+       Các tài liệu khác
+

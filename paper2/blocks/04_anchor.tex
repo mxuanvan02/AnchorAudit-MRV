@@ -1,0 +1,125 @@
+\section{Device-Anchored Attestation}
+\label{sec:anchor}
+
+\subsection{The gateway record}
+
+Propositions~\ref{prop:blind}--\ref{prop:coincide} show that volume and depth
+are insufficient and that order is exactly what the adversary manipulates, so
+the defence must observe timestamps --- and the only party that can vouch for
+a timestamp is the device that acted on it. Let the gateway hold a signed
+command record
+\begin{equation}
+\mathcal{G}=\{(t_j,u_j,\sigma_j)\},
+\label{eq:gateway}
+\end{equation}
+where:
+\begin{symbolist}
+\item[$\mathcal{G}$] the gateway's command record, covering every pump actuation in the season;
+\item[$t_j$] the hour at which the controller switched the pump for command $j$;
+\item[$u_j$] the water depth the controller delivered for that command, in mm;
+\item[$\sigma_j$] a digital signature over the pair $(t_j,u_j)$, produced by the controller at actuation time.
+\end{symbolist} The anchor test compares the claimed log against that record using \emph{two
+directed differences} rather than one symmetric difference, because the two
+directions differ in kind: one can be completed from the source, the other cannot.
+\begin{equation}
+\begin{aligned}
+\Delta^{-}&=\{t_j\}\setminus\{t_i\},\\
+\Delta^{+}&=\{t_i\}\setminus\{t_j\},\\
+\Delta_{\mathrm{depth}}&=\max_{t}\bigl|u(t)-u_{\mathcal{G}}(t)\bigr|,
+\end{aligned}
+\label{eq:deltas}
+\end{equation}
+where:
+\begin{symbolist}
+\item[$\Delta^{-}$] the set of hours present in the gateway record but absent from the claimed log, that is, omitted commands;
+\item[$\Delta^{+}$] the set of hours present in the claimed log but absent from the gateway record, that is, commands claimed but never issued;
+\item[$\setminus$] set difference, returning the elements of the first set that are not in the second;
+\item[$u(t)$] the depth claimed at hour $t$ in log $L$, defined as the \emph{sum} of the depths of every command falling in that hour under the convention of \eqref{eq:uterm}, not the depth of a single command;
+\item[$u_{\mathcal{G}}(t)$] the depth the gateway recorded at the same hour $t$, under the same aggregation;
+\item[$\Delta_{\mathrm{depth}}$] the largest discrepancy between the two depths, taken over hours common to both records.
+\end{symbolist}
+Both records are stored per hour and keep one aggregated level per hour, so the
+comparison loses no information about how many commands there were: every gateway
+command has already been folded into $u_{\mathcal{G}}(t)$ before the comparison, and
+each signature $\sigma_j$ is verified on the individual pair $(t_j,u_j)$ before that
+record is used as the reference.
+
+The verdict then has three levels rather than two:
+\begin{equation}
+A(L,\mathcal{G})=
+\begin{cases}
+\text{forge}, & \Delta^{+}\neq\emptyset\ \vee\ \Delta_{\mathrm{depth}}>\epsilon,\\
+\text{reconcile}, & \Delta^{+}=\emptyset\ \wedge\ \Delta^{-}\neq\emptyset,\\
+\text{match}, & \text{otherwise},
+\end{cases}
+\label{eq:anchor}
+\end{equation}
+where:
+\begin{symbolist}
+\item[$A(L,\mathcal{G})$] the verdict of the anchor test on log $L$;
+\item[$\epsilon$] the depth-matching tolerance, equal to $10^{-6}$\,mm, i.e.\ exact agreement up to floating-point noise;
+\item[$\vee$] logical or, meaning that a single claimed-but-unissued command or a single depth discrepancy suffices to conclude forgery;
+\item[$\wedge$] logical and;
+\item[\text{reconcile}] a flag that the log is missing commands the gateway holds; this is a \emph{clerical} discrepancy, not a finding of fraud, and the missing entries are completed from $\mathcal{G}$.
+\end{symbolist}
+Naming the three levels separately matters, because each fraud class leaves its mark
+in a different place: time-shifting and added commands both create hours absent from
+$\mathcal{G}$ and therefore make $\Delta^{+}$ nonempty, depth inflation alters
+$\Delta_{\mathrm{depth}}$ only, and omission makes $\Delta^{-}$ nonempty only and so
+raises the reconciliation flag alone. A single comparison still catches every fraud
+class, but forgetting to record a command is no longer conflated with claiming one
+that was never issued.
+
+\begin{proposition}[Completeness of the anchor]
+\label{prop:complete}
+If a claimed log $L$ claims an hour absent from the gateway record
+$\mathcal{G}$, or misstates a depth at a shared hour, then $A(L,\mathcal{G})$
+returns \text{forge}. If $L$ merely omits commands that $\mathcal{G}$ holds, then
+$A(L,\mathcal{G})$ returns \text{reconcile}: the missing entries are completed
+from $\mathcal{G}$ and are not used as grounds for accusation. If $L$ and
+$\mathcal{G}$ agree on both the hour set and the depths, then $L$ is a faithful
+transcript and no forgery of the three quantities in \eqref{eq:three} has
+occurred.
+\end{proposition}
+
+\begin{proof}
+Supplementary~S12: the first two clauses are the definition of \eqref{eq:anchor},
+and the last follows because all three forgeable quantities are functions of
+the hour set and the per-hour depths.
+\end{proof}
+
+\subsection{Why this does not re-introduce false accusation}
+
+Proposition~\ref{prop:complete} is strong enough to look dangerous, since it allows a
+finding of forgery from a single disagreement. That disagreement must lie in the
+direction of a command claimed but never issued, or in a misstated depth; the
+forgetting and rounding that Sec.~\ref{sec:guarantee} showed to be ubiquitous
+produce disagreement only in the missing direction and are classified as
+reconciliation, not as fraud. The resolution is that the
+anchor compares a transcript against the \emph{source}, not a log against a
+\emph{model}: an honest farmer who forgets an entry is not accused, because
+\eqref{eq:anchor} routes that case to \text{reconcile} and completes the entry from
+$\mathcal{G}$. Only a command claimed but never issued, or a misstated depth,
+reaches \text{forge}. False accusation then requires the gateway to disagree with
+itself --- a device-integrity question --- which is why Table~\ref{tab:falseacc}
+holds at $0/60$ while the behavioural tiers hold at $26.7\%$ and $5.0\%$
+(Supplementary~S18).
+
+\subsection{Cost and the scope of the claim}
+
+The anchor requires the gateway of the companion work~\cite{twingate2026},
+which actuates the pump and already writes a signed, time-stamped command
+record as part of its safety function; the marginal cost of attestation is
+storage and transmission of a record that exists regardless. The scope of this
+evidence must also be kept clear: a \emph{signed pump command} attests that the
+controller issued a command at a given time, whereas it does not attest to the
+\emph{water actually delivered}, since this work uses no independent measurement of
+delivered volume beyond that record (Supplementary Table~S4). The scope is
+nonetheless narrower than the premise we started from: a hand-written log, with
+no device in the loop, is \emph{not} admissible evidence on its own, since
+Sec.~\ref{sec:results-attack} measures a rational adversary inflating credits by
+$+35\%$ while escaping every physics- and volume-based test ($6/6$ altered
+logs). Near-zero-\emph{marginal}-cost MRV is achievable only where a controller stands
+between
+the farmer and the pump; where irrigation is manual this layer does not
+apply.

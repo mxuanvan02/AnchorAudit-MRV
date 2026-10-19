@@ -1,0 +1,52 @@
+% S4: ban TIENG VIET cua paper2/blocks/08_subsidence.tex.
+% Chi duoc \input boi paper2_hujos/supplementary_vi.tex.
+% NGUYEN TAC: giu nguyen moi con so va moi hedge; thap phan kieu Viet ({,});
+% tham chieu cheo toi bai chinh dung \eqref/\ref (so lay tu main.aux
+% boi experiments/make_supplementary_stubs.py) thay vi go tay "Eq.~(16)" — ban EN go tay
+% nen da lech so voi ban VI (eq:umax EN=16, VI=15).
+\section*{S4. Tính bất biến đối với sụt lún}
+
+Tuân thủ AWD thường được phát biểu bằng một mực nước ngầm hoặc độ sâu ngập tuyệt
+đối, ví dụ $15$\,cm dưới mặt ruộng, tức ngưỡng tưới lại của nghiệm thức Safe-AWD
+trong~\cite{balaine2019}. Ở một đồng bằng đang sụt lún, cao độ mặt ruộng $z_s(t)$ hạ
+với tốc độ $\dot z$. Hai giao thức đo cho hai kết quả khác nhau và cần tách bạch:
+nếu ngưỡng được quy về một \emph{mốc cao độ cố định} thì mốc và mặt ruộng rời nhau
+nên ngưỡng hữu hiệu trôi; còn nếu ngưỡng được đo \emph{tương đối với mặt ruộng hiện
+tại}, như ống đo mực nước perched đặt theo mặt ruộng, thì cả mốc lẫn mặt ruộng cùng
+hạ nên ngưỡng không trôi. Mệnh đề dưới đây chỉ áp dụng cho giao thức thứ nhất.
+
+\begin{proposition}[Độ trôi của một ngưỡng neo theo mốc cố định]
+\label{prop:subsid}
+Xét một ngưỡng được biểu diễn theo một \emph{cao độ gốc cố định}, chẳng hạn mực
+nước đọc từ một cảm biến neo theo mốc trắc đạc. Trong một chu kỳ cấp tín chỉ dài
+$T_c$ năm, ngưỡng đó dịch đi $\dot z\,T_c$ so với mặt ruộng. Với
+$\dot z\in[1{,}1;2{,}5]$~cm/năm và $T_c=5$~năm, độ dịch là $5{,}5$--$12{,}5$~cm,
+tức $37$--$83\%$ của một ngưỡng $15$\,cm. Một tiêu chí viết theo tỷ lệ cạn kiệt
+\eqref{eq:depl} có độ trôi bằng không trong cả hai giao thức, vì $FC$ và $WP$ là
+tính chất của đất quy về tầng rễ chứ không quy về một cao độ tuyệt đối.
+\end{proposition}
+
+Phạm vi của mệnh đề cần được nói rõ. Kết luận trên \emph{không} áp dụng cho một
+ngưỡng đo tương đối với mặt ruộng hiện tại: tiêu chí $15$\,cm dưới mặt ruộng của
+nghiệm thức Safe-AWD trong~\cite{balaine2019} là một mực nước perched đo từ mặt
+ruộng, nên nó tịnh tiến cùng mặt ruộng và không tự động trôi hết lượng sụt lún.
+Chúng tôi không xác minh được từ nguồn đó loại ống đo mà các điểm triển khai dùng,
+nên không gán giao thức nào cho chúng; độ dịch $5{,}5$--$12{,}5$~cm chỉ là cận trên
+đúng cho trường hợp cảm biến neo theo mốc cố định.
+
+\begin{proof}
+Tiêu chí neo theo mốc so một độ sâu đo được với một mốc không đổi; nếu mốc và mặt
+ruộng rời nhau với tốc độ $\dot z$ thì ngưỡng hữu hiệu thay đổi $\dot z T_c$ sau
+$T_c$ năm. Nếu mốc được đặt lại theo mặt ruộng hiện tại thì hai đại lượng tịnh tiến
+cùng nhau và độ trôi bằng không; đó là lý do mệnh đề chỉ phát biểu cho giao thức
+thứ nhất.
+Tiêu chí cạn kiệt so $FC-w_t$ với $(FC-WP)$, cả hai đều được định nghĩa bên trong tầng
+rễ và tịnh tiến cứng cùng mặt ruộng, nên tỷ số của chúng bất biến đối với $z_s$.
+\end{proof}
+
+Các tốc độ sụt lún là số đo cho đồng bằng này trong~\cite{minderhoud2017}. Hệ quả thực
+tiễn là một phương án neo theo tỷ lệ cạn kiệt không cần đo đạc lại các mốc ruộng trong
+suốt chu kỳ cấp tín chỉ năm năm, còn phương án dùng độ sâu tuyệt đối thì cần, với điều kiện phân biệt ở trên:
+nếu đọc từ cảm biến neo theo mốc cố định thì mốc cao độ đó phải được đo đạc lại
+theo chu kỳ, còn nếu đo tương đối mặt ruộng thì không. Trong cả hai trường hợp,
+tỷ lệ cạn kiệt vẫn là đại lượng không cần hiệu chỉnh theo cao độ.

@@ -1,0 +1,29 @@
+{
+  "qd4801": {
+    "file": "refs/QD4801_2025.pdf",
+    "sha256_16": "557b9a6d922ff215",
+    "pages": 37,
+    "checks": {
+      "nguong_3_ngay": true,
+      "thu_tu_uu_tien": true,
+      "khong_dung_chu_Tier": true,
+      "khong_dung_chu_bac": true,
+      "la_quy_trinh_thi_diem": true
+    },
+    "quote_3day": "...AWD chỉ được coi là hiệu quả nếu sau ngày rút nước, cánh đồng không được tưới lại trong ít nhất 3 ngày.",
+    "quote_priority": "hồ sơ tưới tiêu & rút nước thực tế > kế hoạch > lịch trình > ghi chú thực địa > tuyên bố đã ký"
+  },
+  "vm0051": {
+    "file": "refs/VM0051_v1.1.pdf",
+    "sha256_16": "9b9738840824f591",
+    "checks": {
+      "dinh_luong_GHG": true,
+      "che_do_nuoc_la_activity_data": true,
+      "khong_co_72h": true
+    }
+  },
+  "qd1490": {
+    "file": "refs/QD1490_2023.pdf",
+    "sha256_16": "bf9bed53f05e7752"
+  }
+}
