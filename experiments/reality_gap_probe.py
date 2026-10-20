@@ -22,7 +22,7 @@ Bảy trục lệch, mỗi trục có nguồn:
      đầu tiên làm tròn từng mảnh 1.875mm về 5mm -> thành 0 -> nhật ký rỗng giả tạo.
   G. Trạng thái đầu vụ w0 KHÔNG PHẢI field capacity (kiểm toán viên không đo được).
 
-ĐỐI THỦ THÍCH NGHI: bài báo CÔNG KHAI ngưỡng eps, nên kẻ gian lận đọc được nó và
+ĐỐI THỦ THÍCH NGHI: ngưỡng eps được CÔNG KHAI trong đặc tả đã phát hành, nên kẻ gian lận đọc được nó và
 khai sát dưới ngưỡng. Đo hai đại lượng: (i) tỷ lệ nhật ký bị bắt, (ii) TỔNG mm
 bơm khống đã lọt — vì đây chính là số tín chỉ bị thổi phồng.
 
@@ -147,7 +147,7 @@ def audit(log, weather, day_rain):
 
 
 def adaptive_fraud(rec, weather, day_rain, rng, span_budget=0.98, p_ins=0.30):
-    """Đối thủ THÍCH NGHI: biết eps (bài báo công khai) nên khai sát dưới ngưỡng.
+    """Đối thủ THÍCH NGHI: biết eps (đã công khai trong đặc tả) nên khai sát dưới ngưỡng.
     Trả về (nhật ký tấn công, tổng mm khống đã chèn)."""
     attack = dict(rec)
     twin = BucketState(w=TWIN.fc_mm)
@@ -280,7 +280,7 @@ def main():
     print("\n=== LỖ HỔNG #1: V2 LÀ CODE CHET (đã đọc trong code) ===")
     tot_f2 = sum(r["F2"] for r in all_rows)
     print(f"  V2 fire {tot_f2} lần / {len(all_rows)} nhật ký. depletion_fraction() clip về")
-    print("  [0,1] nên dp > 1.02 bất khả thi -> bài báo quảng cáo 3 bộ lọc nhưng V2 vô hiệu."
+    print("  [0,1] nên dp > 1.02 bất khả thi -> bộ lọc V2 không phân biệt được trong dải này."
           if tot_f2 == 0 else "  -> V2 có fire")
 
     hp, hf = by.get("honest_paper", []), by.get("honest_field", [])
@@ -298,7 +298,7 @@ def main():
             print(f"    {s:<18} span={(fc-wp)*500:5.1f}mm  bắt oan "
                   f"{sum(r['flagged'] for r in rs):>2}/{len(rs):<3} = {rate(rs)*100:5.1f}%")
 
-    print("\n=== LỖ HỔNG #3: ĐỐI THỦ THÍCH NGHI BIẾT eps (bài báo công khai) ===")
+    print("\n=== TÌNH HUỐNG 3: ĐỐI THỦ THÍCH NGHI BIẾT eps (đã công khai trong đặc tả) ===")
     ai = by.get("adaptive_inflation", [])
     if ai:
         inj = [r["gap_mm"] for r in ai]
@@ -316,7 +316,7 @@ def main():
         print("    u_max = d*·span + eps là chặn THEO TỪNG SỰ KIỆN, KHÔNG phải theo vụ.")
         print("    Bucket thoát nước liên tục (deep percolation + ETc) nên kẻ tấn công")
         print("    khai nhiều lệnh nhỏ sát ngưỡng vẫn thổi phồng được CẢ VỤ mà không")
-        print("    lần nào vượt ngưỡng. Nghĩa là Mệnh đề u_max yếu hơn bài báo ngụ ý.")
+        print("    lần nào vượt ngưỡng. Nghĩa là Mệnh đề u_max yếu hơn đặc tả đã công bố ngụ ý.")
         over = sum(1 for x in infl if x > span)
         print(f"  số nhật ký tấn công có tổng bơm khống VƯỢT span: {over}/{len(ai)}"
               f" ({over/len(ai)*100:.0f}%)")

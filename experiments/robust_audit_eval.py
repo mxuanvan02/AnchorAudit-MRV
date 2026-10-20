@@ -119,7 +119,7 @@ def rational_adversary(log, weather, day_rain, thetas, w0set, cfg,
                        windows=(1, 6, 12, 24, 48, 96), max_depth=None):
     """Đối thủ CÓ LÝ TRÍ: chọn cách dồn lệnh tối đa n_dry mà không bị bắt.
 
-    Nó biết bộ lọc (bài báo công khai ngưỡng eps và cấu trúc Θ), biết tổng bơm
+    Nó biết bộ lọc (ngưỡng eps và cấu trúc Θ đã công khai trong đặc tả), biết tổng bơm
     bị đồng hồ đo, nên nó giữ nguyên tổng và chỉ đổi LỊCH SỬ thời điểm.
     """
     best = None
@@ -128,7 +128,7 @@ def rational_adversary(log, weather, day_rain, thetas, w0set, cfg,
         # ràng buộc 1: tổng không đổi (nếu không, tầng 1 bắt được)
         if abs(sum(cand.values()) - sum(log.values())) > 1e-6:
             continue
-        # ràng buộc 2: đối thủ CÓ LÝ TRÍ biết F5, vì bài báo công khai ngưỡng sức
+        # ràng buộc 2: đối thủ CÓ LÝ TRÍ biết F5, vì đặc tả đã công bố ngưỡng sức
         # thấm (infil·h + ponding). Không đặt ràng buộc này thì ta đang đo một kẻ
         # thù ngu và con số "lọt 5/5" vô nghĩa — đúng lỗi mà bản adversary bơm
         # 343mm đã mắc (n_dry = 0, nó tự hủy).
