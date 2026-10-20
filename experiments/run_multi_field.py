@@ -350,6 +350,13 @@ def main() -> int:
         if not P:
             continue
         print(f"  [{rule:<8}] n cap = {len(P)}  (slots {s_max} -> {s_min})")
+        # KICH THUOC MAU QUYET DINH SUC MANH KIEM DINH. Che do --quick chi co n=12
+        # cap (1 network x 2 seeds x 1 ngan sach), nen nguong |t| >= 2 khong the dat
+        # duoc ngay ca khi co che dung: cung luat phan bo "gate" nay cho t=+6.64 o che
+        # do day du (n=300 cap) nhung t=-0.64 o quick. Kiem dinh cap KHONG BAC DUOC
+        # gia thiet khong phai la bang chung chong lai co che, vi vay o mau nho chi
+        # canh bao; che do day du van bat buoc that bai.
+        low_power = len(P) < 30
         for fld, want_up in (("withheld", False), ("stress_h", True),
                              ("unsafe_pct", False), ("awd_eff", True)):
             d = [p[s_min][fld] - p[s_max][fld] for p in P]
@@ -361,8 +368,13 @@ def main() -> int:
                   f"{'CO Y NGHIA' if abs(t) >= 2 else 'nhieu'}"
                   + ("" if ok or not hard else "   !! trai co che"))
             if hard and not ok:
-                fails.append(f"{rule}: slots {s_max}->{s_min} ma {fld} khong doi theo "
-                             f"co che (mean={m:+.2f}, t={t:+.2f}; n={len(P)})")
+                msg = (f"{rule}: slots {s_max}->{s_min} ma {fld} khong doi theo "
+                       f"co che (mean={m:+.2f}, t={t:+.2f}; n={len(P)})")
+                if low_power:
+                    print(f"      canh bao mau nho (n={len(P)} < 30, khong du suc manh "
+                          f"kiem dinh, khong tinh la that bai): {msg}")
+                else:
+                    fails.append(msg)
     if n_tot == 0:
         fails.append("khong co cell nao du 2 muc slots de kiem tra -> gate khong chay duoc")
 
