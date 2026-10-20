@@ -216,7 +216,7 @@ on the use of AI tools have been added to both versions.
 The Vietnamese version is 37 pages including its supplement; the English version is 22
 pages with a separate 14-page supplement. Both build with no errors, no undefined
 references and no unresolved cross-references. Every number quoted in this letter is
-produced by the released deterministic pipeline at commit `4f743db` of
+produced by the released deterministic pipeline at commit `e2d8758` of
 `https://github.com/mxuanvan02/TwinGate` (MIT licence); the repository contains the code,
 both uncertainty sets, both adversaries and all 281 audited logs, and `./reproduce.sh`
 regenerates every result under `outputs/` while `./reproduce.sh --tests` runs the eight
