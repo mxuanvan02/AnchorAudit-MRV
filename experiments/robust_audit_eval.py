@@ -425,6 +425,8 @@ def main():
     ap.add_argument("--seeds", type=int, default=0)
     ap.add_argument("--full-theta", action="store_true",
                     help="dùng Θ đầy đủ 30×5=150 thay vì bản rút gọn 12×2=24")
+    ap.add_argument("--out", default="robust_audit_eval.csv",
+                    help="tên file kết quả trong outputs/ (mặc định robust_audit_eval.csv)")
     args = ap.parse_args()
 
     seeds = args.seeds or (2 if args.quick else 10)
@@ -446,7 +448,11 @@ def main():
                   flush=True)
 
     OUT.mkdir(exist_ok=True)
-    p = OUT / "robust_audit_eval.csv"
+    # --out cho phep sinh HAI snapshot tu mot script: ban |Theta| rut gon (281 nhat ky,
+    # nguon cua moi con so trong bai) va ban |Theta| day du (85 nhat ky). Truoc day ten
+    # file bi ghi cung o day, nen hai snapshot phai doi ten bang tay va khong lenh nao
+    # tai tao duoc chung.
+    p = OUT / args.out
     fields = sorted({k for r in rows for k in r})
     with p.open("w", newline="", encoding="utf-8") as fh:
         wr = csv.DictWriter(fh, fieldnames=fields)
