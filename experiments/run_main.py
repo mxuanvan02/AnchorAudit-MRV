@@ -240,7 +240,11 @@ def summarise(rows, key="policy"):
     out = []
     for (fid, pol, net, bud), g in sorted(groups.items()):
         def agg(f, fn=statistics.mean):
-            return fn([f(x) for x in g])
+            # Ép float: statistics.mean trả VỀ INT khi mọi đầu vào là int và chia hết
+            # (vd mean([0,0,0]) == 0), làm CSV ghi "0" thay vì "0.0". Cùng một dữ liệu
+            # mà định dạng đầu ra phụ thuộc kiểu của nhóm -> artifact không tái tạo
+            # được byte-for-byte. Ép float ở đây để summary luôn tất định.
+            return float(fn([f(x) for x in g]))
         out.append({
             "fidelity": fid,
             "policy": pol, "network": net, "budget_mm": bud, "n": len(g),
