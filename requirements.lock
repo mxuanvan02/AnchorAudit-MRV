@@ -1,0 +1,19 @@
+# requirements.lock — phiên bản đã pin, đúng bộ đã dùng để sinh mọi con số
+# công bố trong bài báo (Python 3.14.7, Linux x86_64, pin ngày 2026-11-07).
+#
+# Dùng file này khi cần tái lập chính xác; requirements.txt chỉ nêu ràng buộc
+# tối thiểu để môi trường mới chạy được.
+#
+#   pip install -r requirements.lock
+#
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.68.0
+kiwisolver==1.5.1
+matplotlib==3.11.2
+numpy==2.5.4
+packaging==26.3
+pillow==13.0.0
+pyparsing==3.3.3
+python-dateutil==4.0.0
+scipy==1.18.1

@@ -31,6 +31,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "experiments"))
+sys.path.insert(0, str(ROOT / "paper_qa"))
 
 import make_tables_anchored as base  # noqa: E402
 

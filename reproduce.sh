@@ -2,8 +2,10 @@
 # =============================================================================
 # TwinGate — one-command reproduction of every published number.
 #
-#   A chance-constrained digital-twin safety gate for irrigation command
-#   dispatch over lossy networks, and a device-anchored irrigation-log auditor.
+#   The device-anchored irrigation-log auditor of the published paper
+#   (FAO-56 digital-shadow replay + physical filters + robust detection),
+#   plus the chance-constrained NCS safety-gate prototype (future-work
+#   component; see README "Kết quả chính").
 #
 # What this does, end to end:
 #   1. creates an isolated Python virtual environment (.venv)
@@ -14,7 +16,7 @@
 #   4. runs the six invariant test scripts + the d_max proposition test
 #   5. runs the main grid (7 560 episodes/year x 2 years), the ablation, the
 #      deployment sweep, the multi-field experiment, the sigma x delta sweep,
-#      the salinity scenario, the fraud-detection experiment (240 audited
+#      the salinity scenario, the fraud-detection experiment (281 audited
 #      irrigation logs) and the robust-audit evaluation (v2 filters
 #      under seven reality-gap axes plus nine fraud variants)
 #   6. runs the paired Wilcoxon analysis and regenerates every figure

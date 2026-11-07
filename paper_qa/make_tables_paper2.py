@@ -169,6 +169,7 @@ def tab_prop1(rows) -> None:
     from ncs_loop import load_weather
     from water_balance import BucketState, depletion_fraction, daily_runoff_share, step_bucket
     sys.path.insert(0, str(ROOT / "experiments"))
+    sys.path.insert(0, str(ROOT / "paper_qa"))
     from fraud_detection import replay_log
     weather, day_rain = load_weather("can_tho", limit=74*24+2160+20, year=2024)
     print("    Quet do sau (Prop 1):")

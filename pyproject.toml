@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twingate-mrv"
+version = "1.0.0"
+description = "Device-anchored irrigation log auditor for low-emission rice MRV (FAO-56 digital shadow)"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Mai Xuan Van" },
+  { name = "Le Duc Minh Phuong" },
+  { name = "Nguyen Dang Tri" },
+  { name = "Truong Khanh Duy" },
+  { name = "Nguyen Tuong Tri", email = "ntuongtri@hueuni.edu.vn" },
+]
+keywords = ["AWD", "MRV", "carbon credits", "rice", "FAO-56", "digital shadow"]
+dependencies = [
+  "numpy>=1.24.0",
+  "scipy>=1.10.0",
+  "matplotlib>=3.7.0",
+]
+
+[project.urls]
+Repository = "https://github.com/mxuanvan02/TwinGate-MRV"
+
+# Lưu ý: mã nguồn dùng import phẳng (từ experiments/ và src/ qua sys.path),
+# nên KHÔNG khai báo [tool.setuptools.packages]. File này phục vụ metadata,
+# cài đặt môi trường (pip install -e .) và công cụ đọc pyproject.
+[tool.setuptools]
+py-modules = []

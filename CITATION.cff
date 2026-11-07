@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+type: software
+title: "TwinGate-MRV: Device-Anchored Irrigation Log Auditor for Low-Emission Rice MRV"
+authors:
+  - family-names: Mai
+    given-names: Xuân Văn
+  - family-names: Lê
+    given-names: Đức Minh Phương
+  - family-names: Nguyễn
+    given-names: Đăng Trị
+  - family-names: Trương
+    given-names: Khánh Duy
+  - family-names: Nguyễn
+    given-names: Tương Tri
+    email: ntuongtri@hueuni.edu.vn
+version: v1.0.0
+date-released: "2026-11-07"
+license: MIT
+repository-code: "https://github.com/mxuanvan02/TwinGate-MRV"
+abstract: "Reproduction code for the audit-layer study of farmer irrigation logs: FAO-56 hourly water balance replay, physical filters V1/V4/V5, robust detection over an uncertainty set, time-shift attack analysis, and device-anchored reconciliation against signed gateway records."
+keywords:
+  - AWD
+  - MRV
+  - carbon credits
+  - rice
+  - water balance
+  - FAO-56
+  - digital shadow
+  - information security
+preferred-citation:
+  type: article
+  title: "Hạn chế của kiểm toán vật lý nhật ký tưới và giải pháp neo theo thiết bị trong đo đạc, báo cáo, thẩm định lúa phát thải thấp"
+  authors:
+    - family-names: Mai
+      given-names: Xuân Văn
+    - family-names: Lê
+      given-names: Đức Minh Phương
+    - family-names: Nguyễn
+      given-names: Đăng Trị
+    - family-names: Trương
+      given-names: Khánh Duy
+    - family-names: Nguyễn
+      given-names: Tương Tri
+  journal: "Hue University Journal of Science: Engineering and Technology"
+  year: 2026
+  notes: "Đang phản biện"
