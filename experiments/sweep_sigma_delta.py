@@ -4,7 +4,7 @@
 BA LOI DA SUA (2026-10-04). Ca ba deu lam vo hieu ket qua cua ban cu:
 
   (1) DO SAI CHINH SACH — nghiem trong nhat. Ban cu tao
-      `PolicyConfig("TwinGate+T2", True, True, True, delta=dl, sigma_frac=sf)`
+      `PolicyConfig("AnchorAudit+T2", True, True, True, delta=dl, sigma_frac=sf)`
       ma KHONG truyen `gate_target_depl`, nen no nhan gia tri mac dinh None =
       CENTRE-SEEKING. Chinh sach de xuat that (trong ncs_loop.POLICIES) dung
       gate_target_depl = 0.80 = TARGET-SEEKING. Do truc tiep (f=0.02, b=240,
@@ -88,7 +88,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from ncs_loop import PolicyConfig, load_weather, march_start, run_episode  # noqa: E402
-from twin_gate import TwinParams, safe_bounds  # noqa: E402
+from safety_gate import TwinParams, safe_bounds  # noqa: E402
 from water_balance import SoilProfile  # noqa: E402
 
 OUT = ROOT / "outputs"
@@ -448,7 +448,7 @@ def main() -> int:
     print("\n  do tan suat clip (bucket chan o dung trong -> mu(u) trung nhau):")
     try:
         import ncs_loop as _nl
-        from twin_gate import twin_gate as _tg
+        from safety_gate import safety_gate as _tg
         _prof = SoilProfile()
         _w, _dr = load_weather("can_tho", limit=HOURS + 40)
         _st = march_start(_w)
@@ -740,7 +740,7 @@ def main() -> int:
     print("\n=== GATE (E): huong cua delta o muc trien khai (P(d1) subset P(d2)) ===")
     try:
         import ncs_loop as _nl
-        from twin_gate import twin_gate as _tg
+        from safety_gate import safety_gate as _tg
         _prof = SoilProfile()
         _w, _dr = load_weather("can_tho", limit=HOURS + 40)
         _st = march_start(_w)

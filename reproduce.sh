@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# TwinGate — one-command reproduction of every published number.
+# AnchorAudit — one-command reproduction of every published number.
 #
 #   The device-anchored irrigation-log auditor of the published paper
 #   (FAO-56 digital-shadow replay + physical filters + robust detection),
@@ -38,7 +38,7 @@ MODE="full"
 [[ "${1:-}" == "--quick" ]] && MODE="quick"
 [[ "${1:-}" == "--tests" ]] && MODE="tests"
 
-echo "== TwinGate reproduction ($MODE) =="
+echo "== AnchorAudit reproduction ($MODE) =="
 echo "   root: $ROOT"
 echo "   python: $($PY --version 2>&1)"
 
@@ -66,7 +66,7 @@ fi
 
 # --- 4. tests ---------------------------------------------------------------
 echo "[4/6] invariant + proposition test scripts"
-for t in tests/test_water_balance.py tests/test_twin_gate.py \
+for t in tests/test_water_balance.py tests/test_safety_gate.py \
          tests/test_command_resend.py tests/test_ncs_invariants.py \
          tests/test_tide_salinity.py tests/test_dmax_proposition.py \
          tests/test_log_filters.py \

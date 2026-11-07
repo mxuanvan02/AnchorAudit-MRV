@@ -264,7 +264,7 @@ def fig3() -> None:
         print("  (thu nguon thay the: ablation_raw.csv)")
         return _fig3_from_ablation()
     print("\n=== HINH 3: AWD theo do trung thuc ===")
-    sub = [r for r in rows if r["policy"] == "TwinGate+T2" and r["network"] == "severe"]
+    sub = [r for r in rows if r["policy"] == "AnchorAudit+T2" and r["network"] == "severe"]
     fids = []
     for r in sub:
         if r["fidelity"] not in fids:
@@ -768,8 +768,8 @@ def fig7() -> None:
     for r in sub:
         if r["policy"] not in pols:
             pols.append(r["policy"])
-    order = [p for p in ("TwinGate+T2", "Reactive+T2", "FixedSchedule", "Oracle") if p in pols]
-    cmap = {"TwinGate+T2": C_FULL, "Reactive+T2": C_ACC,
+    order = [p for p in ("AnchorAudit+T2", "Reactive+T2", "FixedSchedule", "Oracle") if p in pols]
+    cmap = {"AnchorAudit+T2": C_FULL, "Reactive+T2": C_ACC,
             "FixedSchedule": C_BASE, "Oracle": C_OK}
 
     fig, axes = plt.subplots(1, 3, figsize=(7.15, 2.45))
@@ -828,7 +828,7 @@ def fig7() -> None:
                 color=[C_ACC, C_NET, C_BASE][i2 % 3], ls="--",
                 label=f"{vname.get(v, v)} ({base_pol})")
     # cỏng đề xuất: 0% ỏ cả 3 nguỡng -> vẽ 1 đùng đậm, chú thích rõ
-    gate_pol = "TwinGate+T2"
+    gate_pol = "AnchorAudit+T2"
     xs = sorted({float(r["intrusion"]) for r in rows})
     gate_vals = []
     for v in variants:
@@ -853,8 +853,8 @@ def fig7() -> None:
     ax.legend(fontsize=5.6, loc="upper left")
 
     save(fig, "fig7_salinity_scenario")
-    ax0 = [fmean([r for r in sub if r["policy"] == "TwinGate+T2"], "saline_mm")]
-    print(f"  TwinGate+T2 bom nuoc man trung binh = {ax0[0]:.2f} mm (ky vong 0)")
+    ax0 = [fmean([r for r in sub if r["policy"] == "AnchorAudit+T2"], "saline_mm")]
+    print(f"  AnchorAudit+T2 bom nuoc man trung binh = {ax0[0]:.2f} mm (ky vong 0)")
     for p in order:
         print(f"  {p:<16} saline_mm = "
               f"{fmean([r for r in sub if r['policy']==p], 'saline_mm'):8.2f}")
@@ -885,8 +885,8 @@ def fig8() -> None:
     axes = axes[0]
     for ax, fid in zip(axes, fids):
         g = [r for r in sub if (not has_fid or r["fidelity"] == fid)]
-        cmap2 = {"TwinGate+T2": C_FULL, "TwinGate+T2+centre": "#7fb3d5",
-                 "TwinGate+blindARQ": "#2c3e50", "Reactive+T2": C_ACC,
+        cmap2 = {"AnchorAudit+T2": C_FULL, "AnchorAudit+T2+centre": "#7fb3d5",
+                 "AnchorAudit+blindARQ": "#2c3e50", "Reactive+T2": C_ACC,
                  "Reactive+blindARQ": "#a569bd", "FixedSchedule": C_BASE,
                  "Oracle": C_OK}
         for i, p in enumerate(pols):
@@ -899,7 +899,7 @@ def fig8() -> None:
                 ys.append(100 * statistics.mean(
                     [float(r["hours_unsafe"]) / float(r["hours"]) for r in gg]))
                 sz.append(fmean(gg, "awd_effective"))
-            isfull = p == "TwinGate+T2"
+            isfull = p == "AnchorAudit+T2"
             ax.plot(xs, ys, marker=MARK[i % 8], ms=4.6 if isfull else 3.6,
                     lw=2.0 if isfull else 1.05, color=cmap2.get(p, INK),
                     ls="-" if isfull else "--", alpha=1.0 if isfull else 0.75,

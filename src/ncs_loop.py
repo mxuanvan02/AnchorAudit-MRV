@@ -39,8 +39,8 @@ from water_balance import (
     BucketState, SoilProfile, daily_runoff_share, depletion_fraction, et0_hourly,
     step_bucket, stress_coefficient,
 )
-from twin_gate import (
-    CommandCandidate, GilbertElliott, TwinParams, safe_bounds, twin_gate, twin_sigma,
+from safety_gate import (
+    CommandCandidate, GilbertElliott, TwinParams, safe_bounds, safety_gate, twin_sigma,
 )
 from command_resend import ResendParams, should_resend, update_belief_ack, update_belief_no_ack
 from tide_salinity import SalinityScenario, ec_crit, stage_from_doy
@@ -55,7 +55,7 @@ DATA = ROOT / "data" / "era5_multi"
 LAT = {"can_tho": 10.0452, "soc_trang": 9.6037, "ca_mau": 9.1769}
 ELEV = 5.0
 
-# Channel parameterisations, identical to those verified in test_twin_gate.py.
+# Channel parameterisations, identical to those verified in test_safety_gate.py.
 NETWORKS = {
     "mild":   dict(p_good_to_bad=0.06, p_bad_to_good=0.22, loss_in_good=0.035, loss_in_bad=0.65),
     "severe": dict(p_good_to_bad=0.08, p_bad_to_good=0.15, loss_in_good=0.82, loss_in_bad=0.15),
@@ -151,7 +151,7 @@ class EpisodeMetrics:
 @dataclass
 class PolicyConfig:
     name: str
-    use_twin_gate: bool        # chance-constrained gate vs reactive threshold
+    use_safety_gate: bool        # chance-constrained gate vs reactive threshold
     use_belief_resend: bool    # T2 threshold rule vs blind ARQ resend
     use_uplink_reanchor: bool  # whether the twin gets re-anchored by sensors
     delta: float = 0.05
@@ -170,29 +170,29 @@ class PolicyConfig:
     use_whatif: bool = True
     # None = centre-seeking (giam thieu rui ro ton du); x = giu ruong o depletion x.
     # Duoi ngan sach nuoc rang buoc va de tuan thu AWD (pha kho >= 72h) phai dat
-    # dau kho, nhu Oracle. Xem twin_gate.twin_gate.
+    # dau kho, nhu Oracle. Xem safety_gate.safety_gate.
     gate_target_depl: float | None = None
 
 
 # gate_target_depl = 0.80 cho moi chinh sach dung cong: cung mot luat chon lenh
 # voi Oracle (giu o dau kho), de so sanh cong bang la "cung muc tieu, khac thong tin".
-# Neu de None (centre-seeking) thi TwinGate bi phat oan ca ve nuoc lan ve AWD.
+# Neu de None (centre-seeking) thi AnchorAudit bi phat oan ca ve nuoc lan ve AWD.
 POLICIES = [
-    PolicyConfig("TwinGate+T2",       True,  True,  True,  gate_target_depl=0.80),
-    PolicyConfig("TwinGate+blindARQ", True,  False, True,  gate_target_depl=0.80),
+    PolicyConfig("AnchorAudit+T2",       True,  True,  True,  gate_target_depl=0.80),
+    PolicyConfig("AnchorAudit+blindARQ", True,  False, True,  gate_target_depl=0.80),
     PolicyConfig("Reactive+T2",       False, True,  True),
     PolicyConfig("Reactive+blindARQ", False, False, True),
     PolicyConfig("FixedSchedule",     False, False, False),
     PolicyConfig("Oracle",            True,  True,  True,  oracle=True),
     # doi chung centre-seeking (luat chon lenh cu) -- de do cai gia cua luat moi
-    PolicyConfig("TwinGate+T2+centre", True, True,  True,  gate_target_depl=None),
+    PolicyConfig("AnchorAudit+T2+centre", True, True,  True,  gate_target_depl=None),
 ]
 
 # ---- ABLATION: bo tung thanh phan cua co che de xuat ------------------------
-# Moi dong la mot bien the cua TwinGate+T2 (dong dau) voi DUNG MOT thanh phan bi
+# Moi dong la mot bien the cua AnchorAudit+T2 (dong dau) voi DUNG MOT thanh phan bi
 # tat. Ten goi ghi ro thanh phan bi bo de doc bang khong nham.
 ABLATIONS = [
-    PolicyConfig("FULL TwinGate+T2",      True,  True,  True,  gate_target_depl=0.80),   # nguyen ven
+    PolicyConfig("FULL AnchorAudit+T2",      True,  True,  True,  gate_target_depl=0.80),   # nguyen ven
     PolicyConfig("- whatif (predictor)",  True,  True,  True,  use_whatif=False, gate_target_depl=0.80),
     PolicyConfig("- T2 (blindARQ)",       True,  False, True,  gate_target_depl=0.80),
     PolicyConfig("- reanchor (no sensor)",True,  True,  False, gate_target_depl=0.80),
@@ -297,7 +297,7 @@ def run_episode(station: str, policy: PolicyConfig, seed: int, hours: int = 720,
     -- a meaningless reference point.
 
     `sal` (SalinityScenario) enables C2 -- the SCENARIO salinity model. With it,
-    salinity-aware policies (TwinGate*, Oracle) may only act at hours whose source
+    salinity-aware policies (AnchorAudit*, Oracle) may only act at hours whose source
     water is fresher than the stage-dependent rice EC threshold ("cho con nuoc"),
     while baselines keep pumping regardless and accumulate `salt_excess_dsm_mm`.
     `sal_variant` picks the EC_crit table variant (the flowering-stage tolerance is
@@ -401,14 +401,14 @@ def run_episode(station: str, policy: PolicyConfig, seed: int, hours: int = 720,
             if fresh_now:
                 m.fresh_hours += 1
 
-        # Salinity-aware policies (twin gate + oracle) may open the sluice only at
+        # Salinity-aware policies (safety gate + oracle) may open the sluice only at
         # a FRESH hour. Waiting does NOT consume the epoch -- the gateway simply
         # has not evaluated yet. If the epoch ends with no fresh hour at all, the
         # correct action is WITHHELD (counted separately as withheld_saline; this
         # is the second, stronger reason to withhold described in DESIGN_VN).
         # Baselines (Reactive*, FixedSchedule) represent traditional practice:
         # they pump regardless of source quality and accumulate salt.
-        sal_aware = sal is not None and (policy.use_twin_gate or policy.oracle)
+        sal_aware = sal is not None and (policy.use_safety_gate or policy.oracle)
         last_slot = (k % slots_per_decision) == slots_per_decision - 1
         if sal_aware and not fresh_now:
             if last_slot and not decided_this_epoch:
@@ -440,7 +440,7 @@ def run_episode(station: str, policy: PolicyConfig, seed: int, hours: int = 720,
         # so it MUST respect the same hard budget as a new command -- otherwise an
         # aggressive-retry policy overshoots and "wins" the safety comparison by
         # spending water it was not allocated. Measured before this fix:
-        # TwinGate+blindARQ delivered 215 mm under a 200 mm budget.
+        # AnchorAudit+blindARQ delivered 215 mm under a 200 mm budget.
         remaining = (math.inf if water_budget_mm is None
                      else max(0.0, water_budget_mm - water_used_mm))
 
@@ -470,7 +470,7 @@ def run_episode(station: str, policy: PolicyConfig, seed: int, hours: int = 720,
             # water are offered to the policy, so no policy can overshoot. An
             # earlier version tested `water_used < budget` before issuing and then
             # let a 35 mm command land on top of 199 mm used; measured consequence:
-            # TwinGate+blindARQ spent 215 mm under a 200 mm budget and "won" the
+            # AnchorAudit+blindARQ spent 215 mm under a 200 mm budget and "won" the
             # safety comparison purely by overshooting. A soft cap makes the
             # ranking an artefact of who overshoots most.
             remaining = (math.inf if water_budget_mm is None
@@ -492,7 +492,7 @@ def run_episode(station: str, policy: PolicyConfig, seed: int, hours: int = 720,
             # LOI THIET KE DA BAT (2026-10-04): gate_target_depl = 0.80 CO DINH cho
             # moi ngan sach. Giu ruong o dau kho la toi uu khi nuoc khan, nhung khi
             # nuoc DU THUA thi do la tu bo bien an toan: do duoc severe/b=inf cho
-            # TwinGate+T2 = 4,26% gio mat an toan trong khi MOI baseline dat 0%, vi
+            # AnchorAudit+T2 = 4,26% gio mat an toan trong khi MOI baseline dat 0%, vi
             # blindARQ tinh co bom nhieu nuoc hon (360 mm vs 320 mm) nho chinh luong
             # nuoc tuoi dup lang phi (7,5 vs 4,0 lan).
             # Nguyen tac sua, KHONG them tham so tu do: gateway da co du bao thoi
@@ -529,8 +529,8 @@ def run_episode(station: str, policy: PolicyConfig, seed: int, hours: int = 720,
                     enough = [c for c in afford_nz if c.mm >= need]
                     to_send = min(enough, key=lambda c: c.mm) if enough else max(
                         afford_nz, key=lambda c: c.mm)
-            elif policy.use_twin_gate:
-                dec = twin_gate(belief_w, twin_age, weather, i, prof, tp, day_rain,
+            elif policy.use_safety_gate:
+                dec = safety_gate(belief_w, twin_age, weather, i, prof, tp, day_rain,
                                 afford_all, use_whatif=policy.use_whatif,
                                 target_depl=adaptive_target)
                 if dec.sent is None:
@@ -577,7 +577,7 @@ def run_episode(station: str, policy: PolicyConfig, seed: int, hours: int = 720,
                     # history restarts. Forgetting to reset `landed_ever` here
                     # made every arrival of a new command count as a "double
                     # irrigation" of the previous one -- which is why the first
-                    # full run showed TwinGate causing MORE duplication (26.7)
+                    # full run showed AnchorAudit causing MORE duplication (26.7)
                     # than the reactive baseline (4.6), the opposite of the
                     # paper's claim.
                     pending, pending_age, landed_ever = to_send, 0, landed

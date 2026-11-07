@@ -25,7 +25,7 @@ import statistics
 import subprocess
 from pathlib import Path
 
-H = Path("/media/SAS/Van/DeTai2025/TwinGate_K1/paper2_hujos")
+H = Path("/media/SAS/Van/DeTai2025/AnchorAudit_K1/paper2_hujos")
 BLOCKS = H.parent / "paper2" / "blocks"
 PT = 28.3465                      # 1 cm = 28.3465 pt
 LEFT, RIGHT = 2.00, 17.00         # vung chu 19cm - le 2cm, do tu bai da xuat ban

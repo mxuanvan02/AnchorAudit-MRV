@@ -7,7 +7,7 @@ the main table. Each one was added because it was actually violated once:
 
   I1. HARD WATER BUDGET: delivered water must never exceed water_budget_mm.
       Violated before: a retransmission path bypassed the cap, so
-      TwinGate+blindARQ delivered 215 mm under a 200 mm budget and then "won"
+      AnchorAudit+blindARQ delivered 215 mm under a 200 mm budget and then "won"
       the safety ranking purely by spending water it was not allocated.
 
   I2. ONE DECISION PER EPOCH: commands_generated <= number of epochs.

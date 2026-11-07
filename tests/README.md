@@ -1,4 +1,4 @@
-# Cách chạy bộ test của TwinGate
+# Cách chạy bộ test của AnchorAudit
 
 **Chạy bằng Python trực tiếp, KHÔNG dùng `pytest`.**
 
@@ -13,7 +13,7 @@ Kết quả mong đợi: cả 7 file đều exit 0.
 |---|---|---|
 | `test_log_filters.py` | 46 phép thử bộ lọc vật lý + neo | `PASS 46 \| FAIL 0` |
 | `test_water_balance.py` | cân bằng nước FAO-56 | `ALL CHECKS PASSED` |
-| `test_twin_gate.py` | bản sao số + cổng an toàn | `ALL CHECKS PASSED` |
+| `test_safety_gate.py` | bản sao số + cổng an toàn | `ALL CHECKS PASSED` |
 | `test_dmax_proposition.py` | mệnh đề về `d_max` | `ALL d_max PROPOSITION CHECKS PASS` |
 | `test_ncs_invariants.py` | bất biến NCS | `ALL INVARIANTS HOLD` |
 | `test_tide_salinity.py` | thuỷ triều / mặn | `ALL TIDE/SALINITY TESTS PASS` |

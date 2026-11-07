@@ -40,8 +40,8 @@ sys.path.insert(0, os.path.join(ROOT, "src"))
 from ncs_loop import (  # noqa: E402
     PolicyConfig, default_candidates, load_weather, march_start, run_episode,
 )
-from twin_gate import (  # noqa: E402
-    TwinParams, safe_bounds, twin_gate, twin_rollout, twin_sigma,
+from safety_gate import (  # noqa: E402
+    TwinParams, safe_bounds, safety_gate, twin_rollout, twin_sigma,
 )
 from water_balance import SoilProfile, depletion_fraction, BucketState  # noqa: E402
 
@@ -73,7 +73,7 @@ def pass_region(sigma_H: float, prof: SoilProfile, delta: float = 0.05) -> tuple
     p_max = 2*Phi(W/(2 sigma_H)) - 1, nen cong RONG khi va chi khi
     sigma_H < W/(2 z_{1-delta/2}) = sigma*. He qua sigma* van CHAT, khong doi.
     """
-    from twin_gate import normal_cdf
+    from safety_gate import normal_cdf
     lo, hi = safe_bounds(prof)
 
     def p_of(mu: float) -> float:
@@ -247,7 +247,7 @@ def main() -> int:
         pred = int(width_true // eff_step) + 1 if width_true > 0 else 0
         max_pass = 0
         for belief in beliefs:
-            dec = twin_gate(belief, 0, w, st + 300, prof, tp, day_rain, cand)
+            dec = safety_gate(belief, 0, w, st + 300, prof, tp, day_rain, cand)
             npass = sum(1 for v in dec.scores.values() if v >= 1.0 - tp.delta)
             max_pass = max(max_pass, npass)
         # DU DOAN CHAT (khong phai chan tren long leo): so ung vien lot vung pass

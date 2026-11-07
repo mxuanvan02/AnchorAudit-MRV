@@ -38,7 +38,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from ncs_loop import (  # noqa: E402
     DEPTH_SETS, PolicyConfig, default_candidates, load_weather, march_start, run_episode,
 )
-from twin_gate import TwinParams, safe_bounds, twin_sigma  # noqa: E402
+from safety_gate import TwinParams, safe_bounds, twin_sigma  # noqa: E402
 from water_balance import SoilProfile  # noqa: E402
 
 OUT = ROOT / "outputs"

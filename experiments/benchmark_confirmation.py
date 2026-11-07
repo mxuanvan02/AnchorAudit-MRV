@@ -76,7 +76,7 @@ CADENCES = [
     ("s1ab",    "Sentinel-1A+1B (6-day revisit)",          6 * 24, "hashemi2022s1", "0"),
     ("s1a",     "Sentinel-1A alone (12-day revisit)",     12 * 24, "clauss2017s1",  "0"),
     ("iot",     "Continuous water-level tube (IoT)",           1,  "delacruz2022",  "1 per plot"),
-    ("anchor",  "Signed command record (this work)",           1,  "twingate2026",  "0 (controller)"),
+    ("anchor",  "Signed command record (this work)",           1,  "anchoraudit2026",  "0 (controller)"),
 ]
 
 # GATE: tag khong duoc trung. Thieu gate nay thi bug tren da lot qua im lang.

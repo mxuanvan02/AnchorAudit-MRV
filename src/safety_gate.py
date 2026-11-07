@@ -184,14 +184,14 @@ class CommandCandidate:
 
 @dataclass
 class GateDecision:
-    """Outcome of the twin gate for one slot."""
+    """Outcome of the safety gate for one slot."""
     sent: CommandCandidate | None
     prob: float
     reason: str
     scores: dict = field(default_factory=dict)
 
 
-def twin_gate(w_hat: float, age: int, weather: list[dict], start_idx: int,
+def safety_gate(w_hat: float, age: int, weather: list[dict], start_idx: int,
               prof: SoilProfile, tp: TwinParams, day_rain: dict[str, float],
               candidates: list[CommandCandidate],
               use_whatif: bool = True,

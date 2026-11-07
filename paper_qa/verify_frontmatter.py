@@ -30,7 +30,7 @@ MID = 9.5                       # tam vung chu 2.00..17.00cm
 BODY_X0, BODY_X1 = 2.00, 17.00  # vung chu that, do tu bai da xuat ban
 DOCS = [("/tmp/hujos_col/published_0.pdf", "DA XUAT BAN #1"),
         ("/tmp/hujos_col/published_1.pdf", "DA XUAT BAN #2"),
-        ("/media/SAS/Van/DeTai2025/TwinGate_K1/paper2_hujos/main_hujos.pdf", "BAN EM")]
+        ("/media/SAS/Van/DeTai2025/AnchorAudit_K1/paper2_hujos/main_hujos.pdf", "BAN EM")]
 
 RE_NUM_ONLY = re.compile(r"^\d{1,2}$")
 RE_TITLE_AFTER_NUM = re.compile(r"^[A-Z][A-Za-z]")

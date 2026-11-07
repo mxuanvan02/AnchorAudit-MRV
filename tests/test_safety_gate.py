@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verification of the K1 twin gate mechanism.
+"""Verification of the K1 safety gate mechanism.
 
 These checks are about MECHANISM, not about paper results. They exist to prove
 the gate is not a no-op, that its parts behave monotonically, and that the two
@@ -39,10 +39,10 @@ sys.path.insert(0, str(HERE / "src"))
 from water_balance import (  # noqa: E402
     BucketState, SoilProfile, depletion_fraction, et0_hourly, is_safe,
 )
-from twin_gate import (  # noqa: E402
+from safety_gate import (  # noqa: E402
     CommandCandidate, GilbertElliott, TwinBelief, TwinParams,
     blind_resend_policy, reactive_threshold_policy, safe_bounds,
-    safe_probability, twin_gate, twin_rollout,
+    safe_probability, safety_gate, twin_rollout,
 )
 
 DATA = HERE / "data" / "era5_multi"
@@ -110,10 +110,10 @@ def main() -> int:
     tp = TwinParams(sigma_frac=0.10, horizon=6, delta=0.05)
     # a WET field (at field capacity): big commands push it out of the safe set
     w_wet = prof.fc_mm
-    dec_wet = twin_gate(w_wet, 0, weather, 100, prof, tp, day_rain, big)
+    dec_wet = safety_gate(w_wet, 0, weather, 100, prof, tp, day_rain, big)
     # a DRY field (near wilting): some command should be released
     w_dry = prof.wp_mm + 0.10 * (prof.fc_mm - prof.wp_mm)
-    dec_dry = twin_gate(w_dry, 0, weather, 100, prof, tp, day_rain, big)
+    dec_dry = safety_gate(w_dry, 0, weather, 100, prof, tp, day_rain, big)
     print(f"\n3. gate on WET field (w={w_wet:.1f}): sent={dec_wet.sent} "
           f"p={dec_wet.prob:.3f} reason='{dec_wet.reason}'")
     print(f"   gate on DRY field (w={w_dry:.1f}): sent="
@@ -137,7 +137,7 @@ def main() -> int:
         released = 0
         for k in range(n_slots):
             w_k = w_dry + 0.02 * (prof.fc_mm - prof.wp_mm) * (k % 10)
-            d = twin_gate(w_k, k % 12, weather, (start0 + k) % len(weather),
+            d = safety_gate(w_k, k % 12, weather, (start0 + k) % len(weather),
                           prof, tpp, day_rain, cands)
             released += 1 if d.sent is not None and d.sent.mm > 0 else 0
         rel_by_sigma[sf] = released
@@ -154,7 +154,7 @@ def main() -> int:
         released = 0
         for k in range(n_slots):
             w_k = w_dry + 0.02 * (prof.fc_mm - prof.wp_mm) * (k % 10)
-            d = twin_gate(w_k, k % 12, weather, (start0 + k) % len(weather),
+            d = safety_gate(w_k, k % 12, weather, (start0 + k) % len(weather),
                           prof, tpp, day_rain, cands)
             released += 1 if d.sent is not None and d.sent.mm > 0 else 0
         rel_by_delta[dl] = released
@@ -205,11 +205,11 @@ def main() -> int:
     # --- 8. reactive threshold ignores probability --------------------------
     w_edge = prof.fc_mm - 0.60 * (prof.fc_mm - prof.wp_mm)   # depletion 0.60 > 0.55
     react = reactive_threshold_policy(w_edge, 0, weather, 100, prof, day_rain, cands)
-    dec_gate = twin_gate(w_edge, 0, weather, 100, prof, tp, day_rain, cands)
+    dec_gate = safety_gate(w_edge, 0, weather, 100, prof, tp, day_rain, cands)
     print(f"\n8. at depletion 0.60 (above the 0.55 reactive threshold):")
     print(f"   reactive fires: {react.label if react else None} "
           f"({react.mm if react else 0:.0f} mm, the LARGEST candidate)")
-    print(f"   twin gate:      {dec_gate.sent.label if dec_gate.sent else 'WITHHELD'} "
+    print(f"   safety gate:      {dec_gate.sent.label if dec_gate.sent else 'WITHHELD'} "
           f"(p={dec_gate.prob:.3f})")
     if react is None or react.mm != max(c.mm for c in cands):
         fails.append("reactive baseline should fire its largest candidate")

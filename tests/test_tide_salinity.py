@@ -174,8 +174,8 @@ def main() -> int:
                   slots_per_decision=24, water_budget_mm=200.0)
 
     # 8a. BACKWARD COMPAT: sal=None bit-identical voi khong truyen sal.
-    m_a = run_episode(st, pol["TwinGate+T2"], 7, **common)
-    m_b = run_episode(st, pol["TwinGate+T2"], 7, sal=None, **common)
+    m_a = run_episode(st, pol["AnchorAudit+T2"], 7, **common)
+    m_b = run_episode(st, pol["AnchorAudit+T2"], 7, sal=None, **common)
     check("sal=None bit-identical",
           m_a.hours_unsafe == m_b.hours_unsafe
           and approx(m_a.water_applied_mm, m_b.water_applied_mm)
@@ -186,7 +186,7 @@ def main() -> int:
 
     # 8b. MAN GAT (i=2.0, thang III): EC kem = 3.7 > 3.0 => khong gio ngot.
     dry = SalinityScenario(intrusion=2.0)
-    m_gate = run_episode(st, pol["TwinGate+T2"], 7, sal=dry, **common)
+    m_gate = run_episode(st, pol["AnchorAudit+T2"], 7, sal=dry, **common)
     check("man gat: fresh_hours = 0", m_gate.fresh_hours == 0, f"{m_gate.fresh_hours}")
     check("man gat: gate khong bom man (saline_mm=0)", m_gate.saline_mm == 0.0,
           f"{m_gate.saline_mm}")
@@ -204,7 +204,7 @@ def main() -> int:
     # 8c. CUA SO NGOT MOT PHAN (i=1.0, thang III-IV): gate chi bom luc ngot.
     # Thang 4: EC kem = 2.5 <= 3.0 (booting_heading) => co cua so ~ quanh trieu kem.
     part = SalinityScenario(intrusion=1.0)
-    m_part = run_episode(st, pol["TwinGate+T2"], 7, sal=part, **common)
+    m_part = run_episode(st, pol["AnchorAudit+T2"], 7, sal=part, **common)
     check("mot phan: fresh_hours > 0 va < hours",
           0 < m_part.fresh_hours < m_part.hours,
           f"{m_part.fresh_hours}/{m_part.hours}")
@@ -223,7 +223,7 @@ def main() -> int:
     # 8d. MUA NGOT (i=0): moi gio deu ngot => ket qua phai trung voi sal=None
     # (ngoai tru fresh_hours = hours). Day la test tinh nhat quan quan trong:
     # C2 khong duoc lam thay doi vat ly nuoc khi nguon luon ngot.
-    m_zero = run_episode(st, pol["TwinGate+T2"], 7, sal=SalinityScenario(intrusion=0.0),
+    m_zero = run_episode(st, pol["AnchorAudit+T2"], 7, sal=SalinityScenario(intrusion=0.0),
                          **common)
     check("i=0 trung unsafe voi sal=None", m_zero.hours_unsafe == m_a.hours_unsafe,
           f"{m_zero.hours_unsafe} vs {m_a.hours_unsafe}")
@@ -238,9 +238,9 @@ def main() -> int:
         check(f"{name}: salt_excess >= 0", mm.salt_excess_dsm_mm >= 0.0)
 
     # 8f. Variant EC_crit doi ket qua (chung minh quet variant la can thiet)
-    m_strict = run_episode(st, pol["TwinGate+T2"], 7, sal=part, sal_variant="grattan_strict",
+    m_strict = run_episode(st, pol["AnchorAudit+T2"], 7, sal=part, sal_variant="grattan_strict",
                            **common)
-    m_len = run_episode(st, pol["TwinGate+T2"], 7, sal=part, sal_variant="maas_lenient",
+    m_len = run_episode(st, pol["AnchorAudit+T2"], 7, sal=part, sal_variant="maas_lenient",
                         **common)
     check("variant khac nhau => fresh_hours khac nhau",
           m_strict.fresh_hours <= m_part.fresh_hours <= m_len.fresh_hours,

@@ -1,4 +1,4 @@
-# TwinGate-MRV — Device-Anchored Irrigation Log Auditor
+# AnchorAudit-MRV — Device-Anchored Irrigation Log Auditor
 
 Mã nguồn tái lập toàn bộ kết quả của bài báo
 **"Hạn chế của kiểm toán vật lý nhật ký tưới và giải pháp neo theo thiết bị
@@ -30,14 +30,14 @@ vào mô hình.
 ## Cấu trúc thư mục
 
 ```
-TwinGate-MRV/
+AnchorAudit-MRV/
 ├── data/                     # Fetch dữ liệu ERA5 từ Open-Meteo (+ provenance)
 │   ├── fetch_era5_multi.py
 │   └── era5_multi/*.provenance.json
 ├── src/                      # Mã nguồn cốt lõi
 │   ├── water_balance.py      # Cân bằng nước FAO-56 (bucket, ET0, SCS-CN)
 │   ├── log_filters.py        # Bộ lọc vật lý V1/V4/V5 + tập bất định Θ
-│   ├── twin_gate.py          # Bản sao số + cổng an toàn (phần NCS)
+│   ├── safety_gate.py          # Bản sao số + cổng an toàn (phần NCS)
 │   ├── ncs_loop.py           # Vòng lặp mạng có điều khiển
 │   ├── command_resend.py     # Chiến lược gửi lại lệnh
 │   └── tide_salinity.py      # Thuỷ triều / xâm nhập mặn
@@ -166,7 +166,7 @@ Sau khi chạy `reproduce.sh`:
 
 | Phương pháp | Nước (mm) | Unsafe (%) |
 |-------------|-----------|------------|
-| TwinGate+T2 | 232.0 | 8.41 |
+| AnchorAudit+T2 | 232.0 | 8.41 |
 | Reactive+T2 | 301.3 | 22.28 |
 | FixedSchedule | 468.0 | 36.91 |
 | Oracle | 234.7 | 6.57 |
@@ -208,7 +208,7 @@ for f in tests/test_*.py; do python3 "$f" || echo "FAIL: $f"; done
 ## Trích dẫn
 
 ```bibtex
-@article{van2026twingate,
+@article{van2026anchoraudit,
   author  = {Mai, Xuân Văn and Lê, Đức Minh Phương and Nguyễn, Đăng Trị
              and Trương, Khánh Duy and Nguyễn, Tương Tri},
   title   = {Hạn chế của kiểm toán vật lý nhật ký tưới và giải pháp neo theo
@@ -235,4 +235,4 @@ DHH2025-19-07 — Đại học Huế.
 
 - Nguyễn Tương Tri (tác giả liên hệ): ntuongtri@hueuni.edu.vn
 - Lê Đức Minh Phương (đồng tác giả liên hệ): Ldmphuong@hueuni.edu.vn
-- Mã nguồn: <https://github.com/mxuanvan02/TwinGate-MRV>
+- Mã nguồn: <https://github.com/mxuanvan02/AnchorAudit-MRV>

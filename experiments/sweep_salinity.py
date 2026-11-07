@@ -16,7 +16,7 @@ Cau hoi khoa hoc cua sweep:
      (withheld_saline ~ toan bo epoch, unsafe tien ve muc FixedSchedule)
 
 Gates (moi cai deu derive duoc, khong bịa bound -- bai hoc checkpoint):
-  G1 TwinGate/Oracle: salt_excess == 0.0 dung (khong the phat luc gio man)
+  G1 AnchorAudit/Oracle: salt_excess == 0.0 dung (khong the phat luc gio man)
   G2 Baselines (Reactive/Fixed): salt_excess don dieu KHONG giam theo intrusion.
      Vi cac policy nay khong nhin chat luong nguon nen luong nuoc bom la y het
      nhau; chi EC tang theo intrusion => muoi tich khong the giam.
@@ -53,8 +53,8 @@ INTRUSIONS = [0.25, 0.5, 1.0, 1.5, 2.0]
 VARIANTS = ["grattan_strict", "central", "maas_lenient"]
 # Chi policy co hanh vi bom nuoc dang quan tam. Oracle duoc giu lam reference
 # "neu biet het va van ton trong cua so ngot".
-POLICY_NAMES = ["TwinGate+T2", "Oracle", "Reactive+T2", "FixedSchedule"]
-SAL_AWARE = {"TwinGate+T2", "Oracle"}
+POLICY_NAMES = ["AnchorAudit+T2", "Oracle", "Reactive+T2", "FixedSchedule"]
+SAL_AWARE = {"AnchorAudit+T2", "Oracle"}
 HOURS = 2160
 EPOCH = 24
 
@@ -176,10 +176,10 @@ def main() -> int:
     for var in variants:
         for st in stations:
             for net in networks:
-                fr = [mean[(i_, var, "TwinGate+T2", st, net)]["fresh_frac"]
-                      for i_ in intrusions if (i_, var, "TwinGate+T2", st, net) in mean]
-                wh = [mean[(i_, var, "TwinGate+T2", st, net)]["withheld_saline"]
-                      for i_ in intrusions if (i_, var, "TwinGate+T2", st, net) in mean]
+                fr = [mean[(i_, var, "AnchorAudit+T2", st, net)]["fresh_frac"]
+                      for i_ in intrusions if (i_, var, "AnchorAudit+T2", st, net) in mean]
+                wh = [mean[(i_, var, "AnchorAudit+T2", st, net)]["withheld_saline"]
+                      for i_ in intrusions if (i_, var, "AnchorAudit+T2", st, net) in mean]
                 # G3: intrusion TANG (man hon) => fresh_frac phai GIAM. Sai khi no TANG.
                 # (LOI TEST LAM LAI: ban dau viet `b < a` => flag dung hanh vi giam la
                 #  vat ly DUNG. Tinh tay [0.497,0.194,0.026] la giam -> code dung, test sai.)
@@ -217,7 +217,7 @@ def main() -> int:
         for st in stations:
             for net in networks:
                 for i_ in intrusions:
-                    kg = (i_, var, "TwinGate+T2", st, net)
+                    kg = (i_, var, "AnchorAudit+T2", st, net)
                     kr = (i_, var, "Reactive+T2", st, net)
                     if kg not in mean or kr not in mean:
                         continue
@@ -253,8 +253,8 @@ def main() -> int:
     for i_ in intrusions:
         for st in stations:
             for net in networks:
-                fr = {v_: mean[(i_, v_, "TwinGate+T2", st, net)]["fresh_frac"]
-                      for v_ in variants if (i_, v_, "TwinGate+T2", st, net) in mean}
+                fr = {v_: mean[(i_, v_, "AnchorAudit+T2", st, net)]["fresh_frac"]
+                      for v_ in variants if (i_, v_, "AnchorAudit+T2", st, net) in mean}
                 if len(fr) > 1 and len(set(round(x, 6) for x in fr.values())) == 1:
                     fails.append(f"G6 i={i_}/{st}/{net}: ca {len(fr)} variant cho cung "
                                  f"fresh_frac {fr} -- quet variant khong do gi")
@@ -265,7 +265,7 @@ def main() -> int:
     for var in variants:
         for st in stations:
             for net in networks:
-                kg = (i_max, var, "TwinGate+T2", st, net)
+                kg = (i_max, var, "AnchorAudit+T2", st, net)
                 kf = (i_max, var, "FixedSchedule", st, net)
                 if kg not in mean:
                     continue

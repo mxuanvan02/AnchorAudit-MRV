@@ -22,7 +22,7 @@ Design decisions that are load-bearing, and why:
     muc do trung thuc do VUNG PASS cua cong chi rong W - 2*z*sigma_H = 4.2 mm, nho
     hon buoc nhay ung vien 20 mm, nen:
       - hai luat chon lenh (target-seeking vs centre-seeking) tra ve CUNG mot lenh
-        => TwinGate+T2 va TwinGate+T2+centre giong het nhau (40.07/24.27/7.91/1.32)
+        => AnchorAudit+T2 va AnchorAudit+T2+centre giong het nhau (40.07/24.27/7.91/1.32)
         => luoi chinh KHONG DO DUOC dong gop cua luat thich ung;
       - awd_effective chi 0.3-0.5 chu ky/mua => KHONG DO DUOC kha nang lam AWD.
     Tuc la bang ket qua chinh cua bai cu khong kiem chung duoc hai dong gop lon
@@ -51,7 +51,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from ncs_loop import POLICIES, load_weather, march_start, run_episode  # noqa: E402
-from twin_gate import safe_bounds  # noqa: E402
+from safety_gate import safe_bounds  # noqa: E402
 from water_balance import SoilProfile  # noqa: E402
 
 OUT = ROOT / "outputs"
@@ -379,12 +379,12 @@ def main() -> int:
                       key=lambda b: (b == "inf", float(b) if b != "inf" else 0))
 
     # ---- does the water budget actually create a TRADE-OFF? -------------------
-    print("\n=== TRADE-OFF: unsafe% theo ngân sách nước (policy TwinGate+T2) ===")
+    print("\n=== TRADE-OFF: unsafe% theo ngân sách nước (policy AnchorAudit+T2) ===")
     for fid in fid_list:
         for net in networks:
             pts = sorted([(s["budget_mm"], s["unsafe_pct"]) for s in summ
                           if s["fidelity"] == fid and s["network"] == net
-                          and s["policy"] == "TwinGate+T2"])
+                          and s["policy"] == "AnchorAudit+T2"])
             print(f"  [{fid} {net}] " + "  ".join(f"b={b}:{u}%" for b, u in pts))
             if len({u for _, u in pts}) <= 1:
                 print("     ⚠ unsafe% KHÔNG đổi theo budget -> ràng buộc chưa bind")
@@ -439,7 +439,7 @@ def main() -> int:
             100 * r["hours_unsafe"] / r["hours"]
     for fid in fid_list:
         for net in networks:
-            for pol_name in ("TwinGate+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
+            for pol_name in ("AnchorAudit+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
                 pts = sorted([(float(b), u) for (f2, n2, p2, b), dd in by_cell.items()
                               for u in [statistics.mean(dd.values())]
                               if f2 == fid and n2 == net and p2 == pol_name and b != "inf"],
@@ -521,15 +521,15 @@ def main() -> int:
                                  f"({infv[0]:.2f}%) mot ngan sach huu han -- vo ly")
 
     # ---- GATE: luat thich ung phai DO DUOC o dai awd -------------------------
-    # Neu TwinGate+T2 va TwinGate+T2+centre giong het nhau o dai awd thi luoi chinh
+    # Neu AnchorAudit+T2 va AnchorAudit+T2+centre giong het nhau o dai awd thi luoi chinh
     # van khong kiem chung duoc luat chon lenh -> phai bao loi thiet ke thuc nghiem.
     print("\n=== GATE: lưới chính có đo được luật thích ứng không? ===")
     for fid in fid_list:
         for net in networks:
             a_rows = [s for s in summ if s["fidelity"] == fid and s["network"] == net
-                      and s["policy"] == "TwinGate+T2"]
+                      and s["policy"] == "AnchorAudit+T2"]
             c_rows = [s for s in summ if s["fidelity"] == fid and s["network"] == net
-                      and s["policy"] == "TwinGate+T2+centre"]
+                      and s["policy"] == "AnchorAudit+T2+centre"]
             if not a_rows or not c_rows:
                 continue
             identical = all(
@@ -549,7 +549,7 @@ def main() -> int:
         for net in networks:
             for bud in bud_list:
                 s = next((x for x in summ if x["fidelity"] == fid and x["network"] == net
-                          and x["budget_mm"] == bud and x["policy"] == "TwinGate+T2"), None)
+                          and x["budget_mm"] == bud and x["policy"] == "AnchorAudit+T2"), None)
                 if not s:
                     continue
                 # LOI GATE LAN THU 24 (2026-10-04). Ban cu xep "rang buoc" bang
@@ -587,7 +587,7 @@ def main() -> int:
             for bud in bud_list:
                 d = {s["policy"]: s for s in summ if s["fidelity"] == fid
                      and s["network"] == net and s["budget_mm"] == bud}
-                a1, a2 = d.get("TwinGate+T2"), d.get("TwinGate+blindARQ")
+                a1, a2 = d.get("AnchorAudit+T2"), d.get("AnchorAudit+blindARQ")
                 if a1 and a2:
                     same = (a1["sent"] == a2["sent"] and a1["dup"] == a2["dup"]
                             and a1["water_mm"] == a2["water_mm"])

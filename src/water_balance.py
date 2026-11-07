@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """FAO-56 reference evapotranspiration + root-zone soil water balance.
 
-This is the PHYSICAL PLANT of the K1 (TwinGate) study. It is deliberately the
+This is the PHYSICAL PLANT of the K1 (AnchorAudit) study. It is deliberately the
 standard published formulation so that no number in the paper depends on a model
 invented here.
 

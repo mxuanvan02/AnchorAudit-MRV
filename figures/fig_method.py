@@ -61,7 +61,7 @@ Lich su sua — moi lan deu DO (vision_fallback + renderer), khong sua theo cam 
 
 Moi thanh phan ung voi doi tuong that trong src/ (doi chieu khi review):
   twin FAO-56   -> water_balance.step_bucket       | tai neo -> ncs_loop (age=0)
-  cong 95%      -> twin_gate.twin_gate/safe_bounds | T2      -> ncs_loop belief pi
+  cong 95%      -> safety_gate.safety_gate/safe_bounds | T2      -> ncs_loop belief pi
   epoch cap 24h -> ncs_loop.slots_per_decision
 
 Usage: python3 figures/fig_method.py     (exit 1 neu con loi trinh bay)

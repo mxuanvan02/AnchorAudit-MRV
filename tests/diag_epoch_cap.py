@@ -28,7 +28,7 @@ assert "commands_per_epoch" in sig.parameters, "PATCH NOT PRESENT in the importe
 weather, _ = load_weather("can_tho")
 ms = march_start(weather)
 HOURS = 720
-pol = POLICIES[0]          # TwinGate+T2
+pol = POLICIES[0]          # AnchorAudit+T2
 
 print(f"\nstation=can_tho start={ms} ({weather[ms]['time']}) hours={HOURS} policy={pol.name}\n")
 print(f"{'slots_per_decision':>18} {'epochs':>7} {'generated':>10} {'sent':>7} "

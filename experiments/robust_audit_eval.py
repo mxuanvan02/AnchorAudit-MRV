@@ -192,7 +192,7 @@ def f2_reachability(station, year, thetas, w0set, cfg):
 #   * từng độ sâu vẫn dưới ngưỡng  -> F1/F4/F5 mù
 #   * quỹ đạo vẫn tự nhất quán     -> cân bằng nước không có gì để bắt
 # Chỉ có MỘT thứ bị làm giả: THỜI ĐIỂM. Nên phòng tuyến duy nhất là thời điểm
-# phải do THIẾT BỊ đóng dấu, không phải do nông dân nhập. Paper 1 (TwinGate) đã
+# phải do THIẾT BỊ đóng dấu, không phải do nông dân nhập. Paper 1 (AnchorAudit) đã
 # ghi bản lệnh có chữ ký + timestamp tại gateway, nên phòng tuyến này KHÔNG tốn
 # thêm thiết bị nếu đã triển khai paper 1 — nhưng điều đó có nghĩa "tầng 0 thuần
 # app trên điện thoại" KHÔNG đủ tin cậy một mình. Đây là điều phải sửa trong mô

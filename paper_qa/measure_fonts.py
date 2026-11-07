@@ -24,7 +24,7 @@ import fitz          # PyMuPDF
 
 DOCS = [("/tmp/hujos_col/published_0.pdf", "XUAT BAN #1 (art.7830)"),
         ("/tmp/hujos_col/published_1.pdf", "XUAT BAN #2 (art.7862)"),
-        ("/media/SAS/Van/DeTai2025/TwinGate_K1/paper2_hujos/main_hujos.pdf", "BAN EM")]
+        ("/media/SAS/Van/DeTai2025/AnchorAudit_K1/paper2_hujos/main_hujos.pdf", "BAN EM")]
 
 
 def spans(pdf):

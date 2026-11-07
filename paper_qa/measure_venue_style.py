@@ -17,7 +17,7 @@ from collections import Counter
 PT = 28.3465          # 1 cm
 PUB = [("/tmp/hujos_col/published_0.pdf", "XUAT BAN #1 (art.7830)"),
        ("/tmp/hujos_col/published_1.pdf", "XUAT BAN #2 (art.7862)")]
-MINE = ("/media/SAS/Van/DeTai2025/TwinGate_K1/paper2_hujos/main_hujos.pdf",
+MINE = ("/media/SAS/Van/DeTai2025/AnchorAudit_K1/paper2_hujos/main_hujos.pdf",
         "BAN EM (LaTeX)")
 
 RE_W = re.compile(r'<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" '

@@ -2,7 +2,7 @@
 """Paired Wilcoxon signed-rank + effect size trên outputs/main_raw.csv.
 
 Thiết kế: trong mỗi cell (fidelity, station, network, budget), các policy chạy CÙNG
-seed => paired theo seed. So sánh TwinGate+T2 (policy chính) với từng baseline trên
+seed => paired theo seed. So sánh AnchorAudit+T2 (policy chính) với từng baseline trên
 metric unsafe% = hours_unsafe/hours*100 (thấp hơn = tốt hơn).
 
 HAI LỖI ĐÃ SỬA (2026-10-04) — cả hai đều làm THẤP hơn số so sánh thật:
@@ -11,7 +11,7 @@ HAI LỖI ĐÃ SỬA (2026-10-04) — cả hai đều làm THẤP hơn số so s
       48 so sánh thay vì hàng trăm. Sửa: TỰ KHÁM PHÁ mọi giá trị có trong CSV.
   (2) Key cell không có cột `fidelity` (mới thêm), nên 3 dải độ trung thực bị GỘP
       CHUNG một cell -> gán ghi đè nhau và báo cáo sai. Sửa: đưa fidelity vào key.
-  Ngoài ra: baseline cũ thiếu TwinGate+T2+centre (đối chứng của luật chọn lệnh thích
+  Ngoài ra: baseline cũ thiếu AnchorAudit+T2+centre (đối chứng của luật chọn lệnh thích
   ứng) nên không kiểm định được đóng góp của luật đó. Đã thêm.
 
 Thống kê:
@@ -19,7 +19,7 @@ Thống kê:
   alternative='two-sided'). Số seed/cell = 10 => mẫu nhỏ, báo cáo chính xác p.
 - Effect size: rank-biserial r = Z/sqrt(N_paired) (công thức chuẩn cho Wilcoxon
   matched-pairs), |r| >= 0.5 large, >= 0.3 medium, >= 0.1 small.
-- Median difference (TwinGate+T2 - baseline), âm = TwinGate tốt hơn.
+- Median difference (AnchorAudit+T2 - baseline), âm = AnchorAudit tốt hơn.
 - Holm-Bonferroni correction trên họ so sánh trong mỗi cell.
 
 Lưu ý trung thực:
@@ -48,11 +48,11 @@ if len(sys.argv) > 1:
     stem = os.path.splitext(os.path.basename(RAW))[0]
     OUT = os.path.join(ROOT, "outputs", f"wilcoxon_{stem.replace('main_raw', 'results')}.csv")
 
-PRIMARY = "TwinGate+T2"
-# TwinGate+T2+centre là ĐỐI CHỨNG của luật chọn lệnh thích ứng (cùng cổng, cùng T2,
+PRIMARY = "AnchorAudit+T2"
+# AnchorAudit+T2+centre là ĐỐI CHỨNG của luật chọn lệnh thích ứng (cùng cổng, cùng T2,
 # chỉ khác luật chọn đích đến). Nó phải nằm trong danh sách để kiểm định được đóng
 # góp của luật đó — nếu thiếu thì bài không có bằng chứng thống kê cho thành phần này.
-BASELINES = ["TwinGate+T2+centre", "TwinGate+blindARQ", "Reactive+T2",
+BASELINES = ["AnchorAudit+T2+centre", "AnchorAudit+blindARQ", "Reactive+T2",
              "Reactive+blindARQ", "FixedSchedule"]
 METRIC = "unsafe_pct"
 
@@ -132,7 +132,7 @@ def main():
                         common = [s for s in seeds if s in bmap]
                         a = np.array([prim[s] for s in common])
                         b = np.array([bmap[s] for s in common])
-                        diff = a - b  # âm = TwinGate tốt hơn
+                        diff = a - b  # âm = AnchorAudit tốt hơn
                         med = float(np.median(diff))
                         if np.all(diff == 0):
                             recs.append((base, common, med, float("nan"),
@@ -207,11 +207,11 @@ def main():
         print(f"{fid:<8}{('inf' if bud=='inf' else bud):>8}  {base:<24}{len(rs):>5}"
               f"{med:>+9.2f}{pmin:>16}{rbm:>8}  {sig:>7}/{len(rs):<5}")
 
-    # ---- GATE: o nao TwinGate THUA co y nghia? ----
+    # ---- GATE: o nao AnchorAudit THUA co y nghia? ----
     worse_sig = [r_ for r_ in out_rows
                  if r_["p_holm"] != "n/a" and float(r_["p_holm"]) < 0.05
                  and r_["median_diff_unsafe_pp"] > 0]
-    print(f"\n=== GATE: có ô nào TwinGate+T2 THUA có ý nghĩa thống kê không? ===")
+    print(f"\n=== GATE: có ô nào AnchorAudit+T2 THUA có ý nghĩa thống kê không? ===")
     if worse_sig:
         print(f"  !! CO {len(worse_sig)} o:")
         for r_ in worse_sig[:20]:
@@ -219,11 +219,11 @@ def main():
                   f"{r_['comparison']} medΔ={r_['median_diff_unsafe_pp']:+.2f} "
                   f"p_holm={r_['p_holm']}")
     else:
-        print("  khong co o nao -> TwinGate+T2 khong thua co y nghia o bat ky o nao")
+        print("  khong co o nao -> AnchorAudit+T2 khong thua co y nghia o bat ky o nao")
 
     # ---- GATE: luat thich ung co dong gop co y nghia o dai nao? ----
     print(f"\n=== GATE: luật chọn lệnh thích ứng (vs centre-seeking) ===")
-    ct = [r_ for r_ in out_rows if r_["comparison"].endswith("TwinGate+T2+centre")]
+    ct = [r_ for r_ in out_rows if r_["comparison"].endswith("AnchorAudit+T2+centre")]
     by_fid = defaultdict(list)
     for r_ in ct:
         by_fid[r_["fidelity"]].append(r_)

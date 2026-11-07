@@ -286,7 +286,7 @@ def tab_legal() -> None:
          r"A counter of dry phases of at least 72 h with $d\ge d_{\mathrm{dry}}$, evaluated on the replayed trajectory &"
          r"Direct \\",
          r"Decision 4801, Appendix A12: uncertainty reported at a 95\% interval with $z=1.96$ &"
-         r"The same statistical machinery as the I7 calibration invariant of~\cite{twingate2026} &"
+         r"The same statistical machinery as the I7 calibration invariant of~\cite{anchoraudit2026} &"
          r"Direct \\",
          r"VM0051 \S 9.3: the principle of conservativeness when choosing parameters &"
          r"Thresholds are biased toward raising an alarm ($\varepsilon=5$\,mm), so a compliant farmer may be queried but a fraudster is not passed &"

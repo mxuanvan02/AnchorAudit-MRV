@@ -155,7 +155,7 @@ def main() -> int:
     # ZIP MAC DINH = goi nop layout PHANG. Ten cu source_latex_final.zip la goi
     # layout src/+output/ (da bo): doc no se bao FAIL vi danh muc rac bay gio
     # TINH CA src/ va output/ (xem JUNK) — khong phai gate hong ma la goi het han.
-    zip_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/tmp/TwinGate_HUJOS_source.zip")
+    zip_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/tmp/AnchorAudit_HUJOS_source.zip")
     if not zip_path.exists():
         print(f"  i  {zip_path} khong ton tai — tu goi lai tu paper2_hujos/")
         build_zip(zip_path)

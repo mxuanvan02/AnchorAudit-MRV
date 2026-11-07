@@ -99,8 +99,8 @@ def tab_wilcoxon(check: bool) -> None:
         return
     fids = sorted({r["fidelity"] for r in rows},
                   key=lambda f: {"awd": 0, "mid": 1, "narrow": 2}.get(f, 9))
-    VN = {"TwinGate+T2+centre": "centre-seeking (đối chứng luật chọn lệnh)",
-          "TwinGate+blindARQ": "gửi lại mù (đối chứng T2)",
+    VN = {"AnchorAudit+T2+centre": "centre-seeking (đối chứng luật chọn lệnh)",
+          "AnchorAudit+blindARQ": "gửi lại mù (đối chứng T2)",
           "Reactive+T2": "ngưỡng tĩnh + T2",
           "Reactive+blindARQ": "ngưỡng tĩnh + gửi lại mù",
           "FixedSchedule": "lịch cố định (tập quán)"}
@@ -112,7 +112,7 @@ def tab_wilcoxon(check: bool) -> None:
     for fid in fids:
         for b in VN:
             g = [r for r in rows if r["fidelity"] == fid
-                 and r["comparison"] == f"TwinGate+T2 vs {b}"]
+                 and r["comparison"] == f"AnchorAudit+T2 vs {b}"]
             if not g:
                 continue
             sig = sum(1 for r in g if r["p_holm"] != "n/a" and float(r["p_holm"]) < 0.05)
@@ -294,18 +294,18 @@ def tab_salinity(check: bool) -> None:
                   "est_yield_loss_pct", "withheld_saline", "fresh_frac"):
             r[f] = float(r[f])
     sub = [r for r in rows if r["network"] == "severe" and r["variant"] == "central"]
-    POL = {"TwinGate+T2": r"\textbf{Cổng đề xuất}", "Reactive+T2": "ngưỡng tĩnh + T2",
+    POL = {"AnchorAudit+T2": r"\textbf{Cổng đề xuất}", "Reactive+T2": "ngưỡng tĩnh + T2",
            "FixedSchedule": "lịch cố định", "Oracle": "Oracle"}
     L = [HDR, r"\begin{tabular}{@{}llcccccc@{}}", r"\toprule",
          r"Cường độ $i$ & Chính sách & nước mặn (mm) & muối thừa (dS$\cdot$mm)"
          r" & thiệt hại NS (\%) & mất an toàn (\%) & im lặng (chu kỳ) & giờ ngọt (\%) \\",
          r"\midrule"]
     for it in sorted({r["intrusion"] for r in sub}):
-        for pol in ("TwinGate+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
+        for pol in ("AnchorAudit+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
             g = [r for r in sub if r["intrusion"] == it and r["policy"] == pol]
             if not g:
                 continue
-            lab = f"{vn_num(it,2)}" if pol == "TwinGate+T2" else ""
+            lab = f"{vn_num(it,2)}" if pol == "AnchorAudit+T2" else ""
             L.append(f"{lab} & {POL[pol]} & {m(fmean(g,'saline_mm'),1)} & "
                      f"{m(fmean(g,'salt_excess_dsm_mm'),0)} & "
                      f"{m(fmean(g,'est_yield_loss_pct'),1)} & "
@@ -324,7 +324,7 @@ def tab_salinity(check: bool) -> None:
          r"Chính sách & Bảng ngưỡng EC$_{crit}$ (dS/m) & "
          + " & ".join(f"$i={vn_num(x,2)}$" for x in its) + r" \\",
          r"\midrule"]
-    for pol, pn in (("TwinGate+T2", r"\textbf{Cổng đề xuất}"),
+    for pol, pn in (("AnchorAudit+T2", r"\textbf{Cổng đề xuất}"),
                     ("Reactive+T2", "ngưỡng tĩnh + T2")):
         for k, v in enumerate(("central", "grattan_strict", "maas_lenient")):
             cells = []
@@ -355,7 +355,7 @@ def tab_awd(check: bool) -> None:
     for r in rows:
         for f in ("awd_effective", "awd_short", "stress_hours", "hours_unsafe", "hours"):
             r[f] = float(r[f])
-    sub = [r for r in rows if r["policy"] == "TwinGate+T2" and r["network"] == "severe"]
+    sub = [r for r in rows if r["policy"] == "AnchorAudit+T2" and r["network"] == "severe"]
     fids = sorted({r["fidelity"] for r in sub},
                   key=lambda f: {"awd": 0, "mid": 1, "narrow": 2}.get(f, 9))
     SF = {"awd": r"$0{,}02$", "mid": r"$0{,}05$", "narrow": r"$0{,}10$"}

@@ -33,7 +33,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
-ROOT = Path("/media/SAS/Van/DeTai2025/TwinGate_K1")
+ROOT = Path("/media/SAS/Van/DeTai2025/AnchorAudit_K1")
 OUT = ROOT / "outputs"
 # Layout moi (migration v4, 2026-10-15):
 #   VI: paper2_vi_submission/src/figures/fig1_method.png  (khong con _vi)

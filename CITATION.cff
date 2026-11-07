@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the paper below."
 type: software
-title: "TwinGate-MRV: Device-Anchored Irrigation Log Auditor for Low-Emission Rice MRV"
+title: "AnchorAudit-MRV: Device-Anchored Irrigation Log Auditor for Low-Emission Rice MRV"
 authors:
   - family-names: Mai
     given-names: Xuân Văn
@@ -17,7 +17,7 @@ authors:
 version: v1.0.0
 date-released: "2026-11-07"
 license: MIT
-repository-code: "https://github.com/mxuanvan02/TwinGate-MRV"
+repository-code: "https://github.com/mxuanvan02/AnchorAudit-MRV"
 abstract: "Reproduction code for the audit-layer study of farmer irrigation logs: FAO-56 hourly water balance replay, physical filters V1/V4/V5, robust detection over an uncertainty set, time-shift attack analysis, and device-anchored reconciliation against signed gateway records."
 keywords:
   - AWD

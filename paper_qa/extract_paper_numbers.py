@@ -207,7 +207,7 @@ else:
         cells = []
         for b in ["80.0", "160.0", "240.0", "320.0", "400.0", "inf"]:
             g = [r for r in main if r["fidelity"] == fid and r["network"] == "severe"
-                 and r["policy"] == "TwinGate+T2" and r["budget_mm"] == b]
+                 and r["policy"] == "AnchorAudit+T2" and r["budget_mm"] == b]
             cells.append(f"{mean(g,'awd_effective'):.2f}" if g else "—")
         w(f"| {fid} | {sf_of[fid]} | " + " | ".join(cells) + " |")
     w("")
@@ -220,7 +220,7 @@ else:
         c = []
         for b in ("240.0", "400.0", "inf"):
             g = [r for r in main if r["fidelity"] == fid and r["network"] == "severe"
-                 and r["policy"] == "TwinGate+T2" and r["budget_mm"] == b]
+                 and r["policy"] == "AnchorAudit+T2" and r["budget_mm"] == b]
             c += [f"{mean(g,'awd_effective'):.2f}", f"{mean(g,'awd_short'):.2f}"] if g \
                  else ["—", "—"]
         w(f"| {fid} | " + " | ".join(c) + " |")
@@ -270,7 +270,7 @@ else:
             (r["seed"], r["station"])] = r["unsafe"]
     for net in ("severe", "mild"):
         for fid in fids:
-            for p in ("TwinGate+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
+            for p in ("AnchorAudit+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
                 pts = sorted([(float(b), statistics.mean(dd.values()))
                               for (f2, n2, p2, b), dd in by_cell.items()
                               if f2 == fid and n2 == net and p2 == p and b != "inf"],
@@ -337,7 +337,7 @@ else:
                         key=lambda f: float(next(r["sigma_frac"] for r in m25
                                                  if r["fidelity"] == f)))
         for fid in fids25:
-            for p in ("TwinGate+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
+            for p in ("AnchorAudit+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
                 cells = []
                 for b in buds25:
                     g = [r for r in m25 if r["fidelity"] == fid and r["network"] == "severe"
@@ -532,7 +532,7 @@ else:
 # ======================================================================
 sys.path.insert(0, str(ROOT / "src"))
 try:
-    from twin_gate import TwinParams, safe_bounds, twin_sigma  # noqa: E402
+    from safety_gate import TwinParams, safe_bounds, twin_sigma  # noqa: E402
     from water_balance import SoilProfile  # noqa: E402
     prof = SoilProfile()
     lo, hi = safe_bounds(prof)
@@ -584,7 +584,7 @@ else:
     w("| cường độ | chính sách | nước mặn bơm (mm) | giờ nguồn còn ngọt (%) | thiệt hại NS ước tính (%) | im lặng vì mặn |")
     w("|---|---|---|---|---|---|")
     for it in sorted({float(r["intrusion"]) for r in sal}):
-        for p in ("TwinGate+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
+        for p in ("AnchorAudit+T2", "Reactive+T2", "FixedSchedule", "Oracle"):
             g = [r for r in sal if float(r["intrusion"]) == it and r["policy"] == p
                  and r["variant"] == "central" and r["network"] == "severe"]
             if not g:
@@ -593,7 +593,7 @@ else:
               f"{100*mean(g,'fresh_frac'):.1f} | {mean(g,'est_yield_loss_pct'):.2f} | "
               f"{mean(g,'withheld_saline'):.1f} |")
     w("")
-    w("Nhạy cảm với bảng ngưỡng chịu mặn (TwinGate+T2, kênh severe, thiệt hại NS %):")
+    w("Nhạy cảm với bảng ngưỡng chịu mặn (AnchorAudit+T2, kênh severe, thiệt hại NS %):")
     w("")
     vs = sorted({r["variant"] for r in sal})
     its = sorted({float(r["intrusion"]) for r in sal})
@@ -603,7 +603,7 @@ else:
         cells = []
         for i in its:
             g = [r for r in sal if r["variant"] == v and float(r["intrusion"]) == i
-                 and r["policy"] == "TwinGate+T2" and r["network"] == "severe"]
+                 and r["policy"] == "AnchorAudit+T2" and r["network"] == "severe"]
             cells.append(f"{mean(g,'est_yield_loss_pct'):.2f}" if g else "—")
         w(f"| {v} | " + " | ".join(cells) + " |")
     w("")
