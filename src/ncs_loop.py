@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """The networked control loop of the K1 study.
 
-SCOPE NOTE: this module is the FUTURE-WORK two-way component (a genuine digital
-twin: it gates commands before dispatch). The published paper's audit layer is a
-one-way digital SHADOW over FAO-56 replay -- see experiments/fraud_detection.py,
-experiments/robust_audit_eval.py and src/log_filters.py. Do not conflate the two.
+SCOPE NOTE: this module is the two-way command-gating component of the codebase
+(NCS study). The paper's audit layer is the one-way digital shadow over FAO-56
+replay -- see experiments/fraud_detection.py, experiments/robust_audit_eval.py
+and src/log_filters.py.
 
 Three states are kept SEPARATE, and the whole difficulty of the problem is that
 the controller only ever sees the second and third:

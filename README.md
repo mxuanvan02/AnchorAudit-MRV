@@ -24,9 +24,8 @@ nước FAO-56:
 4. **Phân tích tấn công dịch thời điểm** — chứng minh điểm mù của phòng thủ
    tổng hợp (Mệnh đề 1, Mệnh đề 2).
 
-Hệ thống được mô tả đúng như một **bóng số**: dữ liệu chảy một chiều từ thực tế
-vào mô hình. Bản sao hai chiều có cổng chặn lệnh tiền phát là hướng phát triển
-tương lai, chưa phải nội dung bài báo.
+Hệ thống là một **bóng số** (Digital Shadow): dữ liệu chảy một chiều từ thực tế
+vào mô hình.
 
 ## Cấu trúc thư mục
 

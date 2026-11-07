@@ -4,8 +4,7 @@
 #
 #   The device-anchored irrigation-log auditor of the published paper
 #   (FAO-56 digital-shadow replay + physical filters + robust detection),
-#   plus the chance-constrained NCS safety-gate prototype (future-work
-#   component; see README "Kết quả chính").
+#   plus the chance-constrained NCS safety-gate experiments.
 #
 # What this does, end to end:
 #   1. creates an isolated Python virtual environment (.venv)

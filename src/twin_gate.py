@@ -2,9 +2,9 @@
 """The K1 mechanism: a lossy COMMAND channel, a twin that gates commands, and
 the policies that compete for the same command budget.
 
-SCOPE NOTE: this is the FUTURE-WORK two-way component of the paper. The
-published audit layer itself is a one-way digital SHADOW (FAO-56 replay of
-farmer logs, no command interception) -- see src/log_filters.py and
+SCOPE NOTE: this is the two-way command-gating component of the codebase (NCS
+study). The paper's audit layer itself is the one-way digital shadow (FAO-56
+replay of farmer logs, no command interception) -- see src/log_filters.py and
 experiments/robust_audit_eval.py. "Twin" here is used in the strict sense: the
 model consumes the candidate command as an input and rolls state forward.
 
