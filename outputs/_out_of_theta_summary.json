@@ -1,0 +1,94 @@
+{
+ "_what": "Tổng hợp thí nghiệm 'kiểm tra ngoài Θ' (Mục 3.2). Mọi giá trị cộng từ cờ từng dòng của hai CSV nguồn; không nhập tay.",
+ "_source": {
+  "honest": "outputs/out_of_theta.csv (experiments/out_of_theta_probe.py)",
+  "fraud": "outputs/out_of_theta_fraud.csv (experiments/out_of_theta_fraud.py)"
+ },
+ "_model_outside_theta": {
+  "soil_fc": 0.3,
+  "soil_wp": 0.2,
+  "root_depth_m": 0.7,
+  "kc_fixed": 1.15,
+  "seepage_mm_h": 0.05,
+  "note": "Bốn tham số sinh nhật ký, nằm ngoài tập bất định Θ của bộ kiểm toán."
+ },
+ "false_accusation_honest_outside_theta": {
+  "don_cau_hinh_tau0": {
+   "count": 17,
+   "n": 42,
+   "ratio": "17/42",
+   "percent": 40.5
+  },
+  "bo_phat_hien_ben_vung": {
+   "count": 0,
+   "n": 42,
+   "ratio": "0/42",
+   "percent": 0.0
+  },
+  "nguong_ty_le_tau_n": {
+   "count": 1,
+   "n": 42,
+   "ratio": "1/42",
+   "percent": 2.4
+  }
+ },
+ "detection_on_attacks": {
+  "fraud_added_events": {
+   "n": 42,
+   "changed": 42,
+   "don_cau_hinh_tau0": {
+    "count": 42,
+    "n": 42,
+    "ratio": "42/42"
+   },
+   "bo_phat_hien_ben_vung": {
+    "count": 42,
+    "n": 42,
+    "ratio": "42/42"
+   },
+   "nguong_ty_le_tau_n": {
+    "count": 42,
+    "n": 42,
+    "ratio": "42/42"
+   }
+  },
+  "fraud_infeasible_depth": {
+   "n": 42,
+   "changed": 42,
+   "don_cau_hinh_tau0": {
+    "count": 42,
+    "n": 42,
+    "ratio": "42/42"
+   },
+   "bo_phat_hien_ben_vung": {
+    "count": 42,
+    "n": 42,
+    "ratio": "42/42"
+   },
+   "nguong_ty_le_tau_n": {
+    "count": 42,
+    "n": 42,
+    "ratio": "42/42"
+   }
+  },
+  "fraud_timing": {
+   "n": 20,
+   "changed": 20,
+   "don_cau_hinh_tau0": {
+    "count": 6,
+    "n": 20,
+    "ratio": "6/20"
+   },
+   "bo_phat_hien_ben_vung": {
+    "count": 0,
+    "n": 20,
+    "ratio": "0/20"
+   },
+   "nguong_ty_le_tau_n": {
+    "count": 1,
+    "n": 20,
+    "ratio": "1/20"
+   }
+  }
+ }
+}

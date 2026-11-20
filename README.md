@@ -46,6 +46,8 @@ AnchorAudit-MRV/
 │   ├── fraud_detection.py    # Phát hiện gian lận trên 281 nhật ký
 │   ├── robust_audit_eval.py  # Đánh giá bộ lọc bền vững (Θ rút gọn / đầy đủ)
 │   ├── reality_gap_probe.py  # Bảy trục khoảng cách thực tế
+│   ├── out_of_theta_probe.py # Kiểm tra ngoài Θ: đo kết tội oan (Mục 3.2)
+│   ├── out_of_theta_fraud.py # Kiểm tra ngoài Θ: đo phát hiện (import probe)
 │   ├── benchmark_confirmation.py, benchmark_mrv.py   # Đối chứng
 │   ├── run_ablation.py, run_deployment.py, run_multi_field.py
 │   ├── sweep_sigma_delta.py, sweep_salinity.py
@@ -149,6 +151,7 @@ Sau khi chạy `reproduce.sh`:
 - **CSV/JSON**: `outputs/*.csv`, `outputs/*.json`
 - **Hình vẽ**: `figures/*.pdf`, `figures/*.png`
 - **Tổng hợp**: `outputs/_benchmark_summary.json`
+- **Thí nghiệm ngoài Θ**: `outputs/_out_of_theta_summary.json`
 - **Mọi con số công bố**: `outputs/_verified_numbers.json`
 
 ### Phát hiện chính của bài báo
@@ -161,6 +164,13 @@ Sau khi chạy `reproduce.sh`:
 - **Bộ phát hiện bền vững**: hạ kết tội oan xuống **5,0 %** nhưng để lọt **8/9**
   tấn công dịch thời điểm.
 - **Phép đối chiếu thiết bị**: bắt **116/116** nhật ký bị sửa, **0/60** kết tội oan.
+- **Kiểm tra ngoài $\\Theta$**: sinh lại nhật ký trung thực bằng một mô hình nước
+  khác hẳn tập bất định (đất 0,30/0,20 không có trong $\\mathcal{S}$, tầng rễ 0,7 m,
+  $K_c = 1{,}15$, rò rỉ 0,05 mm/h). Trên 42 nhật ký như vậy, bộ đơn cấu hình với
+  $\\tau_0$ đánh dấu oan **17/42** (40,5 %), bộ phát hiện bền vững **0/42** (0,0 %),
+  ngưỡng tỷ lệ **1/42** (2,4 %); gian lận thô bị bắt **42/42** ở cả ba tầng, còn
+  tấn công dịch thời điểm chỉ bị bắt **6/20 · 0/20 · 1/20**. Nghĩa là điểm mù là
+  hệ quả của cơ chế, không phải của việc dùng chung một phương trình.
 
 ### Bảng đối chứng NCS (phần mở rộng, chưa phải nội dung chính của bài)
 

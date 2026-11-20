@@ -128,6 +128,15 @@ else
   # gia thiet 'khoang ton that rong' cua menh de loi ich tin chi song duoc bao lau
   # (moi con so cong bo ve phep do nay chi duoc trich tu outputs/_net_loss_summary.json)
   python experiments/measure_net_loss_intervals.py
+
+  # --- Kiem tra NGOAI Theta (Muc 3.2 cua bai) --------------------------------
+  # Sinh lai nhat ky trung thuc bang mo hinh nuoc nam NGOAI tap bat dinh, roi kiem
+  # toan bang bo da cong bo. Bao oan: 17/42, 0/42, 1/42. Phat hien: 42/42, 42/42,
+  # 6/20-0/20-1/20. out_of_theta_fraud.py import out_of_theta_probe.py nen THU TU
+  # hai lenh duoi day la bat buoc.
+  python experiments/out_of_theta_probe.py
+  python experiments/out_of_theta_fraud.py
+  python experiments/make_out_of_theta_summary.py
 fi
 
 # --- 6. stats + figures ------------------------------------------------------
