@@ -68,4 +68,7 @@ tmp_*
 # GIU: *.provenance.json (512 byte, ho so nguon cua tung file thoi tiet)
 # BO:  *.csv thoi tiet (vai MB, tai lai duoc tu Open-Meteo)
 data/era5_multi/*.csv
+!data/era5_multi/can_tho_202[45].csv
+!data/era5_multi/soc_trang_202[45].csv
+!data/era5_multi/ca_mau_202[45].csv
 data/era5_multi/*.json.gz
