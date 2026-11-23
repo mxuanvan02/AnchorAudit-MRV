@@ -33,7 +33,6 @@ Thời gian chạy toàn bộ kiểm định và thực nghiệm của bài báo
 
 | Thành phần bài báo | Script sinh dữ liệu | Tệp đầu ra đối chiếu |
 |---|---|---|
-| Hình 1 (Kiến trúc hệ thống) | `figures/make_fig1.py` | `figures/fig_architecture.png` |
 | Bảng 1 (Tham số mô hình & ngoài $\Theta$) | `src/log_filters.py`, `experiments/out_of_theta_probe.py` | — |
 | Bảng 2 (Thiết kế $2\times 2$ tách $\Theta$ và $\tau$) | `experiments/robust_audit_eval.py --seeds 10` | `outputs/eval_theta_reduced_10seeds.csv` |
 | Bảng 3 (Cảnh báo giả trên $60$ nhật ký trung thực) | `experiments/robust_audit_eval.py --seeds 10` | `outputs/eval_theta_reduced_10seeds.csv` |
@@ -57,7 +56,6 @@ AnchorAudit-MRV/
 ├── src/                 # Cân bằng nước FAO-56, bộ lọc vật lý V1/V4/V5, tập bất định Θ
 ├── experiments/         # Kịch bản đánh giá, quét độ nhạy d_dry và kiểm tra ngoài Θ
 ├── tests/               # Kiểm tra bất biến vật lý và bộ lọc
-├── figures/             # Hình 1 (kiến trúc) và script vẽ
 ├── outputs/             # Tệp CSV/JSON đối chiếu với các bảng trong bài
 ├── reproduce_paper.sh   # Tái lập một lệnh toàn bộ kết quả bài báo
 ├── requirements.lock    # Phiên bản phụ thuộc cố định
