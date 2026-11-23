@@ -61,12 +61,11 @@ AnchorAudit-MRV/
 ├── outputs/             # Tệp CSV/JSON đối chiếu với các bảng trong bài
 ├── reproduce_paper.sh   # Tái lập một lệnh toàn bộ kết quả bài báo
 ├── requirements.lock    # Phiên bản phụ thuộc cố định
-├── CITATION.cff         # Thông tin trích dẫn chuẩn
 └── LICENSE              # Giấy phép MIT
 ```
 
-## Trích dẫn & Tài trợ
+## Tài trợ & Liên hệ
 
-Nghiên cứu được tài trợ bởi Đại học Huế trong khuôn khổ đề tài mã số **DHH2025-19-07**. Xem thông tin trích dẫn chuẩn tại [`CITATION.cff`](./CITATION.cff).
+Nghiên cứu được tài trợ bởi Đại học Huế trong khuôn khổ đề tài mã số **DHH2025-19-07**.
 
 - Tác giả liên hệ: `Ldmphuong@hueuni.edu.vn`; `ntuongtri@hueuni.edu.vn`.
