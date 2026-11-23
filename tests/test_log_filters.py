@@ -227,12 +227,17 @@ a = robust_audit(log2, wet, {"2024-03-01": 0.0}, 0, 6)
 b = robust_audit(log2, wet, {"2024-03-01": 0.0}, 0, 6)
 check("robust_audit tất định", (a.flagged, a.f1, a.f4, a.hours) == (b.flagged, b.f1, b.f4, b.hours))
 
-print("\n" + "=" * 70)
-print(f"PASS {len(PASSES)} | FAIL {len(FAILS)}")
-if FAILS:
-    print("Các test FAIL:")
-    for f in FAILS:
-        print("  -", f)
-    sys.exit(1)
-print("TẤT CẢ TEST PASS")
-sys.exit(0)
+def test_log_filters_invariants():
+    assert not FAILS, f"Failed log filter checks: {FAILS}"
+
+
+if __name__ == "__main__":
+    print("\n" + "=" * 70)
+    print(f"PASS {len(PASSES)} | FAIL {len(FAILS)}")
+    if FAILS:
+        print("Các test FAIL:")
+        for f in FAILS:
+            print("  -", f)
+        sys.exit(1)
+    print("TẤT CẢ TEST PASS")
+    sys.exit(0)
