@@ -1,25 +1,28 @@
 # AnchorAudit-MRV
 
-Mã nguồn tái lập toàn bộ thực nghiệm của bài báo:
-
-> **Giới hạn của kiểm toán vật lý nhật ký tưới và điều kiện áp dụng neo theo thiết bị trong đo đạc, báo cáo, thẩm định lúa phát thải thấp**  
-> Mai Xuân Văn, Lê Đức Minh Phương\*, Nguyễn Đăng Trị, Trương Khánh Duy, Nguyễn Tương Tri\*  
-> *Tạp chí Khoa học Đại học Huế (Hue University Journal of Science)*, 2026.
-
+[![English](https://img.shields.io/badge/Lang-English-blue.svg)](./README.md)
+[![Tiếng Việt](https://img.shields.io/badge/Lang-Ti%E1%BA%BFng%20Vi%E1%BB%87t-lightgrey.svg)](./README.vi.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 ![Python](https://img.shields.io/badge/python-%E2%89%A53.10-blue.svg)
 
-## Phạm vi nghiên cứu
+**Language:** **English** | [Tiếng Việt](./README.vi.md)
 
-Kho mã này phục vụ tái lập trực tiếp các bảng kết quả và kiểm định của bài báo về ba tầng kiểm toán nhật ký tưới khô-ướt luân phiên (AWD) trên dữ liệu khí tượng tái phân tích ERA5 (Cần Thơ, Sóc Trăng, Cà Mau; năm 2024--2025):
+Experimental simulation and verification repository for the study:
 
-1. **Tầng 1 — Mô hình đơn cấu hình** ($\theta_0$, ngưỡng tuyệt đối $\tau_0 = 5$~mm, bộ lọc $V_1, V_4, V_5$).
-2. **Tầng 2 — Bộ phát hiện bền vững** ($V_{\mathrm{rob}}(L) = \bigcap_{\theta \in \Theta} V_\theta(L)$ kết hợp ngưỡng co giãn $\tau(N_{\mathrm{event}})$ với $\sigma_{\mathrm{event}} = 7{,}67$~mm).
-3. **Tầng 3 — Neo theo bản ghi thiết bị** (đối chiếu hai hiệu đa tập $\Delta^-, \Delta^+$ và $\Delta_{\mathrm{depth}}$ với bản ghi có chữ ký $\mathcal{G}$ dưới giả thiết thiết bị toàn vẹn — kiểm tra tính nhất quán nội tại).
+> **Limits of Physical Auditing for Irrigation Logs and Conditions for Device Anchoring in Responsible Low-Emission Rice MRV**  
+> Xuan Van Mai, Duc Minh Phuong Le\*, Tri Nguyen Dang, Khanh Duy Truong, Tuong Tri Nguyen\*  
 
-## Tái lập nhanh (1 lệnh)
+## Scope
 
-Yêu cầu: Python $\ge$ 3.10 (`numpy`, `scipy`, `matplotlib`). Không cần API key (dữ liệu ERA5 đã được lưu sẵn kèm tệp truy vết trong `data/era5_multi/`).
+This repository reproduces all experimental tables and checks for a three-tier audit framework over alternate wetting and drying (AWD) irrigation logs using hourly ERA5 reanalysis meteorology across three Mekong Delta stations (Can Tho, Soc Trang, Ca Mau; 2024–2025):
+
+1. **Tier 1 — Single-Configuration Baseline** ($\theta_0$, fixed gap threshold $\tau_0 = 5$ mm, physical plausibility filters $V_1, V_4, V_5$).
+2. **Tier 2 — Robust Uncertainty-Set Detector** ($V_{\mathrm{rob}}(L) = \bigcap_{\theta \in \Theta} V_\theta(L)$ paired with elastic event-scaled tolerance $\tau(N_{\mathrm{event}})$ using $\sigma_{\mathrm{event}} = 7.67$ mm).
+3. **Tier 3 — Device-Anchored Reconciliation** (directional multiset differences $\Delta^-, \Delta^+$ and maximum hourly depth deviation $\Delta_{\mathrm{depth}}$ against signed pump-controller records $\mathcal{G}$ as an internal consistency check).
+
+## One-Command Reproduction
+
+Requirements: Python $\ge$ 3.10 (`numpy`, `scipy`, `matplotlib`). No API keys are needed because cached ERA5 inputs and provenance files are included in `data/era5_multi/`.
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
@@ -27,43 +30,45 @@ pip install -r requirements.lock
 bash reproduce_paper.sh
 ```
 
-Thời gian chạy toàn bộ kiểm định và thực nghiệm của bài báo: ~1--2 phút trên máy tính cá nhân.
+Runtime: approximately 1–2 minutes on a standard laptop.
 
-## Ánh xạ Bảng trong bài báo $\leftrightarrow$ Mã nguồn & Đầu ra
+## Paper Tables $\leftrightarrow$ Scripts & Outputs Mapping
 
-| Thành phần bài báo | Script sinh dữ liệu | Tệp đầu ra đối chiếu |
+| Paper Element | Reproduction Script | Reference Output File |
 |---|---|---|
-| Bảng 1 (Tham số mô hình & ngoài $\Theta$) | `src/log_filters.py`, `experiments/out_of_theta_probe.py` | — |
-| Bảng 2 (Thiết kế $2\times 2$ tách $\Theta$ và $\tau$) | `experiments/robust_audit_eval.py --seeds 10` | `outputs/eval_theta_reduced_10seeds.csv` |
-| Bảng 3 (Cảnh báo giả trên $60$ nhật ký trung thực) | `experiments/robust_audit_eval.py --seeds 10` | `outputs/eval_theta_reduced_10seeds.csv` |
-| Bảng 4 (Số pha khô $n_{\mathrm{dry}}$, ghép cặp) | `experiments/robust_audit_eval.py --seeds 10` / `--full-theta --seeds 3` | `outputs/eval_theta_reduced_10seeds.csv`, `outputs/eval_theta_full_3seeds.csv` |
-| Bảng 5 (Độ nhạy theo ngưỡng $d_{\mathrm{dry}}$) | `experiments/sweep_dry_threshold.py` | `outputs/sweep_dry_threshold.csv` |
-| Bảng 6 (Tỷ lệ phát hiện trên $116$ nhật ký bị sửa) | `experiments/robust_audit_eval.py --seeds 10` | `outputs/eval_theta_reduced_10seeds.csv` |
-| Kiểm tra ngoài $\Theta$ (Mục 3.2) | `experiments/out_of_theta_probe.py`, `experiments/out_of_theta_fraud.py`, `experiments/make_out_of_theta_summary.py` | `outputs/_out_of_theta_summary.json` |
+| Table 1 (Model & out-of-$\Theta$ parameters) | `src/log_filters.py`, `experiments/out_of_theta_probe.py` | — |
+| Table 2 ($2\times 2$ ablation isolating $\Theta$ and $\tau$) | `experiments/robust_audit_eval.py --seeds 10` | `outputs/eval_theta_reduced_10seeds.csv` |
+| Table 3 (False positives on $60$ honest logs) | `experiments/robust_audit_eval.py --seeds 10` | `outputs/eval_theta_reduced_10seeds.csv` |
+| Table 4 (Paired $n_{\mathrm{dry}}$ dry-phase gains) | `experiments/robust_audit_eval.py --seeds 10` / `--full-theta --seeds 3` | `outputs/eval_theta_reduced_10seeds.csv`, `outputs/eval_theta_full_3seeds.csv` |
+| Table 5 (Sensitivity across $d_{\mathrm{dry}}$ thresholds) | `experiments/sweep_dry_threshold.py` | `outputs/sweep_dry_threshold.csv` |
+| Table 6 (Detection rates on $116$ modified logs) | `experiments/robust_audit_eval.py --seeds 10` | `outputs/eval_theta_reduced_10seeds.csv` |
+| Out-of-$\Theta$ validation | `experiments/out_of_theta_probe.py`, `experiments/out_of_theta_fraud.py`, `experiments/make_out_of_theta_summary.py` | `outputs/_out_of_theta_summary.json` |
 
-## Tóm tắt kết quả chính (từ bản chạy đối chiếu)
+## Key Verified Results
 
-- **Cảnh báo giả (nhật ký có nhiễu, $n=60$):** Đơn cấu hình ($\tau_0$) $16/60$ ($26{,}7\%$); đổi riêng ngưỡng co giãn $\tau(N_{\mathrm{event}})$ còn $5/60$ ($8{,}3\%$); kết hợp giao trên $\Theta$ rút gọn còn $3/60$ ($5{,}0\%$); neo thiết bị $0/60$ (tính nhất quán nội tại).
-- **Tấn công dịch thời điểm ($d_{\mathrm{dry}}=0{,}45$):** Tăng trung bình $+0{,}61$ pha trên toàn bộ $23$ nhật ký mục tiêu ($+12{,}5\%$); trên $9$ nhật ký leo đồi sửa thành công tăng $+1{,}56$ pha ($4{,}78 \to 6{,}33$, $+32{,}6\%$); bộ phát hiện bền vững bỏ lọt $8/9$ ca (và $22/24$ ca khi gộp cả $5$ ngưỡng $d_{\mathrm{dry}}\in\{0{,}05;\,0{,}20;\,0{,}45;\,0{,}80;\,0{,}95\}$).
-- **Kiểm tra ngoài $\Theta$ ($n=42$ trung thực, $n=20$ dịch thời điểm):** Cảnh báo giả $17/42$ ($40{,}5\%$, đơn cấu hình), $1/42$ ($2{,}4\%$, ngưỡng co giãn), $0/42$ ($0{,}0\%$, bền vững); phát hiện dịch thời điểm lần lượt $6/20$, $1/20$, $0/20$.
-- **Neo thiết bị ($281$ nhật ký mô phỏng):** Phát hiện $116/116$ nhật ký bị sửa ($107/107$ gian lận xác nhận sau khi tách $9$ ca bỏ sót lệnh sang đối soát) và $0/120$ cảnh báo giả dưới giả thiết bản ghi thiết bị toàn vẹn.
+- **False positives ($60$ noisy honest logs):** Single-config ($\tau_0$) flags $16/60$ ($26.7\%$); elastic allowance $\tau(N_{\mathrm{event}})$ alone lowers this to $5/60$ ($8.3\%$); robust intersection over $\Theta_{\mathrm{red}}$ lowers it to $3/60$ ($5.0\%$); device anchoring yields $0/60$ ($0/120$ total across ideal and noisy logs, reflecting internal consistency).
+- **Timing-shift attack ($d_{\mathrm{dry}}=0.45$):** Mean dry-phase increase is $+0.61$ phases ($+12.5\%$) across all $23$ targeted logs and $+1.56$ phases ($4.78 \to 6.33$, $+32.6\%$) across $9$ hill-climb-modified logs; the robust detector misses $8/9$ at $d_{\mathrm{dry}}=0.45$ and $22/24$ pooled across $d_{\mathrm{dry}} \in \{0.05, 0.20, 0.45, 0.80, 0.95\}$.
+- **Out-of-$\Theta$ validation ($42$ honest, $20$ timing-shift logs):** Honest false positives are $17/42$ ($40.5\%$, single-config), $1/42$ ($2.4\%$, elastic allowance), and $0/42$ ($0.0\%$, robust); timing-shift detection falls to $6/20$, $1/20$, and $0/20$, respectively.
+- **Device-anchored reconciliation ($281$ audited logs under $\Theta_{\mathrm{red}}$):** Flags $116/116$ modified logs under any discrepancy ($107/107$ confirmed fraud cases after isolating $9$ omission cases as reconciliation errors) with $0/120$ honest false positives under uncompromised controller records.
 
-## Cấu trúc cốt lõi
+## Repository Structure
 
 ```text
 AnchorAudit-MRV/
-├── data/                # Khí tượng ERA5 (Open-Meteo) kèm provenance
-├── src/                 # Cân bằng nước FAO-56, bộ lọc vật lý V1/V4/V5, tập bất định Θ
-├── experiments/         # Kịch bản đánh giá, quét độ nhạy d_dry và kiểm tra ngoài Θ
-├── tests/               # Kiểm tra bất biến vật lý và bộ lọc
-├── outputs/             # Tệp CSV/JSON đối chiếu với các bảng trong bài
-├── reproduce_paper.sh   # Tái lập một lệnh toàn bộ kết quả bài báo
-├── requirements.lock    # Phiên bản phụ thuộc cố định
-└── LICENSE              # Giấy phép MIT
+├── README.md            # Primary English documentation
+├── README.vi.md         # Vietnamese documentation (Bản tiếng Việt)
+├── data/                # Cached ERA5 meteorology (Open-Meteo) with provenance
+├── src/                 # FAO-56 water balance, filters V1/V4/V5, uncertainty set Θ
+├── experiments/         # Evaluation, d_dry sensitivity sweeps, out-of-Θ scripts
+├── tests/               # Physical invariant and filter unit tests
+├── outputs/             # Reference CSV/JSON tables matched to paper results
+├── reproduce_paper.sh   # One-command reproduction workflow
+├── requirements.lock    # Pinned dependency versions
+└── LICENSE              # MIT License
 ```
 
-## Tài trợ & Liên hệ
+## Funding & Contact
 
-Nghiên cứu được tài trợ bởi Đại học Huế trong khuôn khổ đề tài mã số **DHH2025-19-07**.
+This research was funded by Hue University under grant number **DHH2025-19-07**.
 
-- Tác giả liên hệ: `Ldmphuong@hueuni.edu.vn`; `ntuongtri@hueuni.edu.vn`.
+- Corresponding authors: `Ldmphuong@hueuni.edu.vn`; `ntuongtri@hueuni.edu.vn`.
